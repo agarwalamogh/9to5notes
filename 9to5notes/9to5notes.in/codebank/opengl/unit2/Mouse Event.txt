@@ -1,0 +1,77 @@
+#include< iostream>
+#include< GL/glut.h>
+
+float tx= 0.0, ty= 0.0, sx= 0, sy= 0, r= 0;
+int move= -1;
+
+void xyz(int v)
+{
+	if(move== 1)
+	{
+		tx += 0.01;
+		ty += 0.01;
+		sx += 0.005;
+		sy += 0.005;
+		r += 10;
+	}
+	else if(move== 0)
+	{
+		tx -= 0.01;
+		ty -= 0.01;
+		sx -= 0.005;
+		sy -= 0.005;
+		r -= 10;
+	}
+	
+	glutPostRedisplay();
+	glutTimerFunc(100, xyz, v);
+}
+
+void mouse(int button, int status, int x, int y)
+{
+	if(button== GLUT_LEFT_BUTTON && status== GLUT_DOWN)
+	{
+		move= 1;
+	}
+	else if(button== GLUT_RIGHT_BUTTON && status== GLUT_DOWN)
+	{
+		move= 0;
+	}
+}
+
+void display()
+{
+	gluOrtho2D(-100, 100, -100, 100);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(0.7, 0.8, 1);
+	
+	glTranslatef(tx, ty, 0);
+	glRotatef(r, 0, 0, 1);
+	glScalef(sx, sy, 0);
+	//glScalef(100, 100, 0), 
+	
+	glBegin(GL_QUADS);
+	
+	glVertex2f(-20, 20);
+	glVertex2f(-20, -20);
+	glVertex2f(20, -20);
+	glVertex2f(20, 20);
+	
+	glEnd();
+	glFlush();
+}
+
+int main(int argc, char **argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowPosition(400, 125);
+	glutInitWindowSize(500, 500);
+	glutCreateWindow("Mouse Function");
+	glutDisplayFunc(display);
+	glutMouseFunc(mouse);
+	glutTimerFunc(10, xyz, 0);
+	glutMainLoop();
+} 

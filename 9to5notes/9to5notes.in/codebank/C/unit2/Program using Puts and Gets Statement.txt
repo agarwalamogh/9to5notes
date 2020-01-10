@@ -1,0 +1,14 @@
+#include < stdio.h >
+
+main()
+{
+char str[81];
+
+puts("Enter a line of text:\n");
+
+gets (str);
+
+puts("You entered:\n");
+
+puts(str);
+}

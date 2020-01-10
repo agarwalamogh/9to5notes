@@ -1,0 +1,20 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp;
+char c;
+clrscr();
+fp=fopen("g.txt","w");
+printf("Enter the line of text,press ^z to stop ");
+while(1)
+{
+c=getchar();
+if(c==EOF)
+break;
+else
+fputc(c,fp);
+}
+fclose(fp);
+getch();
+}

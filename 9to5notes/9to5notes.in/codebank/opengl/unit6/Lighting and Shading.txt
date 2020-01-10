@@ -1,0 +1,48 @@
+#include< gl/GLUT.h>
+#include< stdio.h>
+void display()
+{
+
+
+glOrtho(-100,100,-100,100,-100,100);
+
+
+
+GLfloat direction[]={1.0,0.0,-1.0,0.0};
+
+GLfloat black[]={0.0,0.0,0.0};
+GLfloat white[]={1.0,1.0,1.0};
+GLfloat yellow[]={1.0,1.0,0.0};
+GLfloat cyan[]={1.0,0.0,1.0};
+
+//glMaterialfv(GL_FRONT,GL_AMBIENT_AND_DIFFUSE,yellow);
+//glMaterialfv(GL_FRONT,SPECULAR,white);
+glMaterialfv(GL_FRONT,GL_AMBIENT,yellow);
+//glMaterialfv(GL_FRONT,GL_DIFFUSE,yellow);
+
+glMaterialf(GL_FRONT,GL_SHININESS,55);
+
+glLightfv(GL_LIGHT0,GL_AMBIENT,black);
+//glLightfv(GL_LIGHT0,GL_DIFFUSE,cyan);
+
+glLightfv(GL_LIGHT0,GL_POSITION,direction);
+
+glEnable(GL_DEPTH_TEST);
+glEnable(GL_LIGHTING);
+glEnable(GL_LIGHT0);
+glClear(GL_DEPTH_BUFFER_BIT); 
+
+
+glutSolidTeapot(50);
+glFlush();
+}
+int main(int argc,char** argv)
+{
+glutInit(&argc,argv);
+glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE|GLUT_DEPTH);
+glutInitWindowSize(500,400);
+glutInitWindowPosition(40,50);
+glutCreateWindow("lighting");
+glutDisplayFunc(display);
+glutMainLoop();
+}

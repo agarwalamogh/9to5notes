@@ -1,0 +1,1325 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="c592755e117339e3c624ce43-text/javascript"></script>
+<script type="c592755e117339e3c624ce43-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="c592755e117339e3c624ce43-text/javascript"></script>
+<script type="c592755e117339e3c624ce43-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="c592755e117339e3c624ce43-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="c592755e117339e3c624ce43-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="c592755e117339e3c624ce43-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="c592755e117339e3c624ce43-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="c592755e117339e3c624ce43-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="c592755e117339e3c624ce43-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="c592755e117339e3c624ce43-text/javascript"></script>
+
+<script src="prism-2.html" type="c592755e117339e3c624ce43-text/javascript"></script>
+<title>c++</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C++ </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Inheritance, Aggregation And Operator Overloading </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Aggregation </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Aggregation.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Aggregation</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>  
+using namespace std;  
+class Address {  
+    public:  
+   string addressLine, city, state;    
+     Address(string addressLine, string city, string state)    
+    {    
+        this->addressLine = addressLine;    
+        this->city = city;    
+        this->state = state;    
+    }    
+};  
+class Employee    
+    {    
+        private:  
+        Address* address;  //Employee HAS-A Address   
+        public:  
+        int id;    
+        string name;    
+        Employee(int id, string name, Address* address)    
+       {    
+           this->id = id;    
+           this->name = name;    
+           this->address = address;    
+       }    
+     void display()    
+       {    
+           cout<<id <<" "<< name<< " "<< address->addressLine<< " "<< address->city<< " "<< address->state<< endl;    
+       }    
+   };   
+int main(void) {  
+    Address a1= Address("C14Sec15","Noida","UP");    
+    Employee e1 = Employee(101,"Nakul",&a1);    
+            e1.display();   
+   return 0;  
+}  
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+ Basic to Class Type Conversion </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Basic%20to%20Class%20Type%20Conversion.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Basic to Class Type Conversion</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+using namespace std;
+class Time
+{
+	int hrs,min;
+	public:
+                Time(int);
+		void display();
+};
+
+Time :: Time(int t)
+{
+	cout<<"Basic Type to ==> Class Type Conversion..."<< endl;
+	hrs=t/60;
+	min=t%60;
+}
+
+void Time::display()
+{
+	cout<< hrs<< ": Hours(s)" << endl;
+	cout<< min<< " Minutes" << endl;
+}
+
+int main()
+{
+	int duration;
+	cout<<"Enter time duration in minutes"; 
+        cin>>duration;
+	
+	Time t1=duration;
+        
+	t1.display();
+	
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Class to Class Type Conversion </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Class%20to%20Class%20Type%20Conversion.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Class to Class Type Conversion</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+ <div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+#include < iomanip>
+using namespace std;
+class Time
+{
+	int hrs,min;
+	public:
+		Time(int h,int m)
+		{
+			hrs=h;
+			min=m;
+		}
+		Time()
+		{
+			cout<<"\n Time's Object Created";
+		}
+		int getMinutes()
+		{
+			int tot_min = ( hrs * 60 ) + min ;
+                        return tot_min;
+		}
+		void display()
+		{
+			cout<<"Hours: "<< hrs<< endl ;
+                        cout<<" Minutes : "<< min << endl ;
+		}
+};
+class Minute
+{
+	int min;
+	public:
+	
+        Minute()
+        {
+           min = 0;
+        }
+	void operator=(Time T)
+	{
+		min=T.getMinutes();
+	}
+	void display()
+	{
+		cout<<"\n Total Minutes : " <<min<< endl; } }; int main() { Time t1(2,30); t1.display(); Minute m1; m1.display(); m1 = t1; conversion from Time to Minute t1.display(); m1.display(); } < code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Explicit Type Conversion </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Explicit%20Type%20Conversion.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Explicit Type Conversion</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+int main()
+{
+int a;
+float b,c;
+cout << "Enter the value of a:";
+cin >> a;
+cout << "Enter the value of b:";
+cin >> b;
+c = float(a)+b;
+cout << "The value of c is:" << c;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+ <div class="col">
+Function Overriding </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Function%20Overriding.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Function Overriding</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+class BaseClass {
+public:
+   void disp(){
+      cout<<"Function of Parent Class";
+   }
+};
+class DerivedClass: public BaseClass{
+public:
+   void disp() {
+      cout<<"Function of Child Class";
+   }
+};
+int main() {
+   DerivedClass obj = DerivedClass();
+   obj.disp();
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Implicit Type Conversion </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Implicit%20Type%20Conversion.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Implicit Type Conversion</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+int main()
+{
+short x=6000;
+int y;
+y=x;
+cout<<"y="<< y;
+}
+ </code></pre>
+</div>
+ <div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Inheritance </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Inheritance.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Inheritance</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Person
+{
+     public:
+        string profession;
+        int age;
+
+        Person(): profession("unemployed"), age(16) { }
+        void display()
+        {
+             cout << "My profession is: " << profession << endl;
+             cout << "My age is: " << age << endl;
+             walk();
+             talk();
+        }
+        void walk() { cout << "I can walk." << endl; }
+        void talk() { cout << "I can talk." << endl; }
+};
+
+// MathsTeacher class is derived from base class Person.
+class MathsTeacher : public Person
+{
+    public:
+       void teachMaths() { cout << "I can teach Maths." << endl; }
+};
+
+// Footballer class is derived from base class Person.
+class Footballer : public Person
+{
+    public:
+       void playFootball() { cout << "I can play Football." << endl; }
+};
+
+int main()
+{
+     MathsTeacher teacher;
+     teacher.profession = "Teacher";
+     teacher.age = 23;
+     teacher.display();
+     teacher.teachMaths();
+
+     Footballer footballer;
+     footballer.profession = "Footballer";
+     footballer.age = 19;
+     footballer.display();
+     footballer.playFootball();
+
+     return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Multilevel Inheritance </div>
+ <div class="col">
+<a href="c%2b%2b/unit4/Multilevel%20Inheritance.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Multilevel Inheritance</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class A
+{
+    public:
+      void display()
+      {
+          cout<<"Base class content.";
+      }
+};
+
+class B : public A
+{
+
+};
+
+class C : public B
+{
+ 
+};
+
+int main()
+{
+    C obj;
+    obj.display();
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Multiple Inheritance </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Multiple%20Inheritance.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal9">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Multiple Inheritance</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Mammal {
+  public:
+    Mammal()
+    {
+      cout << "Mammals can give direct birth." << endl;
+    }
+};
+
+class WingedAnimal {
+  public:
+    WingedAnimal()
+    {
+      cout << "Winged animal can flap." << endl;
+    }
+};
+
+class Bat: public Mammal, public WingedAnimal {
+
+};
+
+int main()
+{
+    Bat b1;
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Object Slicing </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Object%20Slicing.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal10">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal10">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Object Slicing</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Base {
+        int data1;
+        int data2;
+    public:
+        Base(int a, int b) {
+            data1 = a;
+            data2 = b;
+        }
+
+        virtual void display() {
+            cout << "I am Base class" << endl;
+        }
+};
+
+class Derived : public Base {
+        int data3;
+    public:
+        Derived(int a, int b, int c) : Base(a, b) {
+            data3 = c;
+        }
+
+        void display() {
+            cout << "I am Derived class" << endl;
+        }
+};
+
+void somefunc ( Base obj )
+{
+    obj.display();
+}
+
+int main()
+{
+    Base b(10, 20);
+    Derived d(100, 200, 300);
+
+    somefunc(b);
+    somefunc(d);
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Operator Overloading of Decrement -- Operator </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Operator%20Overloading%20of%20Decrement%20--%20Operator.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal11">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal11">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+ 
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Operator Overloading of Decrement -- Operator</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Check
+{
+  private:
+    int i;
+  public:
+    Check(): i(3) {  }
+    Check operator -- ()
+    {
+        Check temp;
+        temp.i = --i;
+        return temp;
+    }
+
+    // Notice int inside barcket which indicates postfix decrement.
+    Check operator -- (int)
+    {
+        Check temp;
+        temp.i = i--;
+        return temp;
+    }
+
+    void Display()
+    { cout << "i = "<< i << endl; }
+};
+
+int main()
+{
+    Check obj, obj1;    
+    obj.Display(); 
+    obj1.Display();
+
+    // Operator function is called, only then value of obj is assigned to obj1
+    obj1 = --obj;
+    obj.Display();
+    obj1.Display();
+
+    // Assigns value of obj to obj1, only then operator function is called.
+    obj1 = obj--;
+    obj.Display();
+    obj1.Display();
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Operator Overloading </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Operator%20Overloading.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal12">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal12">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Operator Overloading</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Test
+{
+   private:
+      int count;
+
+   public:
+       Test(): count(5){}
+
+       void operator ++() 
+       { 
+          count = count+1; 
+       }
+       void Display() { cout<<"Count: "<< count; }
+};
+
+int main()
+{
+    Test t;
+    // this calls "function void operator ++()" function
+    ++t;    
+    t.Display();
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Overloading Binary Operator + to Add Two Complex Numbers </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Overloading%20Binary%20Operator%20%2b%20to%20Add%20Two%20Complex%20Numbers.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal13">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal13">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Overloading Binary Operator + to Add Two Complex Numbers</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+using namespace std;
+
+class Complex
+{
+        int num1, num2;
+    public:
+        void accept()
+        {
+                cout<<"\n Enter Two Complex Numbers : ";
+                cin>>num1>>num2;
+        }
+        Complex operator+(Complex obj)   //Overloading '+' operator
+        {
+                Complex c;
+                c.num1=num1+obj.num1;
+                c.num2=num2+obj.num2;
+                return(c);
+        }
+        void display()
+        {
+                cout<< num1<<"+"<< num2<<"i"<<"\n";
+        }
+};
+int main()
+{
+        Complex c1, c2, sum;      //Created Object of Class Complex i.e c1 and c2 
+
+        c1.accept();  //Accepting the values
+        c2.accept();
+
+        sum = c1+c2;   //Addition of object
+    
+        cout<<"\n Entered Values : \n";
+        cout<<"\t";
+        c1.display();    //Displaying user input values
+        cout<<"\t";
+        c2.display();
+  
+        cout<<"\n Addition of Real and Imaginary Numbers : \n";
+        cout<<"\t";
+        sum.display();  //Displaying the addition of real and imaginary numbers
+     
+        return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Overloading Subscript Operator </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Overloading%20Subscript%20Operator.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal14">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal14">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Overloading Subscript Operator</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+using namespace std;
+
+class example
+{
+    int data[5];
+    public:
+        void input()
+        {
+            int i;
+            cout<<"Enter 5 integers:"<< endl;
+            for(i=0;i< 5;i++)
+                cin>>data[i];
+        }
+        int &operator[](int i) // operator function
+        {
+            return data[i];
+        }
+};
+
+int main()
+{
+    int i,sum=0;
+    example a;
+    a.input();
+    cout<<"Calculate sum by overloading [] operator"<< endl;
+    for(i=0;i< 5;i++)
+    {
+        sum=sum+a[i]; // calling operator function
+    }
+    cout<<"Sum = "<< sum;
+    getch();
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Overloading unary - operator </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Overloading%20unary%20-%20operator.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal15">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal15">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Overloading unary - operator</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+using namespace std;
+
+class example
+{
+    int a,b;
+    public:
+        void input()
+        {
+            cout<<"Enter a and b: ";
+            cin>>a>>b;
+        }
+        void operator -()   //operator function as a member function
+        {
+            a=-a;
+            b=-b;
+        }
+        void display()
+        {
+            cout<<"a="<< a<< endl<<"b="<<b<< endl; } }; int main() { example e; e.input(); cout<<"Before overloading unary minus operator"<< endl; e.display(); -e; cout<<"After overloading unary minus operator"<< endl; e.display(); getch(); return 0; } < code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Postfix Increment ++ Operator Overloading </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Postfix%20Increment%20%2b%2b%20Operator%20Overloading.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal16">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal16">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Postfix Increment ++ Operator Overloading</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Check
+{
+  private:
+    int i;
+  public:
+    Check(): i(0) {  }
+    Check operator ++ ()
+    {
+        Check temp;
+        temp.i = ++i;
+        return temp;
+    }
+
+    // Notice int inside barcket which indicates postfix increment.
+    Check operator ++ (int)
+    {
+        Check temp;
+        temp.i = i++;
+        return temp;
+    }
+
+    void Display()
+    { cout << "i = "<< i << endl; }
+};
+
+int main()
+{
+    Check obj, obj1;    
+    obj.Display(); 
+    obj1.Display();
+
+    // Operator function is called, only then value of obj is assigned to obj1
+    obj1 = ++obj;
+    obj.Display();
+    obj1.Display();
+
+    // Assigns value of obj to obj1, only then operator function is called.
+    obj1 = obj++;
+    obj.Display();
+    obj1.Display();
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Prefix ++ Increment Operator Overloading with Return Type </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Prefix%20%2b%2b%20Increment%20Operator%20Overloading%20with%20Return%20Type.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal17">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal17">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Prefix ++ Increment Operator Overloading with Return Type</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Check
+{
+  private:
+    int i;
+  public:
+    Check(): i(0) {  }
+
+    // Return type is Check
+    Check operator ++()
+    {
+       Check temp;
+       ++i;
+       temp.i = i;
+
+       return temp;
+    }
+
+    void Display()
+    { cout << "i = " << i << endl; }
+};
+
+int main()
+{
+    Check obj, obj1;
+    obj.Display();
+    obj1.Display();
+
+    obj1 = ++obj;
+
+    obj.Display();
+    obj1.Display();
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Prefix ++ Increment Operator Overloading with no Return Type </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Prefix%20%2b%2b%20Increment%20Operator%20Overloading%20with%20no%20Return%20Type.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal18">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal18">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Prefix ++ Increment Operator Overloading with no Return Type</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Check
+{
+    private:
+       int i;
+    public:
+       Check(): i(0) {  }
+       void operator ++() 
+          { ++i; }
+       void Display() 
+          { cout << "i=" << i << endl; }
+};
+
+int main()
+{
+    Check obj;
+
+    // Displays the value of data member i for object obj
+    obj.Display();
+
+    // Invokes operator function void operator ++( )
+    ++obj; 
+  
+    // Displays the value of data member i for object obj
+    obj.Display();
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Virtual Base Class </div>
+<div class="col">
+<a href="c%2b%2b/unit4/Virtual%20Base%20Class.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal19">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal19">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Virtual Base Class</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+class student {
+    int rno;
+public:
+
+    void getnumber() {
+        cout << "Enter Roll No:";
+        cin>>rno;
+    }
+
+    void putnumber() {
+        cout << "\n\n\tRoll No:" << rno << "\n";
+    }
+};
+
+class test : virtual public student {
+public:
+    int part1, part2;
+
+    void getmarks() {
+        cout << "Enter Marks\n";
+        cout << "Part1:";
+        cin>>part1;
+        cout << "Part2:";
+        cin>>part2;
+    }
+
+    void putmarks() {
+        cout << "\tMarks Obtained\n";
+        cout << "\n\tPart1:" << part1;
+        cout << "\n\tPart2:" << part2;
+    }
+};
+
+class sports : public virtual student {
+public:
+    int score;
+
+    void getscore() {
+        cout << "Enter Sports Score:";
+        cin>>score;
+    }
+
+    void putscore() {
+        cout << "\n\tSports Score is:" << score;
+    }
+};
+
+class result : public test, public sports {
+    int total;
+public:
+
+    void display() {
+        total = part1 + part2 + score;
+        putnumber();
+        putmarks();
+        putscore();
+        cout << "\n\tTotal Score:" << total;
+    }
+};
+
+int main() {
+    result obj;
+    
+    obj.getnumber();
+    obj.getmarks();
+    obj.getscore();
+    obj.display();
+    getch();
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-c592755e117339e3c624ce43-="">Copy</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="c592755e117339e3c624ce43-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="c592755e117339e3c624ce43-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c592755e117339e3c624ce43-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit4 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:52 GMT -->
+</html>

@@ -1,0 +1,28 @@
+abstract class demo1
+{
+	abstract void show();
+}
+class demo2
+{
+	void math(demo1 x)
+	{
+		x.show();
+	}
+}
+class demo3
+{
+	public static void main(String[] aa)
+	{
+		demo1 obj = new demo1(){
+			
+		void show()
+		  {
+			System.out.println("ann");
+		  }
+							
+				
+         	};
+		obj.show();
+				
+	}
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from 9to5notes.in/sidebar/sidebar.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:04:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8" />
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="6438c3a9c20504feca2b5f22-text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Charmonman|KoHo:300|Montserrat" rel="stylesheet">
+<style>
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.sidebar-btn
+{
+    position: fixed;
+    top:0;
+    left:0;
+    margin: 1%;
+    width: 50px;
+    height: 50px;   
+    background: transparent;
+    text-decoration: none;
+    z-index: 11;
+    cursor: pointer;
+}
+.sidebar-overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    transform: translate(-100%);
+    transition: all 0.5s;
+    z-index:5;
+}
+.sidebar-overlay.visible
+{
+    transform: translate(0%);
+    transition: all 0.5s;
+}
+@keyframes sidebar-show
+{
+    from
+    {
+        left:-100%;
+    }
+    to
+    {
+        left:0%;    
+    }
+}
+.sidebar-links-container
+{
+    position:absolute;
+    top:5%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:400px;
+    height:400px;
+}
+
+
+
+
+
+/*sidebar links*/
+
+.sidebar-accordion,.sidebar-links {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2.5vw;
+    transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+}
+
+.show-now, .sidebar-accordion:hover {
+    background-color: #222;
+}
+.sidebar-links:hover
+{
+    background-color: #222;
+}
+.sidebar-accordion:after {
+    content: '\21E3';
+    color: #777;
+    font-weight: bold;
+    margin-left: 5px; 
+}
+.show-now:after {
+    content: '\21E1';
+}
+
+.panel {
+    line-height: 50%;
+    background-color: transparent;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 2vw;
+    text-align: center;
+}
+.panel a
+{
+    display: block;
+    margin-top:5%;
+    padding-bottom:2%;
+    color:white;
+}
+.panel a:hover
+{
+    text-shadow:0 0px 5px #fff;
+} 
+a
+{
+    text-decoration:none;
+}
+
+
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+    .hamburger:hover {
+      transform: scale(1.05);}
+    .hamburger.is-show:hover {
+      transform: scale(1.05); }
+    .hamburger.is-show .hamburger-inner,
+    .hamburger.is-show .hamburger-inner::before,
+    .hamburger.is-show .hamburger-inner::after {
+      background: linear-gradient(to right, #11998e, #38ef7d);
+    }
+  
+  .hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative; }
+  
+  .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px; }
+    .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+      width: 40px;
+      height: 4px;
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      border-radius: 4px;
+      position: absolute;
+      animation: 1s yoo ease-in-out;
+      transition-property: transform;
+      transition-duration: 0.15s;
+      transition-timing-function: ease; }
+    .hamburger-inner::before, .hamburger-inner::after {
+      content: "";
+      display: block; }
+    .hamburger-inner::before {
+      top: -10px; }
+    .hamburger-inner::after {
+      bottom: -10px; 
+  }
+  
+  
+  /*collapse*/
+  .hamburger--collapse .hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-duration: 0.13s;
+    transition-delay: 0.13s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    .hamburger--collapse .hamburger-inner::after {
+      top: -20px;
+      transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+    .hamburger--collapse .hamburger-inner::before {
+      transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  
+  .hamburger--collapse.is-active .hamburger-inner {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+    .hamburger--collapse.is-active .hamburger-inner::after {
+      top: 0;
+      opacity: 0;
+      transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+    .hamburger--collapse.is-active .hamburger-inner::before {
+      top: 0;
+      transform: rotate(-90deg);
+      transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  
+.sidebar-search-container
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 50%;
+    height: 20%;
+    background:url('../icons/logo-side-white.png');
+    background:transparent;
+    background-size:contain;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.sidebar-searchbar
+{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:85%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    border-bottom:2px solid #ccc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 5vw;
+    color: white;
+    font-family: 'KoHo', sans-serif !important;
+    text-align: center; 
+    transition:0.4s ease-in-out;
+}
+
+.sidebar-searchbar::-webkit-input-placeholder 
+        {
+            text-align: center;
+            color: white;
+            opacity: 0.7 !important;
+        }
+        .sidebar-searchbar:-moz-placeholder{
+           text-align: center;
+           color: white;
+           opacity: 0.7 !important;  
+        }
+
+        .sidebar-searchbar::-moz-placeholder {
+           text-align: center;
+           color: white;
+           font-size: 5vw;
+           font-family: 'KoHo', sans-serif;
+           opacity: 0.5 !important;
+           font-weight: lighter;
+           letter-spacing: 25px;
+           }
+
+        .sidebar-searchbar:-ms-input-placeholder {  
+           text-align: center;
+           color: white;
+           opacity: 0.7 !important;
+            
+        }
+        .sidebar-searchbar:focus {
+            width: 90%;
+            padding-left:20px;
+            padding-right:20px;
+            transition:0.4s ease-in-out;
+            -webkit-transition:0.4s ease-in-out;
+            -moz-transition:0.4s ease-in-out;
+        }
+
+.a-links
+{
+    transform:translateY(60px);
+    opacity:0;
+    
+}
+.a-links.visible
+{
+    animation:0.3s showit ease-in-out;
+    animation-delay:0.4s;
+    animation-fill-mode:forwards;
+}        
+@keyframes showit
+{
+    from
+    {
+        
+    }
+    to
+    {
+        transform:translateY(0px);
+        opacity:1;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+.sidebar-links-container
+{
+    position:relative;
+    top:8%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:100%!important;
+    height:400px;
+    text-align:center;
+    padding:0;
+}
+    .sidebar-accordion,.sidebar-links 
+    {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 20px!important;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 7vw;
+    transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    }
+.sidebar-search-container
+{
+    position: relative;
+    top:5%;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 70%;
+    height: 50px;
+}
+.sidebar-searchbar
+{
+    font-size:9vw;
+    border-bottom:1px solid rgba(256,256,256,0.7);;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+}
+.sidebar-searchbar::-webkit-input-placeholder 
+        {
+            text-align: center;
+            color: rgba(256,256,256,0.7);
+            opacity: 0.7 !important;
+        }
+        .sidebar-searchbar:-moz-placeholder{
+           text-align: center;
+           color: rgba(256,256,256,0.7);
+           opacity: 0.7 !important;  
+        }
+
+        .sidebar-searchbar::-moz-placeholder {
+           text-align: center;
+           color: rgba(256,256,256,0.7);
+           font-size: 5vw;
+           font-family: 'KoHo', sans-serif;
+           opacity: 0.5 !important;
+           font-weight: lighter;
+           letter-spacing: 25px;
+           }
+
+        .sidebar-searchbar:-ms-input-placeholder {  
+           text-align: center;
+           color: rgba(256,256,256,0.7);
+           opacity: 0.7 !important;
+            
+        }
+        .sidebar-searchbar:focus {
+            width: 80%;
+            padding-left:20px;
+            padding-right:20px;
+            transition:0.4s ease-in-out;
+            -webkit-transition:0.4s ease-in-out;
+            -moz-transition:0.4s ease-in-out;
+        }
+
+.panel {
+    line-height: 50%;
+    background-color: transparent;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 6vw!important;
+    text-align: center;
+}
+}
+</style>
+</head>
+<body>
+<div class="sidebar-btn">
+<div class="hamburger hamburger--collapse">
+<div class="hamburger-box">
+<div class="hamburger-inner"></div>
+</div>
+</div>
+</div>
+<div class="sidebar-overlay">
+<div class="sidebar-search-container">
+<form action="https://9to5notes.in/Search/search.php" method="post" autocomplete="off">
+<input class="sidebar-searchbar" type="text" name="search" placeholder="Search" onblur="if (!window.__cfRLUnblockHandlers) return false; this.value=''" autocomplete="off" required data-cf-modified-6438c3a9c20504feca2b5f22-="">
+</form>
+</div>
+<div class="sidebar-links-container">
+<button class="sidebar-links a-links" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='../index.html'" data-cf-modified-6438c3a9c20504feca2b5f22-="">Home</button>
+<button class="sidebar-accordion a-links">B.Tech</button>
+<div class="panel">
+<a href="../subject/subject7735.html?id=CSE&amp;full_id=CSE_1st_Year">CSE</a>
+<a href="../subject/subject135a.html?id=ECE&amp;full_id=ECE_1st_Year">ECE</a>
+<a href="../subject/subject53d8.html?id=CIV&amp;full_id=CIV_1st_Year">CIV</a>
+<a href="../subject/subject21b5.html?id=ME&amp;full_id=ME_1st_Year">ME</a>
+<a href="../subject/subject9e4a.html?id=IT&amp;full_id=IT_1st_Year">IT</a>
+</div>
+<button class="sidebar-links a-links" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='../codebank/codepage681a.html?id=1'" data-cf-modified-6438c3a9c20504feca2b5f22-="">Code Bank</button>
+<button class="sidebar-links a-links" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='../How%20To/Topics/Topics.html'" data-cf-modified-6438c3a9c20504feca2b5f22-="">How To ?</button>
+</div>
+</div>
+<script type="6438c3a9c20504feca2b5f22-text/javascript">
+            var acc = document.getElementsByClassName("sidebar-accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("show");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+
+
+        $(document).ready(function () {
+            $('.sidebar-btn').click(function () {
+                setTimeout(function() {
+                    $('.sidebar-overlay').toggleClass('visible');
+                    $('.a-links').toggleClass('visible');
+                }, 50);
+            });
+        });
+        
+        $(document).ready(function () {
+            if($('.sidebar-overlay').hasClass('visible'))
+            {
+                alert('hel');
+            }
+        });
+
+
+var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+  forEach(hamburgers, function(hamburger) {
+    hamburger.addEventListener("click", function() {
+      this.classList.toggle("is-active");
+    }, false);
+  });
+}
+
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="6438c3a9c20504feca2b5f22-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/sidebar/sidebar.php by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:04:02 GMT -->
+</html>

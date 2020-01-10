@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=C&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:11:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<script type="56873d82a4836fdd15615f0c-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<script type="56873d82a4836fdd15615f0c-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="56873d82a4836fdd15615f0c-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="56873d82a4836fdd15615f0c-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+
+<script src="prism-2.html" type="56873d82a4836fdd15615f0c-text/javascript"></script>
+<title>C</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Structures And Unions </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Accessing Union Members 2 </div>
+<div class="col">
+<a href="C/unit6/Accessing%20Union%20Members%202.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Accessing Union Members 2</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < string.h >
+ 
+union Data {
+   int i;
+   float f;
+   char str[20];
+};
+ 
+int main( ) {
+
+   union Data data;        
+
+   data.i = 10;
+   printf( "data.i : %d\n", data.i);
+   
+   data.f = 220.5;
+   printf( "data.f : %f\n", data.f);
+   
+   strcpy( data.str, "C Programming");
+   printf( "data.str : %s\n", data.str);
+
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Accessing Union Members </div>
+<div class="col">
+<a href="C/unit6/Accessing%20Union%20Members.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Accessing Union Members</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < string.h >
+ 
+union Data {
+   int i;
+   float f;
+   char str[20];
+};
+ 
+int main( ) {
+
+   union Data data;        
+
+   data.i = 10;
+   data.f = 220.5;
+   strcpy( data.str, "C Programming");
+
+   printf( "data.i : %d\n", data.i);
+   printf( "data.f : %f\n", data.f);
+   printf( "data.str : %s\n", data.str);
+
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Array of Structures </div>
+<div class="col">
+<a href="C/unit6/Array%20of%20Structures.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Array of Structures</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+main()
+{
+int i;
+struct student{
+int rollno;
+char name[10];
+int regno;
+}s1[3];
+for(i=0; i < = 1 ;i++)
+{
+printf("enter rollno of %d student",i);
+scanf("%d",&s1[i].rollno);
+printf("enter regno of %d student",i);
+scanf("%d",&s1[i].regno);
+printf("enter name of %d student",i);
+fflush(stdin);
+gets(s1[i].name);
+}
+for(i=0; i < = 1 ;i++)
+{
+printf("rollno of %d student is\t",i);
+printf("%d\n",s1[i].rollno);
+printf("regno of %d student is\t",i);
+printf("%d\n",s1[i].regno);
+printf("name of %d student is\t",i);
+fflush(stdin);
+puts(s1[i].name);
+}
+getch();
+} </code></pre>
+</div>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Nested Structures 2 </div>
+<div class="col">
+<a href="C/unit6/Nested%20Structures%202.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Nested Structures 2</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+struct adress{
+int hno;
+char city[10];
+};
+struct student{
+int rollno;
+char name[10];
+int regno;
+struct adress a;
+}s1;
+main()
+{
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+printf("\nenter address of student");
+printf("\nenter house no");
+scanf("%d",&s1.a.hno);
+printf("enter city");
+fflush(stdin);
+gets(s1.a.city);
+printf("rollno is %d\n",s1.rollno);
+printf("regno is %d\n",s1.regno);
+printf("name is %s\n",s1.name);
+printf("adress is- house no is %d\tcity is %s",s1.a.hno,s1.a.city);
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Nested Structures </div>
+<div class="col">
+<a href="C/unit6/Nested%20Structures.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+ </div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Nested Structures</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+struct student{
+int rollno;
+char name[10];
+int regno;
+struct adress{
+int hno;
+char city[10];
+}a;
+}s1;
+main()
+{
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+printf("\nenter address of student");
+printf("\nenter house no");
+scanf("%d",&s1.a.hno);
+printf("enter city");
+fflush(stdin);
+gets(s1.a.city);
+printf("rollno is %d\n",s1.rollno);
+printf("regno is %d\n",s1.regno);
+printf("name is %s\n",s1.name);
+printf("adress is- house no is %d\tcity is %s",s1.a.hno,s1.a.city);
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing Structure to Function using Call by Reference </div>
+<div class="col">
+<a href="C/unit6/Passing%20Structure%20to%20Function%20using%20Call%20by%20Reference.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing Structure to Function using Call by Reference</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+struct student{
+int rollno;
+char name[10];
+int regno;
+}s1;
+void display(struct student *);
+main()
+{
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+display(&s1);
+getch();
+}
+void display(struct student *s2)
+{
+printf("\nrollno is %d",s2 - > rollno);
+printf("\n name is %s",s2 - > name);
+printf("\nregno is %d",s2 - > regno);
+} </code></pre>
+</div>
+ <div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing Structure to Function using Call by Value </div>
+<div class="col">
+<a href="C/unit6/Passing%20Structure%20to%20Function%20using%20Call%20by%20Value.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing Structure to Function using Call by Value</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+typedef struct{
+int rollno;
+char name[10];
+int regno;
+}stud;
+void display(stud s2);
+main()
+{
+stud s1;
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+display(s1);
+getch();
+}
+void display(stud s2)
+{
+printf("rollno is %d",s2.rollno);
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Returning Structure from Function </div>
+<div class="col">
+<a href="C/unit6/Returning%20Structure%20from%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Returning Structure from Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct student display(struct student s3);
+struct student{
+int rollno;
+char name[10];
+int regno;
+}s1,s2;
+main()
+{
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+s2=display(s1);
+printf("rollno is %d\n",s2.rollno);
+printf("regno is %d\n",s2.regno);
+printf("name is %s\n",s2.name);
+getch();
+}
+struct student display(struct student s3)
+{
+s3.rollno=4;
+s3.regno=0;
+strcpy(s3.name,"isha");
+return s3;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Self Referential Structure </div>
+<div class="col">
+<a href="C/unit6/Self%20Referential%20Structure.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal9">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Self Referential Structure</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+struct node{
+int value;
+struct node *next;
+}s1,s2,s3,*p;
+main()
+{
+p=&s1;
+s1.value=4;
+s1.next=&s2;
+s2.value=5;
+s2.next=&s3;
+s3.value=6;
+s3.next=NULL;
+while(p!=NULL)
+{
+printf("%d\n",p - > value);
+p=p - > next;
+}
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Union </div>
+<div class="col">
+<a href="C/unit6/Union.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal10">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal10">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Union</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < string.h >
+ 
+union Data {
+   int i;
+   float f;
+   char str[20];
+};
+ 
+int main( ) {
+
+   union Data data;        
+
+   printf( "Memory size occupied by data : %d\n", sizeof(data));
+
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Use of Typedef </div>
+<div class="col">
+<a href="C/unit6/Use%20of%20Typedef.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal11">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal11">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Use of Typedef</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+ <pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+typedef struct{
+int rollno;
+char name[10];
+int regno;
+}stud;
+main()
+{
+stud s1;
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("enter regno of student");
+scanf("%d",&s1.regno);
+printf("enter name of the student");
+fflush(stdin);
+gets(s1.name);
+printf("\ndata of student is\n");
+printf("name is %s\trollno is %d\tregno is %d\t",s1.name,s1.rollno,s1.regno);
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-56873d82a4836fdd15615f0c-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="56873d82a4836fdd15615f0c-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="56873d82a4836fdd15615f0c-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="56873d82a4836fdd15615f0c-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=C&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:11:58 GMT -->
+</html>

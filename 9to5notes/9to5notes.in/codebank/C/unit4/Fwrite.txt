@@ -1,0 +1,26 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp ;
+struct emp
+{
+char name[40] ;
+int age ;
+float bs ;
+} ;
+struct emp e ;
+fp = fopen ( "b", "wb" ) ;
+if ( fp == NULL )
+{
+puts ( "Cannot open file" ) ;
+exit( ) ;
+}
+printf ( "\nEnter name, age and basic salary: " ) ;
+fflush(stdin);
+gets(e.name);
+scanf ( "%d %f", &e.age, &e.bs ) ;
+fwrite ( &e, sizeof ( e ), 1, fp ) ;
+fclose ( fp ) ;
+getch();
+}

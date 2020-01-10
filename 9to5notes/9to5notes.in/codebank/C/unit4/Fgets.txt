@@ -1,0 +1,20 @@
+
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp;
+char s[10];
+fp=fopen("m1.c","r");
+if(fp==NULL)
+{
+printf("cannot open file");
+}
+while ( fgets ( s, 7, fp ) != NULL )
+{
+printf ( "%s" , s ) ;
+printf("\n");
+}
+fclose(fp);
+getch();
+}

@@ -1,0 +1,27 @@
+#include< Gl/glut.h>
+int a=0;
+void display(){
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(1,0,0);
+	glClearColor(0,0,0,0);
+//glMatrixMode(GL_PROJECTION);
+  //glLoadIdentity();
+//glOrtho(-30,30,-30,30,-30,30);
+  gluPerspective(60.0, 4.0/3.0, 1, 40);
+// glMatrixMode(GL_MODELVIEW);
+  //glLoadIdentity();
+  gluLookAt(4, 6, 5, 0, 0, 0, 0, 1, 0);
+//glutWireTorus(2.5, 5, 15, 30);
+glutWireTeapot(2.0);
+	glFlush();
+}
+int main(int argc, char** argv){
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowSize(500,500);
+	glutInitWindowPosition(100,100);
+	glutCreateWindow("3D Objects");
+	glutDisplayFunc(display);
+
+	glutMainLoop();
+}

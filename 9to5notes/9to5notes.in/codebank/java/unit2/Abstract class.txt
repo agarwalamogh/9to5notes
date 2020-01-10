@@ -1,0 +1,58 @@
+/*abstract method and class-if method area is defined in superclass, and redefine(overriden) in subclass.but area of super is never called due to insufficient information.so it is better to create area() without body.Such method is ABSTRACT METHOD.It is a method prototype without any implementation.its implementation is provided by the subclasses of the class in which it is declared(to create it,we will use modifier named abstract followed by declaration and body is replaced by semi-colon.Class that contain atleast 1 abstract method must be declared ABSTRACT CLASS. We cannot create objects of abstract class using new operator.ABSTRACT CLASSES ARE USEFUL WHEN WE WANT TO CREATE A GENERIC TYPE THAT IS USED AS A SUPERCLASS FOR SUBCLASSES BUT SUPERCLASS ITSELF DOES NOT REPRESENT AN ACTUAL OBJECT E.G.-SHAPE,CIRCLE,RECTANGLE,TRIANGLE.HERE SHAPE IS SUPER WHICH IS GENERIC.
+1.CONCRETE CLASS-subclass of abstractclass can be instantiated only if overrides each of abstract methods of superclass.and provide implementation for them.
+2.an abstract method cannot be private.since aprivate method cannot be inherited and cannot be overridden in subclass.
+3. constructors(are not inherited)and static(can't be redefined) methods cannot be declared abstract */
+abstract class shape
+{
+ abstract void area(); //same as pure virtual function
+ abstract void circumference(); 
+}
+class rectangle extends shape
+{
+ private double length,breadth;
+ rectangle(double x,double y)
+  {
+   length=x;
+   breadth=y;
+  }
+ public void area()
+  {
+   System.out.println("Area of rectangle is ="+(length*breadth));
+  }
+ public void circumference()
+  {
+   System.out.println("circumference of rectangle is ="+2*(length*breadth));
+  }
+}
+class circle extends shape
+{
+ private double radius;
+ circle(double r)
+ {
+  radius=r;
+ }
+ public void area()
+ {
+  System.out.println("Area of circle is ="+(Math.PI*radius*radius));
+ }
+ public void circumference()
+ {
+  System.out.println("circumference of circle is ="+ 2*(Math.PI*radius));
+ }
+}
+
+public class abstractclass
+{
+public static void main(String[] args)
+{
+shape s;//shape class reference variable
+rectangle r=new rectangle(10,20);//constructor calling
+s=r;//assign rectangle reference to shape reference
+s.area();
+s.circumference();
+circle c=new circle(5);
+s=c;
+s.area();
+s.circumference();
+}
+}

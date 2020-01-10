@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/bypass1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:09:52 GMT -->
+<head>
+<title>How to Reset Lost Password of Kali Linux</title>
+<link rel="stylesheet" type="text/css" href="bypasscss.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+
+strong
+	{font-family:"Times New Roman",serif;}
+p.diff
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+</head>
+<body>
+<div class="picture"></div>
+<div class="a">
+<svg width="46px" height="46px" viewBox="0 0 611.997 611.998">
+<path class="a" d="M511.114,300.251c-9.94,0-17.638,7.663-17.638,17.651v241.105H368.401v-98.453c0-9.236-7.697-17.31-17.002-17.31h-90.435
+			c-9.948,0-17.96,8.073-17.96,17.31v98.453h-124.76v-233.1c0-9.306-7.69-17.036-17.638-17.036c-9.298,0-16.995,7.73-16.995,17.036
+			v250.752c0,9.305,7.697,17.036,16.995,17.036h160.358c9.298,0,16.995-7.731,16.995-17.036v-98.454h55.801v98.454
+			c0,9.305,7.697,17.036,17.639,17.036h159.715c9.299,0,16.995-7.731,16.995-17.036V317.903
+			C528.109,307.915,520.413,300.251,511.114,300.251z M607.003,314.003L467.819,174.225V78.919c0-9.921-8.019-17.583-17.96-17.583c-9.305,0-17.001,7.663-17.001,17.583v60.345
+			L318.046,23.774c-3.518-3.558-7.697-5.474-11.864-5.474c-4.81,0-8.983,1.984-12.507,5.474L5.361,312.087
+			c-6.917,6.91-7.375,17.994,0,24.357c6.411,7.389,17.454,6.91,24.371,0l276.45-275.793l275.807,278.393
+			c2.873,2.874,7.054,4.516,12.507,4.516c4.81,0,8.976-1.642,12.507-4.516C613.42,332.613,613.899,320.982,607.003,314.003z" />
+</svg>
+</div>
+<div class="back">
+<svg width="38px" height="38px" viewBox="0 0 309.143 309.143">
+<path d="M112.855,154.571L240.481,26.946c2.929-2.929,2.929-7.678,0-10.606L226.339,2.197
+	C224.933,0.79,223.025,0,221.036,0c-1.989,0-3.897,0.79-5.303,2.197L68.661,149.268c-2.929,2.929-2.929,7.678,0,10.606
+	l147.071,147.071c1.406,1.407,3.314,2.197,5.303,2.197c1.989,0,3.897-0.79,5.303-2.197l14.142-14.143
+	c2.929-2.929,2.929-7.678,0-10.606L112.855,154.571z" />
+</svg>
+</div>
+<div class="howto">
+<h1>HOW &nbspTO</h1>
+</div>
+<div class="saarpn"><p>&nbsp&nbsp&nbsp&nbspS&nbspA&nbspA&nbspR&nbspP&nbspN</p></div>
+<div class="tag"><h1>Password</h1></div>
+<div class="page1">
+<div class=WordSection1>
+<p class=MsoNormal align=center style='margin-bottom:11.25pt;text-align:center;
+line-height:27.0pt;background:white'><b><span style='font-size:22.0pt;
+font-family:"Century Gothic",sans-serif;color:#111111'>&nbsp;</span></b></p>
+<p class=MsoNormal align=center style='margin-bottom:11.25pt;text-align:center;
+line-height:27.0pt;background:white'><b><span style='font-size:22.0pt;
+font-family:"Century Gothic",sans-serif;color:#111111'>&nbsp;</span></b></p>
+<p class=MsoNormal align=center style='margin-bottom:11.25pt;text-align:center;
+line-height:27.0pt;background:white'><b><span style='font-size:22.0pt;
+font-family:"Century Gothic",sans-serif;color:#111111'>How to Reset Lost
+Password of Kali Linux</span></b></p>
+<p class=MsoNormal style='text-autospace:none'><span lang=EN style='font-size:
+16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;color:black'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:48.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI</span><span style='font-size:16.0pt;
+line-height:115%;font-family:"Century Gothic",sans-serif;color:black;
+background:white'>n this post, I will simply show you how to reset forgotten
+password of Kali Linux and hope it help you reset the lost password of Kali
+Linux easily. I have simply explained in the bellow step by step article or
+watch the video tutorial at&nbsp;the end of this post if you do not like
+reading. So follow the Kali Linux 2.0 password reset article.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span style='font-size:24.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#E36C0A;background:white'>1</span></b><span style='font-size:24.0pt;
+line-height:115%;font-family:"Century Gothic",sans-serif;color:#E36C0A;
+background:white'>.</span><span style='font-size:16.0pt;line-height:115%;
+font-family:"Century Gothic",sans-serif;color:#333333;background:white'> Boot
+your Kali system and let&nbsp;the&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>GNU
+Grub</span></strong>&nbsp;page to appear.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'><img width=623 height=199 id="Picture 13" src="bypass_files/image001.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p align=center style='margin:0in;margin-bottom:.0001pt;text-align:center;
+background:white'><strong><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:#333333'>2.</span></strong><span style='font-size:16.0pt;font-family:
+"Century Gothic",sans-serif;color:#333333'>&nbsp;On the&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>GNU GRUB</span></strong>&nbsp;page&nbsp;selects
+the&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>*Advanced
+options for Kali GNU/Linux</span></strong>&nbsp;option by down arrow
+key&nbsp;and press enter.</span></p>
+<p class="diff" align=center style='margin:0in;margin-bottom:.0001pt;text-align:center;
+background:white'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:#333333'>&nbsp;</span></p>
+<p class="diff" align=center style='margin:0in;margin-bottom:.0001pt;text-align:center;
+background:white'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:#333333'>&nbsp;</span></p>
+<p class="diff" align=center style='margin:0in;margin-bottom:.0001pt;text-align:center;
+background:white'><strong><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:#333333'>&nbsp;</span></strong></p>
+<p class="diff" align=center style='margin:0in;margin-bottom:.0001pt;text-align:center;
+background:white'><strong><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:#333333'>3.</span></strong><span style='font-size:16.0pt;font-family:
+"Century Gothic",sans-serif;color:#333333'>&nbsp;Now simply select the second
+one&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>Recovery
+mode</span></strong>&nbsp;option and press&nbsp;<b>E</b>&nbsp;key to go to
+recovery mode of Kali Linux.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'><img width=624 height=141 id="Picture 16" src="bypass_files/image002.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><strong><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#333333;background:white'>4.</span></strong><span style='font-size:16.0pt;
+line-height:115%;font-family:"Century Gothic",sans-serif;color:#333333;
+background:white'>&nbsp;To modify it just change read-only mode (<strong><span style='font-family:"Century Gothic",sans-serif'>ro</span></strong>) to&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>rw</span></strong>&nbsp;(write
+mode) and add&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>init=/bin/bash</span></strong>&nbsp;like
+below screenshot then&nbsp;press&nbsp;<strong><span style='font-family:"Century Gothic",sans-serif'>F10</span></strong>&nbsp;to
+reboot the Kali Linux.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'><img width=627 height=431 id="Picture 14" src="bypass_files/image003.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><strong><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#333333;background:white'>5.</span></strong><span style='font-size:16.0pt;
+line-height:115%;font-family:"Century Gothic",sans-serif;color:#333333;
+background:white'>&nbsp;After rebooting the Kali Linux system, it will bring
+you the bellow screen to reset Kali Linux password.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'><img width=610 height=147 id="Picture 15" src="bypass_files/image004.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black;background:white'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span style='font-size:20.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#E36C0A;background:white'>All Done</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black'>&nbsp;</span></p>
+</div>
+</div>
+<div class="circle1">
+</div>
+<div class="circle2">
+</div>
+<script src="jquery-3.1.1.min.js" type="46d532ccd3e0c3b92b9b9b98-text/javascript"></script>
+<script type="46d532ccd3e0c3b92b9b9b98-text/javascript">
+$(window).ready(function(){
+	    $('.circle1').hide();
+	    $('.circle2').hide();});
+$(window).scroll(function(){
+	    var wScroll=$(window).scrollTop();
+	    $('.howto').css({
+	   'transform':'translate(0px, -'+ wScroll/2+'%)'});
+	   $('.saarpn').css({
+	   'transform':'translate(0px, -'+ wScroll/15+'%)'
+});
+        if ($(this).scrollTop() > 200) {
+            
+	    $('.circle1').fadeIn();
+	    $('.circle2').fadeIn();
+		$('.a').addClass('filler');
+		$('.back').addClass('filler');
+        } 
+	else {
+           
+	    $('.circle1').fadeOut();
+	    $('.circle2').fadeOut();
+		$('.a').removeClass('filler');
+	    $('.back').removeClass('filler');
+	}
+});
+function scrollWin() {
+    window.scrollBy(0, 230);
+}
+
+function scrollWin1() {
+    window.scrollBy(0, -230);
+}
+$(document).ready(function(){
+    $(".circle1").click(function(){
+        window.scrollWin();
+    });
+    $(".circle2").click(function(){
+        window.scrollWin1();
+    });
+});
+
+
+</script>
+<script src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="46d532ccd3e0c3b92b9b9b98-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/bypass1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:09:58 GMT -->
+</html>

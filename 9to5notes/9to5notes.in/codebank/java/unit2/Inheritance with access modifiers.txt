@@ -1,0 +1,37 @@
+//use of inheritance with access modifiers.
+class base//superclass
+{
+private int num1;
+public void setdata(int n)
+{
+num1=n;
+}
+public int getdata()
+{
+return num1;
+}
+}
+class derived extends base
+{
+int num2;
+public void product()
+{ //to get value stored in private member num1
+int num=getdata();
+System.out.println("product="+(num2*num));
+}
+public void derivedshow()
+{
+System.out.println("num2="+num2);
+}
+}
+
+public class accessspecifier
+{
+public static void main(String[] args)
+{ 
+derived d=new derived();
+d.setdata(20);
+d.num2=10;
+d.product(); 
+}  
+}

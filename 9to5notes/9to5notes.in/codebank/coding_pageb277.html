@@ -1,0 +1,1787 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit2 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<script type="658a50acc039d0d0181476e8-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<script type="658a50acc039d0d0181476e8-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="658a50acc039d0d0181476e8-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="658a50acc039d0d0181476e8-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="658a50acc039d0d0181476e8-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="658a50acc039d0d0181476e8-text/javascript"></script>
+
+<script src="prism-2.html" type="658a50acc039d0d0181476e8-text/javascript"></script>
+<title>c++</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C++ </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Arrays, Strings And Pointers </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Access Array Elements Using Pointer </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Access%20Array%20Elements%20Using%20Pointer.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Access Array Elements Using Pointer</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+   int data[5];
+   cout << "Enter elements: ";
+
+   for(int i = 0; i < 5; ++i)
+      cin >> data[i];
+
+   cout << "You entered: ";
+   for(int i = 0; i < 5; ++i)
+      cout << endl << *(data + i);
+
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Adding two Matrices </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Adding%20two%20Matrices.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+ <div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Adding two Matrices</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    int r, c, a[100][100], b[100][100], sum[100][100], i, j;
+
+    cout << "Enter number of rows (between 1 and 100): ";
+    cin >> r;
+
+    cout << "Enter number of columns (between 1 and 100): ";
+    cin >> c;
+
+    cout << endl << "Enter elements of 1st matrix: " << endl;
+
+    // Storing elements of first matrix entered by user.
+    for(i = 0; i < r; ++i)
+       for(j = 0; j < c; ++j)
+       {
+           cout << "Enter element a" << i + 1 << j + 1 << " : ";
+           cin >> a[i][j];
+       }
+
+    // Storing elements of second matrix entered by user.
+    cout << endl << "Enter elements of 2nd matrix: " << endl;
+    for(i = 0; i < r; ++i)
+       for(j = 0; j < c; ++j)
+       {
+           cout << "Enter element b" << i + 1 << j + 1 << " : ";
+           cin >> b[i][j];
+       }
+
+    // Adding Two matrices
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+            sum[i][j] = a[i][j] + b[i][j];
+
+    // Displaying the resultant sum matrix.
+    cout << endl << "Sum of two matrix is: " << endl;
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+        {
+            cout << sum[i][j] << "  ";
+            if(j == c - 1)
+                cout << endl;
+        }
+
+    return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+C++ String to Read a Line of Text </div>
+<div class="col">
+<a href="c%2b%2b/unit2/C%2b%2b%20String%20to%20Read%20a%20Line%20of%20Text.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">C++ String to Read a Line of Text</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    char str[100];
+    cout << "Enter a string: ";
+    cin.get(str, 100);
+
+    cout << "You entered: " << str << endl;
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Calculating the sum of 5 Numbers Entered by the User using Arrays </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Calculating%20the%20sum%20of%205%20Numbers%20Entered%20by%20the%20User%20using%20Arrays.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Calculating the sum of 5 Numbers Entered by the User using Arrays</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main() 
+{
+    int numbers[5], sum = 0;
+    cout << "Enter 5 numbers: ";
+    
+    //  Storing 5 number entered by user in an array
+    //  Finding the sum of numbers entered
+    for (int i = 0; i < 5; ++i) 
+    {
+        cin >> numbers[i];
+        sum += numbers[i];
+    }
+    
+    cout << "Sum = " << sum << endl;  
+    
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Compare Two String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Compare%20Two%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Compare Two String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str1[100], str2[100];
+	cout<<"Enter first string : ";
+	gets(str1);
+	cout<<"Enter second string : ";
+	gets(str2);
+	if(strcmp(str1, str2)==0)
+	{
+		cout<<"Both the strings are equal";
+	}
+	else
+	{
+		cout<<"Both the strings are not equal";
+	}
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Concatenate String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Concatenate%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Concatenate String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str1[50], str2[50];
+	cout<<"Enter first string : ";
+	gets(str1);
+	cout<<"Enter second string : ";
+	gets(str2);
+	strcat(str1, str2);
+	cout<<"String after concatenation is "<< str1;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Copy String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Copy%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Copy String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str1[20], str2[20];
+	cout<<"Enter a string : ";
+	gets(str1);
+	cout<<"copying string 1 into string 2 ......\n";
+	strcpy(str2, str1);
+	cout<<"String 2 after copying "<< str2;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Delete Vowels from String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Delete%20Vowels%20from%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Delete Vowels from String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str[20];
+	int len, i, j;
+	cout<<"Enter a string : ";
+	gets(str);
+	len=strlen(str);
+	for(i=0; i<len; i++) { if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U') { for(j=i; j<len; j++) { str[j]=str[j+1]; } len--; } } cout<<"After deleting the vowels, the string will be : "<< str; } < code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Display a String Entered by User </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Display%20a%20String%20Entered%20by%20User.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal9">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Display a String Entered by User</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    char str[100];
+
+    cout << "Enter a string: ";
+    cin >> str;
+    cout << "You entered: " << str << endl;
+
+    cout << "\nEnter another string: ";
+    cin >> str;
+    cout << "You entered: "<< str<< endl;
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Find Length of String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Find%20Length%20of%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+ <button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal10">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal10">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Find Length of String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str[20];
+	int len;
+	cout<<"Enter a string : ";
+	gets(str);
+	len=strlen(str);
+	cout<<"Length of the string is "<< len;
+
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Find Transpose of a Matrix </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Find%20Transpose%20of%20a%20Matrix.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal11">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal11">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Find Transpose of a Matrix</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    int a[10][10], trans[10][10], r, c, i, j;
+
+    cout << "Enter rows and columns of matrix: ";
+    cin >> r >> c;
+
+    // Storing element of matrix entered by user in array a[][].
+    cout << endl << "Enter elements of matrix: " << endl;
+    for(i = 0; i < r; ++i)
+    for(j = 0; j < c; ++j)
+    {
+        cout << "Enter elements a" << i + 1 << j + 1 << ": ";
+        cin >> a[i][j];
+    }
+
+    // Displaying the matrix a[][]
+    cout << endl << "Entered Matrix: " << endl;
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+        {
+            cout << " " << a[i][j];
+            if(j == c - 1)
+                cout << endl << endl;
+        }
+
+    // Finding transpose of matrix a[][] and storing it in array trans[][].
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+        {
+            trans[j][i]=a[i][j];
+        }
+
+    // Displaying the transpose,i.e, Displaying array trans[][].
+    cout << endl << "Transpose of Matrix: " << endl;
+    for(i = 0; i < c; ++i)
+        for(j = 0; j < r; ++j)
+        {
+            cout << " " << trans[i][j];
+            if(j == r - 1)
+                cout << endl << endl;
+        }
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Frequency of a String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Frequency%20of%20a%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal12">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal12">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Frequency of a String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    string str = "C++ Programming is awesome";
+    char checkCharacter = 'a';
+    int count = 0;
+
+    for (int i = 0; i < str.size(); i++)
+    {
+        if (str[i] ==  checkCharacter)
+        {
+            ++ count;
+        }
+    }
+
+    cout << "Number of " << checkCharacter << " = " << count;
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Insert Update and Delete Elements in Array </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Insert%20Update%20and%20Delete%20Elements%20in%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal13">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal13">
+ <div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Insert Update and Delete Elements in Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < stdlib.h>
+using namespace std;
+
+//Global Array Declaration
+int array[10];
+void DisplayArray()
+{
+    for (int i=0;i< 10;i++)
+        cout<< "Array [ "<< i<<" ] = "<< array[i]<< endl;
+}
+
+void SetDefaultValues()
+{
+    for(int i=0;i< 10;i++)
+        array[i]=-1;
+}
+
+void InsertValues()
+{
+    cout<<"Enter 10 Values "<< endl;
+    for(int i=0;i< 10;i++)
+    {
+        cin>>array[i];
+    }
+    cout<<"ntArray Values Inserted...  Successfully "<< endl;
+}
+
+void DeleteValues()
+{
+    cout<<"Enter the Index Number To Delete Value :";
+    int index;
+    cin>>index;
+    if(index>9||index<0)
+    {
+        cout<<"Invalid Index Entered-> Valid Range(0-9)"<< endl;
+        DeleteValues();// Recall The Function it self
+    }
+    else
+    {
+        array[index]=-1;
+    }
+    cout<<"ntArray Value Deleted...  Successfully "<< endl;
+}
+
+void UpdateValues()
+{
+    cout<<"Enter Index Number to Update Value :";
+    int index;
+    cin>>index;
+    if(index>9||index < 0)
+    {
+        cout<<"Invalid Index Entered-> Valid Range(0-9)"<< endl;
+        UpdateValues();// Recall The Function it self
+    }
+    else
+    {
+        cout<<"Enter the New Value For Index array[ "<< index<<" ] = ";
+        cin>>array[index];
+        cout<<"ntttArray Updated...  Successfully "<< endl;
+    }
+}
+
+int main()
+{
+    char option;
+    SetDefaultValues();
+
+    do
+    {
+        cout<<"Enter 1 to Enter  Values\nEnter 2 to Update Values \nEnter 3 to Delete Values \n \n or Enter E to EXIT \n\nEnter Option: ->  ";
+        cin>>option;
+        if(option=='1')
+        {
+            cout<<"Insert Function Called"<< endl;
+            InsertValues();
+            cout<<"Inserted Values :"<< endl;
+            DisplayArray();
+        }
+        else if(option=='2')
+        {
+            UpdateValues();
+            cout<<"Updated Array :"<< endl;
+            DisplayArray();
+        }
+        else if(option=='3')
+        {
+            DeleteValues();
+            cout<<"Array After Deleting Values :"<< endl;
+            DisplayArray();
+        }
+        else if(option!='e'&&option!='E')
+        {
+            cout<<"Select A Valid Option From Belownn";
+        }
+    }while(option!='e'&&option!='E');
+
+    system("cls");// To Clear The Screen
+    cout<<"Program Ended Press Any Key To Exit Screen.....nnnnnnnnnnnn"<< endl;
+
+    return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Multiplying two Matrices </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Multiplying%20two%20Matrices.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal14">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal14">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Multiplying two Matrices</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    int a[10][10], b[10][10], mult[10][10], r1, c1, r2, c2, i, j, k;
+
+    cout << "Enter rows and columns for first matrix: ";
+    cin >> r1 >> c1;
+    cout << "Enter rows and columns for second matrix: ";
+    cin >> r2 >> c2;
+
+    // If column of first matrix in not equal to row of second matrix,
+    // ask the user to enter the size of matrix again.
+    while (c1!=r2)
+    {
+        cout << "Error! column of first matrix not equal to row of second.";
+
+        cout << "Enter rows and columns for first matrix: ";
+        cin >> r1 >> c1;
+
+        cout << "Enter rows and columns for second matrix: ";
+        cin >> r2 >> c2;
+    }
+
+    // Storing elements of first matrix.
+    cout << endl << "Enter elements of matrix 1:" << endl;
+    for(i = 0; i < r1; ++i)
+        for(j = 0; j < c1; ++j)
+        {
+            cout << "Enter element a" << i + 1 << j + 1 << " : ";
+            cin >> a[i][j];
+        }
+
+    // Storing elements of second matrix.
+    cout << endl << "Enter elements of matrix 2:" << endl;
+    for(i = 0; i < r2; ++i)
+        for(j = 0; j < c2; ++j)
+        {
+            cout << "Enter element b" << i + 1 << j + 1 << " : ";
+            cin >> b[i][j];
+        }
+
+    // Initializing elements of matrix mult to 0.
+    for(i = 0; i < r1; ++i)
+        for(j = 0; j < c2; ++j)
+        {
+            mult[i][j]=0;
+        }
+
+    // Multiplying matrix a and b and storing in array mult.
+    for(i = 0; i < r1; ++i)
+        for(j = 0; j < c2; ++j)
+            for(k = 0; k < c1; ++k)
+            {
+                mult[i][j] += a[i][k] * b[k][j];
+            }
+
+    // Displaying the multiplication of two matrix.
+    cout << endl << "Output Matrix: " << endl;
+    for(i = 0; i < r1; ++i)
+    for(j = 0; j < c2; ++j)
+    {
+        cout << " " << mult[i][j];
+        if(j == c2-1)
+            cout << endl;
+    }
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Null Pointer </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Null%20Pointer.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal15">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal15">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Null Pointer</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+
+using namespace std;
+int main () {
+   int  *ptr = NULL;
+   cout << "The value of ptr is " << ptr ;
+ 
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing 1D Array to a Function </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Passing%201D%20Array%20to%20a%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal16">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal16">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing 1D Array to a Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+void display(int marks[5]);
+
+int main()
+{
+    int marks[5] = {88, 76, 90, 61, 69};
+    display(marks);
+    return 0;
+}
+
+void display(int m[5])
+{
+    cout << "Displaying marks: "<< endl;
+
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "Student "<< i + 1 <<": "<< m[i] << endl;
+    }
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing 2D Array to a Function </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Passing%202D%20Array%20to%20a%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal17">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal17">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing 2D Array to a Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+void display(int n[3][2]);
+
+int main()
+{
+    int num[3][2] = {
+        {3, 4},
+        {9, 5},
+        {7, 1}
+
+    };
+    display(num);
+
+    return 0;
+}
+
+void display(int n[3][2])
+{
+
+    cout << "Displaying Values: " << endl;
+    for(int i = 0;  i < 3; ++i)
+    {
+        for(int j = 0; j < 2; ++j)
+        {
+            cout << n[i][j] << " ";
+        }
+    }
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing String to a Function </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Passing%20String%20to%20a%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal18">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal18">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing String to a Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+
+using namespace std;
+
+void display(char *);
+void display(string);
+
+int main()
+{
+    string str1;
+    char str[100];
+
+    cout << "Enter a string: ";
+    getline(cin, str1);
+
+    cout << "Enter another string: ";
+    cin.get(str, 100, '\n');
+
+    display(str1);
+    display(str);
+    return 0;
+}
+
+void display(char s[])
+{
+    cout << "Entered char array is: " << s << endl;
+}
+
+void display(string s)
+{
+    cout << "Entered string is: " << s << endl;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Passing by Reference using Pointers </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Passing%20by%20Reference%20using%20Pointers.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal19">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal19">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Passing by Reference using Pointers</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+// Function prototype
+void swap(int*, int*);
+
+int main()
+{
+    int a = 1, b = 2;
+    cout << "Before swapping" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    swap(&a, &b);
+
+    cout << "\nAfter swapping" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    return 0;
+}
+
+void swap(int* n1, int* n2) {
+    int temp;
+    temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Pointer to Pointer </div>
+ <div class="col">
+<a href="c%2b%2b/unit2/Pointer%20to%20Pointer.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal20">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal20">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Pointer to Pointer</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+ 
+using namespace std;
+ 
+int main () {
+   int  var;
+   int  *ptr;
+   int  **pptr;
+
+   var = 3000;
+
+   // take the address of var
+   ptr = &var;
+
+   // take the address of ptr using address of operator &
+   pptr = &ptr;
+
+   // take the value using pptr
+   cout << "Value of var :" << var << endl;
+   cout << "Value available at *ptr :" << *ptr << endl;
+   cout << "Value available at **pptr :" << **pptr << endl;
+
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Pointers and Arrays </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Pointers%20and%20Arrays.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal21">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal21">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Pointers and Arrays</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    float arr[5];
+    float *ptr;
+    
+    cout << "Displaying address using arrays: " << endl;
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "&arr[" << i << "] = " << &arr[i] << endl;
+    }
+
+    // ptr = &arr[0]
+    ptr = arr;
+
+    cout<<"\nDisplaying address using pointers: "<< endl;
+    for (int i = 0; i < 5; ++i)
+    {
+        cout << "ptr + " << i << " = "<< ptr + i << endl;
+    }
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Pointers in C++ </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Pointers%20in%20C%2b%2b.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal22">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal22">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Pointers in C++</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+int main() {
+    int *pc, c;
+    
+    c = 5;
+    cout << "Address of c (&c): " << &c << endl;
+    cout << "Value of c (c): " << c << endl << endl;
+
+    pc = &c;    // Pointer pc holds the memory address of variable c
+    cout << "Address that pointer pc holds (pc): "<< pc << endl;
+    cout << "Content of the address pointer pc holds (*pc): " << *pc << endl << endl;
+    
+    c = 11;    // The content inside memory address &c is changed from 5 to 11.
+    cout << "Address pointer pc holds (pc): " << pc << endl;
+    cout << "Content of the address pointer pc holds (*pc): " << *pc << endl << endl;
+
+    *pc = 2; 
+    cout << "Address of c (&c): " << &c << endl;
+    cout << "Value of c (c): " << c << endl << endl;
+
+    return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Remove or Delete Spaces from String or Sentence </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Remove%20or%20Delete%20Spaces%20from%20String%20or%20Sentence.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal23">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal23">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Remove or Delete Spaces from String or Sentence</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str[80];
+	int i=0, len, j;
+	cout<<"Enter the String : ";
+	gets(str);
+	len=strlen(str);
+	for(i=0; i< len; i++)
+	{
+		if(str[i]==' ')
+		{
+			for(j=i; j< len; j++)
+			{
+				str[j]=str[j+1];
+			}
+		len--;
+		}
+	}
+	cout<<"String after removing spaces = "<< str;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Reverse String </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Reverse%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal24">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal24">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Reverse String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	char str[100], temp;
+	int i=0, j;
+	cout<<"Enter the String : ";
+	gets(str);
+	j=strlen(str)-1;
+	while(i< j)
+	{
+		temp=str[i];
+		str[i]=str[j];
+		str[j]=temp;
+		i++;
+		j--;
+	}
+	cout<<"Reverse of the String = "<< str;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Search an Element in Array </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Search%20an%20Element%20in%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal25">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal25">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Search an Element in Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+using namespace std;
+
+int main()
+{
+ int arr[10], i, 0um, n, cnt=0, pos;
+ cout<<"\n Enter Array Size : ";
+ cin>>n;
+ cout<<"\n Enter Array Elements : \n";
+ for(i=0; i< n; i++)
+ {
+ cout<<" ";
+ cin>>arr[i];
+ }
+ cout<<"\n Enter Element to be Searched : ";
+ cin>>num;
+ for(i=0; i< n; i++)
+ {
+ if(arr[i]==num)
+ {
+ cnt=1;
+ pos=i+1;
+ break;
+ }
+ }
+ if(cnt==0)
+ {
+ cout<<"\n Element Not Found..!!";
+ }
+ else
+ {
+cout<<"\n Element "<< num<<" Found At Position "<< pos;
+}
+return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Sort Elements in Lexicographical Order-Dictionary Order </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Sort%20Elements%20in%20Lexicographical%20Order-Dictionary%20Order.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal26">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal26">
+ <div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Sort Elements in Lexicographical Order-Dictionary Order</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+int main()
+{
+    string str[10], temp;
+
+    cout << "Enter 10 words: " << endl;
+    for(int i = 0; i < 10; ++i)
+    {
+      getline(cin, str[i]);
+    }
+
+    for(int i = 0; i < 9; ++i)
+       for( int j = i+1; j < 10; ++j)
+       {
+          if(str[i] > str[j])
+          {
+            temp = str[i];
+            str[i] = str[j];
+            str[j] = temp;
+          }
+    }
+
+    cout << "In lexicographical order: " << endl;
+
+    for(int i = 0; i < 10; ++i)
+    {
+       cout << str[i] << endl;
+    }
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Sort Strings in Alphabetical Order </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Sort%20Strings%20in%20Alphabetical%20Order.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal27">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal27">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Sort Strings in Alphabetical Order</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< string.h>
+#include< stdio.h>
+using namespace std;
+int main()
+{
+	int n;
+	char str[10][20], t[20];
+	int i, j;
+	cout<<"Enter the number of strings (max 10) : ";
+	cin>>n;
+	cout<<"Enter any " << n <<" strings (name) : ";
+	for(i=0; i< n; i++)
+	{
+		cin>>str[i];
+	}
+	for(i=1; i< n; i++)
+	{
+		for(j=1; j< n; j++)
+		{
+			if(strcmp(str[j-1], str[j])>0)
+			{
+				strcpy(t, str[j-1]);
+				strcpy(str[j-1], str[j]);
+				strcpy(str[j], t);
+			}
+		}
+	}
+	cout<<"Strings (Names) in alphabetical order : \n";
+	for(i=0; i< n; i++)
+	{
+		cout<< str[i]<<"\n";
+	}
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Sorting Elements in an Array </div>
+<div class="col">
+<a href="c%2b%2b/unit2/Sorting%20Elements%20in%20an%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal28">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal28">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Sorting Elements in an Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+ 
+int main()
+{
+    int arr[100];
+    int size, i, j, temp;
+ 
+    // Reading the size of the array
+    cout<<"Enter size of array: ";
+    cin>>size;
+ 
+    //Reading elements of array
+    cout<<"Enter elements in array: ";
+    for(i=0; i< size; i++)
+    {
+        cin>>arr[i];
+    }
+    //Sorting an array in ascending order
+    for(i=0; i< size; i++)
+    {
+        for(j=i+1; j< size; j++)
+        {
+            //If there is a smaller element found on right of the array then swap it.
+            if(arr[j] < arr[i])
+            {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    //Printing the sorted array in ascending order
+    cout<<"Elements of array in sorted ascending order:"<< endl;
+    for(i=0; i< size; i++)
+    {
+        cout<< arr[i]<< endl;
+    }
+ 
+    return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+This Pointer </div>
+<div class="col">
+<a href="c%2b%2b/unit2/This%20Pointer.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal29">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal29">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">This Pointer</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+class Demo {
+private:
+  int num;
+  char ch;
+public:
+  void setMyValues(int num, char ch){
+    this-> num =num;
+    this-> ch=ch;
+  }
+  void displayMyValues(){
+    cout<< num<< endl;
+    cout<< ch;
+  }
+};
+int main(){
+  Demo obj;
+  obj.setMyValues(100, 'A');
+  obj.displayMyValues();
+  return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-658a50acc039d0d0181476e8-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="658a50acc039d0d0181476e8-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="658a50acc039d0d0181476e8-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="658a50acc039d0d0181476e8-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit2 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:38 GMT -->
+</html>

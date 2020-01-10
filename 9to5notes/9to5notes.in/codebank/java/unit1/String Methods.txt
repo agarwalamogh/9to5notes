@@ -1,0 +1,44 @@
+class TestingStringMethods
+{
+public static void main(String[] args)
+{
+String x=new String();
+System.out.println(" "+x);
+System.out.println(" "+x.length());
+
+String y=new String("Hello!!!");
+System.out.println(" "+y);
+System.out.println(" "+y.length());
+
+char[] c={'a','b','c','d','e'};
+
+String z=new String(c);
+System.out.println(" "+z);
+System.out.println(" "+z.length());
+
+String m=new String(c,1,3);
+System.out.println(" "+m);
+System.out.println(" "+m.length());
+
+byte[] b={97,98,99,100,101};
+
+String r=new String(b);
+System.out.println(" "+r);
+System.out.println(" "+r.length());
+
+String t=new String(b,1,3);
+System.out.println(" "+t);
+System.out.println(" "+t.length());
+
+
+String q=new String("Hello");
+//System.out.println(" "+q[1]);
+
+//char c1[]=q.toCharArray();
+//System.out.println(" "+c1[0]);
+
+char v=q.charAt(10);
+System.out.println(" "+v);
+
+}
+}

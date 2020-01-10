@@ -1,0 +1,92 @@
+#include< iostream>
+#include< conio.h>
+using namespace std;
+struct node
+{
+   int info;
+   node *next;   
+}*top=NULL;
+
+void push(int);
+void pop();
+void display();
+
+void push(int val)
+{
+    node *temp = new node;     
+    temp->info = val;
+    
+    if(top==NULL)              
+
+    {   
+       temp->next = NULL;      
+       top = temp;                      
+    }    
+    else
+    {
+       temp->next = top;
+       top = temp;    
+    }
+}
+
+void pop()
+{
+    node *p;
+    if(top==NULL)              
+    {
+      cout<<"Stack is empty...";
+    }
+    else
+    {
+        p = top;
+        top = top->next;       
+        cout<<"Element deleted is: " << p->info  << endl;   
+        delete p; 
+    }   
+}
+void display()
+{
+   node *p = top;         
+   cout<<"\n Elements in stack are: " << endl;
+   while(p!=NULL)
+   {
+       cout<< p->info  << endl;
+       p = p->next;                
+   }
+   cout<<"NULL" << endl;
+        
+}
+int main()
+{
+    int val, choice;    
+    while(1)
+    {
+            cout<<"\n**** Enter choice: ****"  << endl;
+            cout<<"1 : Push"  << endl;
+            cout<<"2 : Pop"  << endl;
+            cout<<"3 : Display"  << endl;
+            cout<<"4 : Exit"  << endl;
+            cin>>choice;
+            switch(choice)
+            {
+                case 1: 
+                     cout<<"Enter value to push: ";
+                     cin>>val;
+                     push(val);
+                     break;                     
+                case 2:
+                     pop();
+                     break;                     
+                case 3:
+                     display();
+                     break;
+                case 4:
+                     exit(1);
+                     break;
+default:
+                   cout<<"Wrong choice..." << endl;          
+            }
+    } 
+        
+  
+}

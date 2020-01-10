@@ -1,0 +1,33 @@
+class DemoSingleton
+{
+
+ private static DemoSingleton ref;
+ 
+ private DemoSingleton()
+  {
+    
+  }
+
+  void otherMethod()
+    {
+    System.out.println("Hello");
+    }
+
+  public static DemoSingleton get()
+   {
+     if(ref == null)
+             ref = new DemoSingleton();
+     return ref;
+   }
+
+}
+
+
+class TestSingleton 
+  { 
+     public static void main(String [] args)
+      {
+	DemoSingleton ds = DemoSingleton.get();
+   	ds.otherMethod();
+      }
+  }

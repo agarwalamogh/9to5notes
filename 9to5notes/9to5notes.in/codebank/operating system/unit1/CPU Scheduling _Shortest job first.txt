@@ -1,0 +1,59 @@
+#include< stdio.h> 
+int main() 
+{ 
+int n; 
+printf("enter no of process\n"); 
+scanf("%d",&n); 
+int a[n],b[n],c[n],t[n],w[n],i,j,x,time=0,f[n],bt=0,s,in; 
+printf("Enter arrival time"); 
+for(i=0;i< n;i++) 
+scanf("%d",&a[i]); 
+for(i=0;i< n;i++) 
+f[i]=0; 
+printf("Enter burst time"); 
+for(i=0;i< n;i++) 
+{scanf("%d",&b[i]); 
+} 
+for(i=0;i< n;i++) 
+bt=bt+b[i]; 
+printf("total time%d\n",bt); 
+for(i=0;i< n;i++) 
+{ 
+for(j=n+1;j< n;j++) 
+{ 
+if(a[i]>a[j]) 
+{ 
+x=a[i]; 
+a[i]=a[j]; 
+a[j]=x; 
+x=b[i]; 
+b[i]=b[j]; 
+b[j]=x; 
+} 
+} 
+} 
+c[0]=b[0]; 
+time=c[0]; 
+f[0]=1; 
+j=0; 
+while(time!=bt) 
+
+{ 
+s=9999; 
+for(i=1;i< n;i++) 
+{ 
+if(a[i]<=c[j]&&f[i]==0&&s>b[i]) 
+{ 
+s=b[i]; 
+in=i; 
+} 
+} 
+f[in]=1; 
+c[in]=c[j]+b[in]; 
+time=time+b[in]; 
+j=in; 
+} 
+for(i=0;i< n;i++) 
+printf("%d\t%d\t%d\n",a[i],b[i],c[i]); 
+return 0; 
+} 

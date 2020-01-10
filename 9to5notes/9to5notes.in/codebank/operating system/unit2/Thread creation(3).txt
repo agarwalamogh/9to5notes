@@ -1,0 +1,23 @@
+#include< pthread.h> 
+#include< stdio.h> 
+void *th(int *a) 
+{ 
+   int *j=(int *)a; 
+   printf("Thread %d created\n",j); 
+   pthread_exit(a); 
+ } 
+int main() 
+{ 
+   pthread_t t1[2]; 
+   int i,*j; 
+   for(i=0;i< 2;i++) 
+     { 
+	    pthread_create(&t1[i],NULL,&th,(void *)i); 
+	 } 
+   for(i=0;i< 2;i++) 
+     { 
+	    pthread_join(t1[i],&j); 
+		printf("thread %d joined\n",j); 
+	 } 
+   printf("Parent thread"); 
+} 

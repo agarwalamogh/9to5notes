@@ -1,0 +1,36 @@
+#include < iostream>
+#include < conio.h>
+using namespace std;
+
+class example
+{
+    int data[5];
+    public:
+        void input()
+        {
+            int i;
+            cout<<"Enter 5 integers:"<< endl;
+            for(i=0;i< 5;i++)
+                cin>>data[i];
+        }
+        int &operator[](int i) // operator function
+        {
+            return data[i];
+        }
+};
+
+int main()
+{
+    int i,sum=0;
+    example a;
+    a.input();
+    cout<<"Calculate sum by overloading [] operator"<< endl;
+    for(i=0;i< 5;i++)
+    {
+        sum=sum+a[i]; // calling operator function
+    }
+    cout<<"Sum = "<< sum;
+    getch();
+    return 0;
+}
+

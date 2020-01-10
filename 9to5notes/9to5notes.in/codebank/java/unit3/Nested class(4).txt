@@ -1,0 +1,30 @@
+class S
+{
+  private  static int a=10;
+ class AB
+    {
+    void m()
+      {
+       System.out.println("AB");
+      }
+    }
+   static class Inner extends AB
+    {
+       void msg()
+        {
+        //m();
+        System.out.println("a=" + a);
+        }
+    }
+}
+class B
+{
+  public static void main(String []arg)
+    {
+   // StaticNested.Inner obj = new StaticNested.Inner();
+   //StaticNested.Inner.msg();
+   S obj = new S();
+   S.Inner obj1 = new S.Inner();
+   obj1.msg();
+    }
+}

@@ -1,0 +1,41 @@
+#include< Gl/glut.h>
+int a=0,r=45;
+void display(){
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(1,0,0);
+	glMatrixMode(GL_MODELVIEW);
+	glClearColor(0,0,0,0);
+	glutWireTeapot(0.5);
+	//glutSolidTeapot(0.5);
+	//glutWireSphere(0.4,50,50);
+//	glutWireSphere(0.4,50,50);
+	//glutWireTorus(0.2,0.8,100,20);
+	
+		
+
+//	glutWireCone(0.6,0.8,10,20);
+	glFlush();
+}
+void key(unsigned char r, int x,int y){
+	if(r=='r'||r=='R'){
+	a=1;
+	}
+}
+void timer(int x){
+	if(a==1){
+	glRotatef(45,1.0,1.0,1.0);
+	}
+	glutPostRedisplay();
+		glutTimerFunc(100,timer,0);
+}
+int main(int argc, char** argv){
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowSize(1000,1000);
+	glutInitWindowPosition(100,100);
+	glutCreateWindow("3D Objects");
+	glutDisplayFunc(display);
+	glutKeyboardFunc(key);
+	glutTimerFunc(100,timer,0);
+	glutMainLoop();
+}

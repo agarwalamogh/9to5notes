@@ -1,0 +1,88 @@
+#include< GL/gl.h>
+#include< GL/glu.h>
+#include< GL/glut.h>
+#include< stdio.h>
+#include< stdlib.h>
+        int n;
+void display()
+{
+glClear(GL_COLOR_BUFFER_BIT);
+glColor3f(1.0,1.0,0.0);
+ glClearColor(0.0,0.0,0.0,1.0);
+glBegin(GL_TRIANGLES);
+glVertex2f(-0.9,0.0);
+glVertex2f(0.9,0.0);
+glVertex2f(0.0,0.9);
+
+
+     glMatrixMode(GL_PROJECTION);
+     glLoadIdentity();
+     gluOrtho2D(-10,10,-10,10);
+glEnd();
+glFlush();
+switch(n)
+{
+case 1:         
+glTranslatef(0.0,-0.5,0.0);
+glColor3f(1.0,0.0,0.0);
+glBegin(GL_TRIANGLES);
+glVertex2f(-0.9,0.0);
+glVertex2f(0.9,0.0);
+glVertex2f(0.0,0.9);
+glEnd();
+break;
+
+case 2:
+glScalef(0.2,0.2,0.0);
+glColor3f(0.0,0.0,1.0);
+glBegin(GL_TRIANGLES);
+glVertex2f(-0.9,0.0);
+glVertex2f(0.9,0.0);
+glVertex2f(0.0,0.9);
+glEnd();
+break;
+
+case 3:
+glRotatef(45,0,0,1);
+glColor3f(1.0,1.0,1.0);
+glBegin(GL_TRIANGLES);
+glVertex2f(-0.9,0.0);
+glVertex2f(0.9,0.0);
+glVertex2f(0.0,0.9);
+glEnd();
+break;
+}
+    
+}
+void keyboard(unsigned char k,int x,int y)
+{
+if (k=='z')
+{
+glTranslatef(0.0,-0.5,0.0);
+glutPostRedisplay();
+}
+else if (k=='x')
+{
+glScalef(0.2,0.2,0.0);
+glutPostRedisplay();       
+}
+else if (k=='c')
+{
+glRotatef(45,0,0,1);
+glutPostRedisplay();       
+}
+}
+
+
+int main()
+{
+     glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+     glutInitWindowSize(500,500);
+      glutInitWindowPosition(50,50);
+     glutCreateWindow("transformation");
+    
+     glutKeyboardFunc(keyboard);
+     glutDisplayFunc(display);
+//     abc();
+     glutMainLoop();
+     }

@@ -1,0 +1,43 @@
+/*overriding-subclass inherits methods from superclass.in some situations subclass needs to modify the code of method defined in superclass without changing parameter list.this is achieved by overriding/redefining the method in subclass.to override subclass method,redefine the method in the subclass with the same name, same return type,same parameter list as its superclass.
+*/
+class person
+{ 
+private String name;
+private int age;
+person(String n,int page)
+{name=n;
+age=page;
+}
+public String tostring()
+{
+return("name= "+name + "\n"+ "age = "+age);
+}
+}
+
+class student extends person
+{
+private int rollno;
+private String stuclass;
+private double percentage;
+student(int rno,String n,int page,String c,double p)
+{
+super(n,page);
+rollno=rno;
+stuclass=c;
+percentage=p;
+}
+//override tostring() method
+ public String tostring()
+{
+return("rollno="+rollno+super.tostring()+"class="+stuclass+"percentage="+percentage);
+}
+}
+
+public class overriding
+{
+public static void main(String[] args)
+{ 
+student s=new student(101,"abcd",21,"PGDCA",70.5);
+System.out.println(s.tostring());
+}
+}

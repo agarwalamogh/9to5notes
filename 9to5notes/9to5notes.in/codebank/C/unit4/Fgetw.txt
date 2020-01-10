@@ -1,0 +1,27 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fptr;
+int i,n;
+clrscr();
+fptr=fopen("a.txt","w+");
+printf("Enter numbers");
+for(i=1; i < = 10 ;i++)
+{
+scanf("%d",&n);
+putw(n,fptr);
+}
+fclose(fptr);
+fptr=fopen("a.txt","r");
+printf("\n the number are");
+n=getw(fptr);
+while(!feof(fptr))
+{
+printf("%d\t",n);
+printf("\n");
+n=getw(fptr);
+}
+fclose(fptr);
+getch();
+}

@@ -1,0 +1,30 @@
+class superclass
+{
+	int a;
+	int b;
+	void display()
+	{
+		this.a=10;
+		this.b=20;
+		System.out.println("The value of a is"+a);
+		System.out.println("The value of b is"+b);
+	}
+}
+class subclass extends superclass
+{
+	void display()
+	{
+		System.out.println("The method of subclass is invoked");
+	}
+	void my()
+	{
+		subclass p=new subclass();
+		p.display();
+		super.display();
+	}
+	public static void main(String a[])
+	{
+		subclass obj=new subclass();
+		obj.my();
+	}
+}

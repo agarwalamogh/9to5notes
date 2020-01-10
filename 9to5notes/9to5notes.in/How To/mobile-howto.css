@@ -1,0 +1,676 @@
+body{
+	background:url(f.jpg)!important;
+	background-repeat:no-repeat!important;
+	background-size:cover!important;
+	background-position:center center!important;
+}
+
+.resize_bg{
+	background-color:black;
+	position:fixed;
+	height:100%;
+	width:100%;
+	left:0;
+	top:0;
+	z-index:99999999999999999999999999999999999999999999999;
+	display:none;
+}
+.resize_bg_visible{
+	display:block;
+}
+.message {
+	position:fixed;
+	background:transparent;
+	height:20%;
+	width:60%;
+	top:40%;
+	left:20%;
+	z-index:999999999999999999999999999999999999999999999999999999;
+	font-family:calibri light;
+	font-size:40px;
+	color:white;
+	display:none;
+	opacity:0.3;
+	text-align:center;
+}
+.message p{
+		position:relative;
+	left:0;
+	top:0;
+}
+.resize_bg_visible{
+	display:block;
+}
+
+.icon1{
+	position:fixed;
+	top:2%;
+	right:2%;
+	fill:white;
+	cursor:pointer;
+}
+.icon1disap{
+	display:none;
+}
+.icon1show{
+	display:block;
+}
+
+.rect{
+position:absolute;
+height:200px;
+width:200px;
+top:35%;
+left:5%;
+background:transparent;
+opacity:0.2;
+border:50px solid black;	
+}
+.boxanimate1{
+	animation:blackbox11 1s linear forwards;
+}
+@keyframes blackbox1{
+	from{
+		top:15%;
+		left:16%;
+		height:200px;
+	}
+	to{
+		top:35%;
+		left:3%;line
+		height:160px;
+	}
+}
+.boxanimate2{
+	animation:blackbox2 2s linear forwards;
+}
+@keyframes blackbox2{
+	from{
+		top:35%;
+		left:3%;
+		height:160px;
+		width:200px;
+	}
+	to{
+		top:35%;
+		left:0%;
+		height:300px;
+		width:850px;
+	}
+}
+.float
+{
+    display:none;
+}
+.boxarrange{
+	animation:lineup 0.8s linear forwards;
+}
+@keyframes lineup{
+	from{
+		width:850px;
+		left:3%;
+		top:38%;
+		height:160px;
+		background:transparent;
+		opacity:0.2;
+	}
+	to{
+		width:80px;
+		left:18%;
+		top:30%;
+		height:70px;
+		background:black;
+		opacity:0.3;
+		border-radius: 8px 8px 8px 8px;
+	}
+}
+.boxrevarrange{
+	animation:linedown 0.7s linear forwards;
+}
+@keyframes linedown{
+	from{
+		width:80px;
+		left:18%;
+		top:30%;
+		height:70px;
+		background:black;
+		opacity:0.3;		
+	}
+	to{
+		width:900px;
+		left:3%;
+		top:38%;
+		height:160px;
+		background:transparent;
+		opacity:0.2;		
+	}
+}
+
+.line1{
+position:absolute;
+font-size:200px;
+font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;
+height:200px;
+width:900px;
+color:white;
+letter-spacing: -25px;
+font-weight: 1500;
+left:16%;
+top:40%;
+opacity:0.8;
+}
+.line1.start
+{
+    animation:slidedown 1s linear forwards;
+}
+.line1.line1animate{
+	animation:slideup1 0.8s linear forwards;
+}
+.line1.line1animate1{
+	animation:disap 0.6s linear forwards;
+}
+.line1.line1animate1rev{
+	animation:line1show1 0.6s linear forwards;
+}
+@keyframes line1show1{
+	from{
+		top:-38%;
+		left:1%;
+		opacity:0;		
+	}
+	to{
+		top:40%;
+		left:5%;
+		opacity:0.8;		
+	}
+}
+
+.line2{
+position:absolute;
+font-size:70px;
+font-family:Courier New, Courier, monospace;
+letter-spacing:-10px;
+color:white;
+opacity:0;
+top:40%;
+left:5%;	
+}
+.line2animate{
+   animation:slideup2 2s linear forwards;	
+}
+
+.line3{
+position:absolute;
+font-size:70px;
+font-family:Courier New, Courier, monospace;
+letter-spacing:-10px;
+color:white;
+opacity:0;
+top:52%;
+left:5%;	
+}
+.line3animate{
+	animation:slideup3 2s linear forwards;
+}
+
+.slideline{
+position:absolute;
+width:200px; 
+height:2px;
+background:white;
+left:0;
+right:0;
+top:56%;
+margin:auto;
+
+}
+.slideline.start
+{
+    animation:line1 1s linear forwards;
+}
+.slideline.slidelineanimate{
+	animation:hideline .8s linear forwards;
+}
+
+@keyframes slidedown{
+	from{
+		top:10%;
+	}
+	to{
+		top:25%;
+	}
+}
+@keyframes hideline{
+	from{
+		left:0;
+		width:800px;
+	}
+	to{
+		left:1250px;
+		width:0;
+	}
+}
+@keyframes line1
+{
+from
+{
+width:200px;
+}
+to
+{
+width:800px;
+}
+}
+
+@keyframes slideup1{
+	from{
+		top:25%;
+		left:16%;
+	}
+	to{
+		top:5%;
+		left:0%;
+	}
+}
+@keyframes disap{
+	from{
+		top:-26%;
+		left:5%;
+		opacity:0.8;
+	}
+	to{
+		top:-38%;
+		left:1%;
+		opacity:0;
+	}
+}
+
+@keyframes slideup2{
+	from{
+		opacity:0;
+		top:40%;
+	}
+	to{
+		opacity:0.8;
+		top:34%;
+	}
+}
+
+@keyframes slideup3{
+	from{
+		opacity:0;
+		top:52%;
+	}
+	to{
+		opacity:1;
+		top:46%;
+	}
+}
+
+.button1{
+position:absolute;
+background:transparent;
+height:7%;
+width:19%;
+left:42%;
+top:63%;
+border:3px solid pink;
+color:white;
+font-size:40px;
+cursor:pointer;
+text-align:center;
+}
+
+.button2{
+position:absolute;
+background:transparent;
+height:5%;
+width:16%;
+left:45%;
+top:83%;
+border:3px solid white;
+color:white;
+opacity:0;
+font-size:40px;
+cursor:pointer;
+float:left;
+line-height:200%;
+}
+.button2show{
+animation:show 4s linear forwards;	
+}
+.button2disap{
+animation:disap1 0.8s linear forwards;	
+}
+.button2appear{
+	animation:appear 0.8s linear forwards;
+}
+@keyframes appear{
+	from{
+		top:86%;
+		opacity:0;		
+	}
+	to{
+		top:83%;
+		opacity:0.8;		
+	}
+}
+
+@keyframes show{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:0.9;
+	}
+}
+@keyframes disap1{
+	from{
+		top:83%;
+		opacity:0.8;
+	}
+	to{
+		top:86%;
+		opacity:0;
+	}
+}
+
+.float{
+	position:absolute;
+	background:url(share.png);
+	background-size:cover;
+	right:0;
+	top:40%;
+	height:16%;
+	width:8%;
+	opacity:0;
+	cursor:pointer;
+}
+.floatshow{
+	animation:float1 1s linear forwards;
+}
+@keyframes float1{
+	from{
+	right:0;	
+	opacity:0;
+	}
+	to{
+		right:3%;
+		opacity:0.9;
+	}
+}
+.floatshow1{
+	opacity:0.9;
+	animation-iteration-count:infinite;
+	animation-name: float2;
+    animation-duration: 6s;
+}
+@keyframes float2{
+      0% {right:3%; top:40%;}
+    25%  {right:3%; top:42%;}
+    50%  {right:5%%; top:42%;}
+    75%  {right:5%; top:40%;}
+    100% {right:3%; top:40%;}
+}
+
+.rect2{
+	position:absolute;
+	background:black;
+	opacity:0;
+	top:30%;
+	height:70px;
+	width:0px;
+	left:35%;
+	border:50px solid black;
+	cursor:pointer;
+	border-radius: 8px 8px 8px 8px;
+}
+.rect2show{
+	animation:rect2slide 0.6s linear forwards;
+}
+@keyframes rect2slide{
+	from{
+		left:28%;
+		opacity:0;
+		width:0;
+	}
+	to{
+		left:35%;
+		opacity:0.3;
+		width:80px;
+	}
+}
+.rect2disap{
+	animation:hide2 0.5s linear forwards;
+}
+@keyframes hide2{
+	from{
+		left:35%;
+		opacity:0.6;
+		width:80px;		
+	}
+	to{
+		left:28%;
+		opacity:0;
+		width:0;		
+	}
+}
+
+.rect3{
+	position:absolute;
+	background:black;
+	opacity:0;
+	top:30%;
+	height:70px;
+	width:0px;
+	left:52%;
+	border:50px solid black;
+	cursor:pointer;
+	border-radius: 8px 8px 8px 8px;
+}
+.rect3show{
+	animation:rect3slide 0.6s linear forwards;
+}
+@keyframes rect3slide{
+	from{
+		left:47%;
+		opacity:0;
+		width:0;
+	}
+	to{
+		left:52%;
+		opacity:0.3;
+		width:80px;
+	}
+}
+.rect3disap{
+	animation:hide3 0.5s linear forwards;
+}
+@keyframes hide3{
+	from{
+		left:52%;
+		opacity:0.6;
+		width:80px;		
+	}
+	to{
+		left:47%;
+		opacity:0;
+		width:0;		
+	}
+}
+
+.rect4{
+	position:absolute;
+	background:black;
+	opacity:0;
+	top:30%;
+	height:70px;
+	width:0px;
+	left:69%;
+	border:50px solid black;
+	cursor:pointer;
+	border-radius: 8px 8px 8px 8px;
+}
+.rect4show{
+	animation:rect4slide 0.6s linear forwards;
+}
+@keyframes rect4slide{
+	from{
+		left:64%;
+		opacity:0;
+		width:0;
+	}
+	to{
+		left:69%;
+		opacity:0.3;
+		width:80px;
+	}
+}
+.rect4disap{
+	animation:hide4 0.5s linear forwards;
+}
+@keyframes hide4{
+	from{
+		left:69%;
+		opacity:0.6;
+		width:80px;		
+	}
+	to{
+		left:64%;
+		opacity:0;
+		width:0;		
+	}
+}
+
+.line4{
+position:absolute;
+font-size:40px;
+font-family:Courier New, Courier, monospace;
+letter-spacing:-3px;
+color:white;
+opacity:0.8;
+top:59%;
+left:35%;	
+display:none;
+}
+
+.start-typewrite1
+{
+	display:block;
+    width: 20em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 4s steps(50, end);
+    animation: type 4s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+.rect11{
+position:absolute;
+background:url(face.png);
+background-size:cover;
+background-repeat:no-repeat;
+top:33%;
+left:20%;
+height:120px;
+width:122px;
+display:none;
+cursor:pointer;
+}
+.rect21{
+position:absolute;
+background:url(twit.png);
+background-size:cover;
+background-repeat:no-repeat;
+top:34%;
+left:37%;
+height:108px;
+width:122px;	
+display:none;
+cursor:pointer;
+}
+.rect31{
+position:absolute;
+background:url(insta.png);
+background-size:cover;
+background-repeat:no-repeat;
+top:33%;
+left:54%;
+height:125px;
+width:125px;
+display:none;
+cursor:pointer;
+}
+.rect41{
+position:absolute;
+background:url(google.png);
+background-size:cover;
+background-repeat:no-repeat;
+top:33%;
+left:71%;
+height:120px;
+width:122px;	
+display:none;
+cursor:pointer;
+}
+
+#cross-btn
+{
+    position:absolute;
+    display:block;
+	top:2%;
+	right:2%;
+    width:30px;
+    height:15px;
+    margin:20px;
+    cursor:pointer; 
+}
+#cross-btn span
+{
+    
+    background:white;
+    margin-bottom:14px;
+    width:30px;
+    transition:1s linear;
+	
+}
+#cross-btn span.visible
+{
+    
+    background-color:white;
+    transition:1s linear;
+
+}
+.one
+{
+	display:none;
+    height:2px;
+	
+}
+
+.two
+{
+	display:none;
+    height:2px;
+
+}
+
+.visible1
+{
+	display:block;
+    transform: translateY(8px) rotate(45deg);
+
+}
+.visible2
+{
+	display:block;
+    transform: translateY(-8px) rotate(-45deg);
+
+}

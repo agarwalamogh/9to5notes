@@ -1,0 +1,16 @@
+#include < stdio.h >
+#include < conio.h >
+#include < string.h >
+ main()
+{
+char ori[20],dup[20];
+int i ;
+printf("Enter string");
+gets(ori);
+strcpy(dup,ori);
+puts("Original string is ");
+puts(ori);
+puts("Duplicate string is ");
+puts(dup);
+getch();
+}

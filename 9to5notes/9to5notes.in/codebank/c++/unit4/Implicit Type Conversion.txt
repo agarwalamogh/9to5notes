@@ -1,0 +1,9 @@
+#include < iostream>
+using namespace std;
+int main()
+{
+short x=6000;
+int y;
+y=x;
+cout<<"y="<< y;
+}

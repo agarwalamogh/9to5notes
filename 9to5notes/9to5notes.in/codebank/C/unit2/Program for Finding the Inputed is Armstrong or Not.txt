@@ -1,0 +1,21 @@
+	#include < stdio.h >
+	#include < conio.h >
+	main()
+	{
+		int n,n1,sum=0,x,v;
+		printf("Enter the any no:-");
+		scanf("%d",&n);
+		n1=n;
+		while(n!=0)
+		{
+			x=n%10;
+			n=n/10;
+			v=x*x*x;
+			sum=sum+v;
+		}
+		if(sum==n1)
+			printf(" %d IS ARMSTRONG",n1);
+		else
+			printf("%d IS NOT ARMSTRONG",n1);
+		getch();
+	}

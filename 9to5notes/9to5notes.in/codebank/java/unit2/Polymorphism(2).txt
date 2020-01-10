@@ -1,0 +1,50 @@
+/*polymorphic behaviour can be achieved if-
+1. method call for subclass object must be through a superclass reference variable.
+2.method called must be declared in super class and redefined in subcla
+3.method in superclass and subclass must have same name and parameter list with same number of parameters. */
+class shape
+{
+ public void area()
+ {
+  System.out.println("Base class area method is called");
+ }
+}
+class rectangle extends shape
+{
+ private double length,breadth;
+ rectangle(double x,double y)
+  {
+   length=x;
+   breadth=y;
+  }
+ public void area()
+  {
+   System.out.println("Area of rectangle is ="+(length*breadth));
+  }
+}
+class circle extends shape
+{
+ private double radius;
+ circle(double r)
+ {
+  radius=r;
+ }
+ public void area()
+ {
+  System.out.println("Area of circle is ="+(Math.PI*radius*radius));
+ }
+}
+
+public class poly1
+{
+public static void main(String[] args)
+{
+shape s;//shape class reference variable
+rectangle r=new rectangle(10,20);//constructor calling
+s=r;//assign rectangle reference to shape reference
+s.area();
+circle c=new circle(5);
+s=c;
+s.area();
+}  
+}

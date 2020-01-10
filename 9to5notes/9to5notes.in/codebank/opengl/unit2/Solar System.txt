@@ -1,0 +1,90 @@
+#include< GL/glut.h>
+#include< math.h>
+
+float ang= 0, s= 0;
+
+void xyz(int v)
+{
+	if (s==0)
+	{
+		ang -= 1;
+	}
+	glutPostRedisplay();
+	glutTimerFunc(100, xyz, v);
+}
+
+void moon()
+{
+glColor3f(1, 1, 1);	
+for(int i=0; i<=360; i++){
+		glBegin(GL_POINTS);
+		double ang = i*6.28/360;
+		double x = 5*cos(ang);
+		double y = 5*sin(ang);
+		glVertex2f(x+70,y+70);
+		glEnd();
+	}
+
+//	glBegin(GL_LINE_LOOP);
+//		glVertex2f(0+50,10+50);
+//		glVertex2f(2+50,2+50);
+//		glVertex2f(10+50,0+50);
+//		glVertex2f(2+50,-2+50);
+//		glVertex2f(0+50,-10+50);
+//		glVertex2f(-2+50,-2+50);
+//		glVertex2f(-10+50,0+50);
+//		glVertex2f(-2+50,2+50);
+//	glEnd();
+
+
+	glutPostRedisplay();
+}
+
+void earth()
+{
+	glColor3f(0, 0, 1);
+	for(int i=0; i<=360; i++){
+		glBegin(GL_POINTS);
+		double ang = i*6.28/360;
+		double x = 50*cos(ang);
+		double y = 50*sin(ang);
+		glVertex2f(x,y);
+		glEnd();
+	}
+//	glBegin(GL_LINE_LOOP);
+//		glVertex2f(20,10);
+//		glVertex2f(20,-10);
+//		glVertex2f(-20,-10);
+//		glVertex2f(-20,10);
+//	glEnd();
+
+ 	
+}
+
+void display()
+{
+	gluOrtho2D(-200, 200, -200, 200);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glClear(GL_COLOR_BUFFER_BIT);
+	
+	earth();
+	glRotatef(ang, 0, 0, 1);
+	moon();
+	
+	
+	
+	glFlush();
+}
+
+int main(int argc, char **argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowPosition(400, 100);
+	glutInitWindowSize(600, 600);
+	glutCreateWindow("Windmill");
+	glutDisplayFunc(display);
+	glutTimerFunc(10, xyz, 0);
+	glutMainLoop();
+}

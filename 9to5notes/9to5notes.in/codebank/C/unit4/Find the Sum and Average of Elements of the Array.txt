@@ -1,0 +1,23 @@
+#include < conio.h >
+#include < stdio.h >
+main()
+{
+int a[50],i,n;
+float sum=0,avg;
+printf("Sum and average of n elements of the array");
+printf("\nEnter the size of the array:");
+scanf("%d",&n);
+printf("\nEnter the elements in the array:");
+for(i=0; i < n ;i++)
+{
+ scanf("%d",&a[i]);
+}
+printf("\nSum of elements of the array : ");
+for(i=0; i < n ;i++)
+ {
+  sum=sum+a[i];
+ }
+ printf("%f",sum);
+printf("\nAverage : %f", sum/n);
+getch();
+}

@@ -1,0 +1,679 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=C&unitid=unit5 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:11:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<script type="f59cca38d8c8ef83603625f9-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<script type="f59cca38d8c8ef83603625f9-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="f59cca38d8c8ef83603625f9-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="f59cca38d8c8ef83603625f9-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+
+<script src="prism-2.html" type="f59cca38d8c8ef83603625f9-text/javascript"></script>
+<title>C</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Pointers, DMA And Strings </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Access Array Elements using Pointer </div>
+<div class="col">
+<a href="C/unit5/Access%20Array%20Elements%20using%20Pointer.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Access Array Elements using Pointer</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+
+int main()
+{
+   int data[5], i;
+   printf("Enter elements: ");
+
+   for(i = 0; i < 5; ++i)
+     scanf("%d", data + i);
+
+   printf("You entered: \n");
+   for(i = 0; i < 5; ++i)
+      printf("%d\n", *(data + i));
+
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Calloc and free </div>
+<div class="col">
+<a href="C/unit5/Calloc%20and%20free.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Calloc and free</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < stdlib.h > 
+
+int main()
+{
+    int n, i, *ptr, sum = 0;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    ptr = (int*) calloc(n, sizeof(int));
+    if(ptr == NULL)
+    {
+        printf("Error! memory not allocated.");
+        exit(0);
+    }
+
+    printf("Enter elements: ");
+    for(i = 0; i < n; ++i)
+    {
+        scanf("%d", ptr + i);
+        sum += *(ptr + i);
+    }
+
+    printf("Sum = %d", sum);
+    free(ptr);
+    return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Comparing two Strings </div>
+<div class="col">
+<a href="C/unit5/Comparing%20two%20Strings.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Comparing two Strings</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+void main()
+{
+int i,b;
+char str1[80],str2[80];
+printf("Enter a string:");
+gets(str1);
+printf("Enter another string:");
+gets(str2);
+if(strcmp(str1,str2)==0)
+   printf("Strings are equal");
+else
+   printf("Strings are not equal");
+
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Copy a String </div>
+<div class="col">
+<a href="C/unit5/Copy%20a%20String.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Copy a String</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+ main()
+{
+char ori[20],dup[20];
+int i ;
+printf("Enter string");
+gets(ori);
+strcpy(dup,ori);
+puts("Original string is ");
+puts(ori);
+puts("Duplicate string is ");
+puts(dup);
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Find Largest Number using Dynamic Memory Allocation </div>
+<div class="col">
+<a href="C/unit5/Find%20Largest%20Number%20using%20Dynamic%20Memory%20Allocation.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Find Largest Number using Dynamic Memory Allocation</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+ <pre id="p1"><code> #include < stdio.h >
+#include < stdlib.h > 
+
+int main()
+{
+    int i, num;
+    float *data;
+
+    printf("Enter total number of elements(1 to 100): ");
+    scanf("%d", &num);
+
+    // Allocates the memory for 'num' elements.
+    data = (float*) calloc(num, sizeof(float));
+
+    if(data == NULL)
+    {
+        printf("Error!!! memory not allocated.");
+        exit(0);
+    }
+
+    printf("\n");
+
+    // Stores the number entered by the user.
+    for(i = 0; i < num; ++i)
+    {
+       printf("Enter Number %d: ", i + 1);
+       scanf("%f", data + i);
+    }
+
+    // Loop to store largest number at address data
+    for(i = 1; i < num; ++i)
+    {
+       // Change < to > if you want to find the smallest number
+       if(*data < *(data + i))
+           *data = *(data + i);
+    }
+
+    printf("Largest element = %.2f", *data);
+
+    return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Malloc and free </div>
+<div class="col">
+<a href="C/unit5/Malloc%20and%20free.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Malloc and free</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < stdlib.h >
+
+int main()
+{
+    int n, i, *ptr, sum = 0;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    ptr = (int*) malloc(n * sizeof(int));
+    if(ptr == NULL)                     
+    {
+        printf("Error! memory not allocated.");
+        exit(0);
+    }
+
+    printf("Enter elements: ");
+    for(i = 0; i < n; ++i)
+    {
+        scanf("%d", ptr + i);
+        sum += *(ptr + i);
+    }
+
+    printf("Sum = %d", sum);
+    free(ptr);
+    return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Pointers </div>
+<div class="col">
+<a href="C/unit5/Pointers.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+ <div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Pointers</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+int main()
+{
+   int* pc, c;
+   
+   c = 22;
+   printf("Address of c: %u\n", &c);
+   printf("Value of c: %d\n\n", c);
+   
+   pc = &c;
+   printf("Address of pointer pc: %u\n", pc);
+   printf("Content of pointer pc: %d\n\n", *pc);
+   
+   c = 11;
+   printf("Address of pointer pc: %u\n", pc);
+   printf("Content of pointer pc: %d\n\n", *pc);
+   
+   *pc = 2;
+   printf("Address of c: %u\n", &c);
+   printf("Value of c: %d\n\n", c);
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+String Functions </div>
+<div class="col">
+<a href="C/unit5/String%20Functions.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">String Functions</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+ main()
+{
+char str[20];
+int len;
+printf("Enter first string\n");
+gets(str);
+len=strlen(str);
+printf("Length of string is %d\n",len);
+printf("Upper case transformation is : \n");
+puts(strupr(str));
+printf("Lower case transformation is : \n");
+puts(strlwr(str));
+printf("Reverse is : \n");
+puts(strrev(str));
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+ <button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+String Predefined Functions </div>
+<div class="col">
+<a href="C/unit5/String%20Predefined%20Functions.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal9">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">String Predefined Functions</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < conio.h >
+#include < string.h >
+#include < stdio.h >
+void main()
+{
+char str1[15],str2[15],str3[15],str4[15],str5[15];
+int length;
+printf("enter first string\t");
+gets(str1);
+length=strlen(str1);
+printf("\nthe length of first string is %d\t",length);
+gets(str2);
+strcpy(str2,str1);
+printf("\nthe copied string is %s\t",str2);
+printf("\nenter string to be compared\t");
+gets(str3);
+if(strcmp(str1,str3)<0)
+printf("\nstring1 is lesser than string2");
+else if(strcmp(str1,str3)>0)
+printf("\nstring1 is greater than string2");
+else
+printf("\nstrings equal");
+printf("\nenter string to be concanated\t");
+gets(str4);
+strcat(str1,str4);
+printf("\nconcanated string is %s\t",str1);
+strcpy(str5,str1);
+printf("reverse of string is %s\n",strrev(str1));
+if(strcmp(str5,str1)==0)
+printf("string is pallindrome\n");
+else
+printf("string is not pallindrome\n");
+printf("enter sub string to be searched");
+gets(str5);
+if(strstr(str1,str5)!=NULL)
+printf("\nsubstring found");
+else
+printf("substring not found");
+printf("\nstring %s in upper case is\t",str2);
+printf("%s",strupr(str2));
+printf("\nstring %s in lower case is\t",str2);
+printf("%s",strlwr(str2));
+getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Swapping using Pointers </div>
+<div class="col">
+<a href="C/unit5/Swapping%20using%20Pointers.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal10">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal10">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Swapping using Pointers</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+void swapnum(int *num1, int *num2)
+{
+   int tempnum;
+
+   tempnum = *num1;
+   *num1 = *num2;
+   *num2 = tempnum;
+}
+int main( )
+{
+   int v1 = 11, v2 = 77 ;
+   printf("Before swapping:");
+   printf("\nValue of v1 is: %d", v1);
+   printf("\nValue of v2 is: %d", v2);
+
+  
+   swapnum( &v1, &v2 );
+
+   printf("\nAfter swapping:");
+   printf("\nValue of v1 is: %d", v1);
+   printf("\nValue of v2 is: %d", v2);
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+strstr </div>
+<div class="col">
+<a href="C/unit5/strstr.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal11">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal11">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">strstr</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h >
+#include < conio.h >
+#include < string.h >
+main()
+{
+int i,b;
+char str1[80],str2[80];
+printf("Enter a string");
+gets(str1);
+printf("Enter another string");
+gets(str2);
+if(strstr(str1,str2)==NULL)
+printf("Not Found");
+else
+printf("found");
+getch();
+} </code></pre>
+</div>
+ <div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-f59cca38d8c8ef83603625f9-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+</div>
+<script type="f59cca38d8c8ef83603625f9-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="f59cca38d8c8ef83603625f9-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="f59cca38d8c8ef83603625f9-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=C&unitid=unit5 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:11:49 GMT -->
+</html>

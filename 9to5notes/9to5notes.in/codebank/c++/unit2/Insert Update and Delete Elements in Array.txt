@@ -1,0 +1,102 @@
+#include < iostream>
+#include < stdlib.h>
+using namespace std;
+
+//Global Array Declaration
+int array[10];
+void DisplayArray()
+{
+    for (int i=0;i< 10;i++)
+        cout<< "Array [ "<< i<<" ] = "<< array[i]<< endl;
+}
+
+void SetDefaultValues()
+{
+    for(int i=0;i< 10;i++)
+        array[i]=-1;
+}
+
+void InsertValues()
+{
+    cout<<"Enter 10 Values "<< endl;
+    for(int i=0;i< 10;i++)
+    {
+        cin>>array[i];
+    }
+    cout<<"ntArray Values Inserted...  Successfully "<< endl;
+}
+
+void DeleteValues()
+{
+    cout<<"Enter the Index Number To Delete Value :";
+    int index;
+    cin>>index;
+    if(index>9||index<0)
+    {
+        cout<<"Invalid Index Entered-> Valid Range(0-9)"<< endl;
+        DeleteValues();// Recall The Function it self
+    }
+    else
+    {
+        array[index]=-1;
+    }
+    cout<<"ntArray Value Deleted...  Successfully "<< endl;
+}
+
+void UpdateValues()
+{
+    cout<<"Enter Index Number to Update Value :";
+    int index;
+    cin>>index;
+    if(index>9||index < 0)
+    {
+        cout<<"Invalid Index Entered-> Valid Range(0-9)"<< endl;
+        UpdateValues();// Recall The Function it self
+    }
+    else
+    {
+        cout<<"Enter the New Value For Index array[ "<< index<<" ] = ";
+        cin>>array[index];
+        cout<<"ntttArray Updated...  Successfully "<< endl;
+    }
+}
+
+int main()
+{
+    char option;
+    SetDefaultValues();
+
+    do
+    {
+        cout<<"Enter 1 to Enter  Values\nEnter 2 to Update Values \nEnter 3 to Delete Values \n \n or Enter E to EXIT \n\nEnter Option: ->  ";
+        cin>>option;
+        if(option=='1')
+        {
+            cout<<"Insert Function Called"<< endl;
+            InsertValues();
+            cout<<"Inserted Values :"<< endl;
+            DisplayArray();
+        }
+        else if(option=='2')
+        {
+            UpdateValues();
+            cout<<"Updated Array :"<< endl;
+            DisplayArray();
+        }
+        else if(option=='3')
+        {
+            DeleteValues();
+            cout<<"Array After Deleting Values :"<< endl;
+            DisplayArray();
+        }
+        else if(option!='e'&&option!='E')
+        {
+            cout<<"Select A Valid Option From Belownn";
+        }
+    }while(option!='e'&&option!='E');
+
+    system("cls");// To Clear The Screen
+    cout<<"Program Ended Press Any Key To Exit Screen.....nnnnnnnnnnnn"<< endl;
+
+    return 0;
+}

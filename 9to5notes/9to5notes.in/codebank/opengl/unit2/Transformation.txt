@@ -1,0 +1,95 @@
+#include< iostream>
+#include< GL/glut.h>
+using namespace std;
+
+int n; 
+void axes()
+{
+	for(int i=-150; i<=150; i++)
+	{
+		glColor3f(1, 1, 1);
+		glVertex2d(i, 0);
+		glVertex2d(0, i);
+	}
+}
+
+void display()
+{
+	glMatrixMode(GL_PROJECTION);
+	gluOrtho2D(-150.0, 150.0, -150.0, 150.0);
+	
+	glClear(GL_COLOR_BUFFER_BIT);
+	
+	glBegin(GL_POINTS);
+	
+	axes();
+	
+	glEnd();
+	
+	glBegin(GL_LINE_LOOP);
+	
+	glColor3f(0, 0, 1);
+    
+	glVertex2d(0, 0);
+    glVertex2d(20, 0);
+    glVertex2d(10, 20);
+	
+	glEnd();
+	
+	switch(n)
+	{
+		case 1:
+			glTranslatef(20, 20, 0);
+			glBegin(GL_LINE_LOOP);
+	
+			glColor3f(1, 0.0, 0.0);
+    
+			glVertex2d(0, 0);
+    		glVertex2d(20, 0);
+    		glVertex2d(10, 20);
+	
+			glEnd();
+			break;
+		case 2:
+			glScalef(1.5, 1.5, 0);
+			glBegin(GL_LINE_LOOP);
+	
+			glColor3f(1, 0, 0);
+    
+			glVertex2d(0, 0);
+    		glVertex2d(20, 0);
+    		glVertex2d(10, 20);
+	
+			glEnd();
+			break;
+		case 3:
+			glRotatef(10, 0, 0, 1);
+			glBegin(GL_LINE_LOOP);
+	
+			glColor3f(1, 0, 0);
+    
+			glVertex2d(0, 0);
+    		glVertex2d(20, 0);
+    		glVertex2d(10, 20);
+	
+			glEnd();
+			break;
+	}
+	
+	glFlush();
+}
+
+int main(int argc, char **argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowSize(550,550);
+	glutInitWindowPosition(200, 50);
+	
+	cout<<"Press 1 to translate\nPress 2 to scale\nPress 3 to rotate\n\nEnter your choice : ";
+	cin>>n;
+	
+	glutCreateWindow("Tranform");
+	glutDisplayFunc(display);
+	glutMainLoop();
+}  

@@ -1,0 +1,50 @@
+#include< stdio.h>
+#include< conio.h>
+#include< string.h>
+int main()
+{
+char a='a',b[20],key[5][10]={"auto\0","break\0","case\0","char\0","const\0"};
+
+int i=0,r,count=0,j,keycount[5],c=0;
+for(j=0;j< 5;j++)
+{keycount[j]=0;
+}
+FILE *f;
+f=fopen("ne.txt","r");
+if(f==NULL)
+printf("Cant open file one");
+do
+{
+a = fgetc(f);
+if(a==' ' || a== '\t' || a== '\n'|| a== EOF|| a=='('||a==')'|| a==';')
+	{
+		
+		b[i]='\0';
+		//printf("%s\n",b);
+		i=0;
+		for(j=0;j< 5;j++)
+		{
+		r=strcmp(b,key[j]);
+		if(r==0)
+		{
+			keycount[j]++;
+			break;
+		}
+		}
+	}
+else
+ 	{
+ 	//	printf("%c",a);
+      	b[i]=a;
+      	i++;
+      
+	}	
+}while(a != EOF);
+for(j=0;j< 5;j++)
+{
+printf("count of keyword %s is %d\n",key[j],keycount[j]);
+}
+//printf("no of char read %d\n",chr);
+getch();
+return 0;	
+}

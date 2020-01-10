@@ -1,0 +1,53 @@
+#include < windows.h>  
+#include < gl/glut.h>  
+#include < math.h>  
+#include < iostream.h>
+ const float PI=3.14;  
+void drawLine(double x0,double y0,double x1,double y1)
+{
+  glBegin(GL_POINTS);
+  glColor3f(1.0,1.0,1.0);
+  double m;  m=(y1-y0)/(x1-x0);
+  if(m< 1) 
+  {
+  while(x0<=x1) 
+  { 
+  glVertex2d(x0,round(y0));
+  cout<< round(y0)<< ends<< x0<< endl;
+  y0=y0+m;  
+  x0++;  
+}  
+}  
+else {  
+double m1=1/m;  
+while(y0<=y1)
+ {
+  glVertex2d(round(x0),y0);
+  y0++;
+  x0=x0+m1;  
+}  
+}  
+glEnd();
+  glFlush();  
+}  
+void display(void)  
+{  
+glClearColor(1.0,0.0,0.0,0.0);
+  glMatrixMode(GL_PROJECTION);
+  glLoadIdentity();
+  gluOrtho2D(0.0,100.0,0.0,100);
+  glClear(GL_COLOR_BUFFER_BIT);
+  glPointSize(14.0);  
+drawLine(2,3,9,8);  
+}  
+int main(int argc, char** argv)
+{
+  glutInit(&argc,argv);  
+  glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);  
+glutInitWindowSize(100,100); 
+ glutInitWindowPosition(50,50);
+ glutCreateWindow("DDA Line Drawing!");  
+glutDisplayFunc(display);
+  glutMainLoop();  
+return 0;  
+} 

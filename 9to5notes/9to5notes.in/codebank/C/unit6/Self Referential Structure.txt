@@ -1,0 +1,23 @@
+#include < stdio.h >
+#include < conio.h >
+#include < string.h >
+struct node{
+int value;
+struct node *next;
+}s1,s2,s3,*p;
+main()
+{
+p=&s1;
+s1.value=4;
+s1.next=&s2;
+s2.value=5;
+s2.next=&s3;
+s3.value=6;
+s3.next=NULL;
+while(p!=NULL)
+{
+printf("%d\n",p - > value);
+p=p - > next;
+}
+getch();
+}

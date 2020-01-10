@@ -1,0 +1,103 @@
+#include< iostream>
+#include< conio.h>
+using namespace std;
+int n,i,t,f,g,e,a[50],temp,temp1,sum1=0;
+void insertion();
+//void deletion();
+void max();
+void min();
+void sum();
+void insertion()
+{
+	cout<<"enter the position to insert an element"<< endl;
+	cin>>f;
+	cout<<"enter the values"<< endl;
+	cin>>e;
+	for(i=n-1;i>=f;i--)
+	{
+		a[i+1]=a[i];
+	}
+	n=n+1;
+	a[f]=e;
+	for(i=0;i< n;i++)
+	{
+		cout<< a[i]<< endl;
+	}
+}
+void sum()
+{
+for (i=0;i< n;i++)
+{
+	sum1=sum1+a[i];
+}
+cout<< sum1<< endl;
+}
+void max()
+{
+	for(i=0;i< n-1;i++)
+	{
+		if(a[i]>a[i+1])
+		{
+		temp=a[i];
+		a[i]=a[i+1];
+		a[i+1]=temp;
+	    }
+	}
+	cout<<"max element is:"<< a[n-1]<< endl;
+}
+void min()
+{
+	for(i=0;i< n-1;i++)
+	{
+		if(a[i]>a[i+1])
+		{
+		temp=a[i];
+		a[i]=a[i+1];
+		a[i+1]=temp;
+	    }
+	}
+	cout<<"min element is:"<< a[0]<< endl;
+}
+
+
+
+int main()
+{
+	
+	cout<<"enter number of terms"<< endl;
+	cin>>n;
+	cout<<"enter the array"<< endl;
+	for(i=0;i< n;i++)
+	{
+	cin>>a[i];	
+	}
+
+	while(1)
+	{
+		cout<<"operations of array"<< endl;
+		cout<<"1 for insertion"<< endl;
+		cout<<"2 for deletion"<< endl;
+		cout<<"3 for max element"<< endl;
+		cout<<"4 for min element"<< endl;
+		cout<<"5 for sum of a array"<< endl;
+	cout<<"enter your choice"<< endl;
+	cin>>t;
+	switch(t)
+	{
+		case 1: insertion();
+		break;
+		//case 2: deletion();
+		//break;
+		case 3: max();
+		break;
+		case 4: min();
+		break;
+		case 5: sum(); sum1=0;
+		break;
+		default :
+			cout<<"please enter the correct choice"<< endl;
+	}
+		
+	}
+	
+}

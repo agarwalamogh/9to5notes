@@ -1,0 +1,76 @@
+#include < GL/glut.h>
+#include< math.h>
+int count=2;
+int moving = 1;
+float tx=0.0, ty =0.0;
+float currentAngleOfRotation = 0.0;
+
+void display() {
+  glClear(GL_COLOR_BUFFER_BIT);
+  glMatrixMode(GL_MODELVIEW);
+  glLoadIdentity();
+  glTranslatef(tx,tx,0.0);
+  glRotatef(currentAngleOfRotation, 0.0, 0.0, 1.0);
+  glColor3f(0.5,0.3,0.5);
+
+     glRectf(-0.25, -0.25, 0.25, 0.25);
+
+  glFlush();
+ 
+  glutSwapBuffers();
+
+}
+
+void timer(int v) {
+  if (moving) 
+  {
+  	if(count%2==0)
+  	{
+  		tx+=0.01;
+    	ty+=0.01;
+	}
+	else
+	{
+	tx-=0.01;
+    ty-=0.01;
+	
+	}
+
+    glutPostRedisplay();
+}   
+   
+else
+{
+	 currentAngleOfRotation += 1.0;
+	 
+	 if(currentAngleOfRotation==360)
+	  
+	  currentAngleOfRotation -= 360.0;
+    
+	 glutPostRedisplay();
+  } 
+  glutTimerFunc(100, timer, v);
+}
+
+void mouse(int button, int state, int x, int y) {
+  if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
+    moving = 1;
+    count++;
+  } 
+  else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
+    moving = 0;
+     currentAngleOfRotation += 1.0;
+      }
+}
+
+int main(int argc, char** argv) {
+  glutInit(&argc, argv);
+  glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+  glutInitWindowPosition(80, 80);
+  glutInitWindowSize(800, 500);
+  glutCreateWindow("Spinning Square");
+  glutDisplayFunc(display);
+  glutTimerFunc(10, timer, 0);
+  glutMouseFunc(mouse);
+  glutMainLoop();
+}

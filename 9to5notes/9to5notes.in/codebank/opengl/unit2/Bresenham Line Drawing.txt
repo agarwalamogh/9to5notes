@@ -1,0 +1,58 @@
+		//BRESENHAM ALGORITHM CASE: (-1,5) to ( -8,6) 
+#include< GL/glut.h>  
+#include< stdlib.h>  
+#include< math.h>  
+//set display-window background color to white  
+void algo(double x1, double y1,double x2, double y2)  
+{  
+glBegin(GL_POINTS);  
+glVertex2d(x1,y1);  
+double dx=x2-x1;  
+double dy=y2-y1;  
+double m=dy/dx;  
+double p=2*(dy)-dx;  
+if( abs(m)< 1)  
+{  
+while(x1< x2)  
+{  
+if(p< 0)  
+{  
+   glVertex2d(x1+1,y1);   
+   p=p+2*dy;   
+   x1++;  
+}  
+else  
+{
+   glVertex2d(x1+1,y1+1);
+   p=p+2*(dy-dx);  
+   x1++;  
+   y1++;  
+}  
+}  
+}  
+glVertex2d(x2,y2);  
+glEnd();  
+glFlush();  
+}  
+ 
+void Bresenham(void)  
+{  
+glClear(GL_COLOR_BUFFER_BIT);  
+glColor3f(1.0,0.0,0.0);  
+glPointSize(4.0);  
+glClearColor(1.0,1.0,1.0,0.0);  
+//set projection paramaters  
+glMatrixMode(GL_PROJECTION);  
+glLoadIdentity();  
+gluOrtho2D(0.0,300.0,0.0,300.0);  
+algo(-1,5,-8,6);  
+}  
+main(int argc, char**argv)  
+{  
+glutInit(&argc,argv);  
+glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  
+glutInitWindowSize(400,400);  
+glutInitWindowPosition(0,0);  
+glutCreateWindow("Bres");  
+glutDisplayFunc(Bresenham); 
+ }

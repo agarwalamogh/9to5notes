@@ -1,0 +1,41 @@
+interface Shape
+{
+double area();
+}
+class Square implements Shape
+{
+double side;
+Square(double s)
+    {
+    side = s;
+    }
+public double area()
+  {
+  return side*side;
+  }
+}
+class Rectangle implements Shape
+{
+double length,breadth;
+Rectangle(double l, double b)
+  {
+  length = l;
+  breadth = b;
+  }
+public double area()
+  {
+  return (length*breadth);
+  }
+}
+class Main
+{
+public static void main(String arv[])
+  {
+  Shape obj;
+  obj = new Square(20.0);
+  System.out.println(obj.area());
+  
+  obj = new Rectangle(20.0,30.0);
+  System.out.println(obj.area());
+  }
+}

@@ -1,0 +1,23 @@
+#include< conio.h> 
+#include< stdio.h> 
+int main() 
+{ 
+int i,m,flag; 
+char st[4][6]= {"if","do","else","while"}; 
+char a[10]; 
+printf("Enter a string:"); 
+gets(a); 
+for(i=0;i< 4;i++) 
+{ m=strcmp(st[i],a); 
+if(m==1) 
+{ 
+flag==0; 
+}} 
+if(flag==0) 
+{ 
+printf("\nkeyword"); 
+} 
+else 
+{ 
+printf("\n not keyword"); 
+} 

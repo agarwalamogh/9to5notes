@@ -1,0 +1,28 @@
+/*THIS PROGRAM WILL GIVE ERROR DUE TO FINAL USED
+final method(static)-if we want to prevent a subclass from overriding a method in super class.To do this put final keyword with function declaration in super class.If one tries to override final method it leads to error.1.privatemethod of super class are automatically considered final(as we can't override them in subclass).static methods are also implicitly final.
+2.STATIC BINDING-final method declaration can never change, so all subclasses use the same method implementation and call to one can be resolved at compile time.
+3.FINAL CLASS- like final method, class can also be declared with final.final class can't be used as super class.All methods of final clss will be implicitly final.*/
+class base//superclass
+{
+final void display()
+{
+System.out.println("base method called");
+}
+}
+
+class derived extends base //subclass
+{
+void display()  //cannot override
+{
+System.out.println("base method called");
+}
+}
+
+public class finalmethod
+{
+public static void main(String[] args)
+{
+derived d=new derived();
+d.display();
+}
+}

@@ -1,0 +1,16 @@
+#include< stdio.h >
+#include< conio.h >
+#define square(x) x*x
+#define cube(x) square(x)*x
+main()
+{
+int a,b,c;
+printf("\n enter the number");
+scanf("%d",&a);
+b = square(a);
+c = cube(a);
+printf("\n the square is %d",b);
+printf("\n the cube is %d",c);
+getch();
+return 0;
+}

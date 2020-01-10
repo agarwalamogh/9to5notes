@@ -1,0 +1,52 @@
+-------------------------
+
+L E X    C O D E
+
+-------------------------
+
+ %{  
+ #include "y.tab.h" 
+ %} 
+ %% 
+ "if" { return IF; } 
+ [sS][0-9]* {return S;} 
+ "<"|">"|"=="|"!="|"<="|">=" { return RELOP; } 
+ [0-9]+ { return NUMBER; } 
+ [a-zA-Z][a-zA-Z0-9_]* { return ID; } 
+ \n { ; } 
+ . { return yytext[0]; }   
+ %% 
+ 
+ 
+-------------------------
+
+Y A C C    C O D E
+
+-------------------------
+
+ %token IF  RELOP  S  NUMBER  ID 
+ %{  
+	int count=0; 
+ %} 
+ %% 
+ stmt : if_stmt { printf("No of nested if statements=%d\n",count); exit(0);}  
+      ; 
+ if_stmt : IF '(' cond ')' if_stmt {count++;}     
+		 | S;     
+		 ; 
+ cond :  x RELOP x  
+		 ; 
+		 x : ID    
+		   | NUMBER    
+		 ; 
+%% 
+int yyerror(char *msg) 
+{  
+	printf("Invalid Expression\n");   
+	exit(0); 
+} 
+main () 
+{  
+	printf("Enter the statement");  
+	yyparse(); 
+}  

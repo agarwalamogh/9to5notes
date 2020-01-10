@@ -1,0 +1,15 @@
+#include< stdio.h> 
+#include< stdlib.h> 
+#include< unistd.h> 
+#include< string.h> 
+int main() 
+{  
+    FILE *rd;  
+	char buffer[500];  
+	int n;  
+	sprintf(buffer,"name first");  
+	rd=popen("wc -c","w");  
+	if(rd !=NULL)  
+	   fwrite(buffer,sizeof(char),strlen(buffer),rd);  
+	pclose(rd); //required 
+}

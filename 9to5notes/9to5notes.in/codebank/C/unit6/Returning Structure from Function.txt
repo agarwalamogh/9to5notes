@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct student display(struct student s3);
+struct student{
+int rollno;
+char name[10];
+int regno;
+}s1,s2;
+main()
+{
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+s2=display(s1);
+printf("rollno is %d\n",s2.rollno);
+printf("regno is %d\n",s2.regno);
+printf("name is %s\n",s2.name);
+getch();
+}
+struct student display(struct student s3)
+{
+s3.rollno=4;
+s3.regno=0;
+strcpy(s3.name,"isha");
+return s3;
+}

@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<script type="b0ce78fd2a4c247de4dd1837-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<script type="b0ce78fd2a4c247de4dd1837-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="b0ce78fd2a4c247de4dd1837-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="b0ce78fd2a4c247de4dd1837-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+
+<script src="prism-2.html" type="b0ce78fd2a4c247de4dd1837-text/javascript"></script>
+<title>c++</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C++ </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Constructor, Destructor And File Handling </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+C++ Sequential IO Operations with Files </div>
+<div class="col">
+<a href="c%2b%2b/unit3/C%2b%2b%20Sequential%20IO%20Operations%20with%20Files.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">C++ Sequential IO Operations with Files</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< stdlib.h>
+#include< fstream>
+#include< conio.h>
+using namespace std;
+
+int main()
+{
+	char fname[20], ch;
+	ifstream fin;      // create an input stream
+
+
+	cout<<"Enter the name of the file: ";
+	cin.get(fname, 20);
+	cin.get(ch);
+
+	fin.open(fname, ios::in);       // open file
+	if(!fin)           // if fin stores zero i.e., false value
+	{
+		cout<<"Error occurred in opening the file..!!\n";
+		cout<<"Press any key to exit...\n";
+		getch();
+		exit(1);
+	}
+
+	while(fin)                  // fin will be 0 when eof is reached
+	{
+		fin.get(ch);         // read a character
+		cout<< ch;       // display the character
+	}
+
+	cout<<"\nPress any key to exit...\n";
+	fin.close();
+	getch();
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Calculating Area of Rectangle using Constructors </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Calculating%20Area%20of%20Rectangle%20using%20Constructors.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Calculating Area of Rectangle using Constructors</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Area
+{
+    private:
+       int length;
+       int breadth;
+
+    public:
+       // Constructor
+       Area(): length(5), breadth(2){ }
+
+       void GetLength()
+       {
+           cout << "Enter length and breadth respectively: ";
+           cin >> length >> breadth;
+       }
+
+       int AreaCalculation() {  return (length * breadth);  }
+
+       void DisplayArea(int temp)
+       {
+           cout << "Area: " << temp;
+       }
+};
+
+int main()
+{
+    Area A1, A2;
+    int temp;
+
+    A1.GetLength();
+    temp = A1.AreaCalculation();
+    A1.DisplayArea(temp);
+
+    cout << endl << "Default Area when value is not taken from user" << endl;
+
+    temp = A2.AreaCalculation();
+    A2.DisplayArea(temp);
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Classes and Objects </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Classes%20and%20Objects.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Classes and Objects</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Test
+{
+    private:
+        int data1;
+        float data2;
+
+    public:
+       
+       void insertIntegerData(int d)
+       {
+          data1 = d;
+          cout << "Number: " << data1;
+        }
+
+       float insertFloatData()
+       {
+           cout << "\nEnter data: ";
+           cin >> data2;
+           return data2;
+        }
+};
+
+ int main()
+ {
+      Test o1, o2;
+      float secondDataOfObject2;
+
+      o1.insertIntegerData(12);
+      secondDataOfObject2 = o2.insertFloatData();
+
+      cout << "You entered " << secondDataOfObject2;
+      return 0;
+ }
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Constructor Overloading </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Constructor%20Overloading.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Constructor Overloading</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Area
+{
+    private:
+       int length;
+       int breadth;
+
+    public:
+       // Constructor with no arguments
+       Area(): length(5), breadth(2) { }
+
+       // Constructor with two arguments
+       Area(int l, int b): length(l), breadth(b){ }
+
+       void GetLength()
+       {
+           cout << "Enter length and breadth respectively: ";
+           cin >> length >> breadth;
+       }
+
+       int AreaCalculation() {  return length * breadth;  }
+
+       void DisplayArea(int temp)
+       {
+           cout << "Area: " << temp << endl;
+       }
+};
+
+int main()
+{
+    Area A1, A2(2, 1);
+    int temp;
+
+    cout << "Default Area when no argument is passed." << endl;
+    temp = A1.AreaCalculation();
+    A1.DisplayArea(temp);
+
+    cout << "Area when (2,1) is passed as argument." << endl;
+    temp = A2.AreaCalculation();
+    A2.DisplayArea(temp);
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+ </div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Constructor and Destructor </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Constructor%20and%20Destructor.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Constructor and Destructor</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream> 
+using namespace std;
+ 
+class Marks
+{
+public:
+   int maths;
+   int science;
+   
+   //constructor
+   Marks() {
+      cout << "Inside Constructor"<< endl;
+      cout << "C++ Object created"<< endl;
+   }
+	
+   //Destructor
+   ~Marks() {
+      cout << "Inside Destructor"<< endl;
+      cout << "C++ Object destructed"<< endl;
+   }
+};
+
+int main( )
+{
+   Marks m1;
+   Marks m2;
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Creating a File using File Handling </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Creating%20a%20File%20using%20File%20Handling.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Creating a File using File Handling</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < fstream>
+ 
+using namespace std;
+ 
+int main()
+{
+   fstream file; //object of fstream class
+    
+   //opening file "sample.txt" in out(write) mode
+   file.open("sample.txt",ios::out);
+    
+   if(!file)
+   {
+       cout<<"Error in creating file!!!";
+       return 0;
+   }
+    
+   cout<<"File created successfully.";
+    
+   //closing the file
+   file.close();
+    
+   return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Reading and Writing on a File </div>
+<div class="col">
+<a href="c%2b%2b/unit3/Reading%20and%20Writing%20on%20a%20File.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Reading and Writing on a File</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> // Create a file named “example.txt”
+
+
+#include < iostream>
+#include < fstream>
+
+using namespace std;
+
+int main(){
+
+  char text[200];
+
+  fstream file;
+  file.open ("example.txt", ios::out | ios::in );
+
+  cout << "Write text to be written on file." << endl;
+  cin.getline(text, sizeof(text));
+
+  // Writing on file
+  file << text << endl;
+
+  // Reding from file
+  file >> text;
+  cout << text << endl;
+
+  //closing the file
+  file.close();
+  return 0;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-b0ce78fd2a4c247de4dd1837-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="b0ce78fd2a4c247de4dd1837-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="b0ce78fd2a4c247de4dd1837-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="b0ce78fd2a4c247de4dd1837-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:42 GMT -->
+</html>

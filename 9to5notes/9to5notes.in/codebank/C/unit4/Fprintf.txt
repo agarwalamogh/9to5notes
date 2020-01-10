@@ -1,0 +1,21 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp;
+int n;
+char name[10];
+fp=fopen("a.txt","w");
+printf("enter your name");
+fflush(stdin);
+gets(name);
+fprintf(fp,"%s",name);
+fclose(fp);
+fp=fopen("a.txt","r");
+while(fscanf(fp,"%s",name)!=EOF)
+{
+printf("%s",name);
+}
+fclose(fp);
+getch();
+}

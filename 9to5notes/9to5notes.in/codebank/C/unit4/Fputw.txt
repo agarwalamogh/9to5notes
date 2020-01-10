@@ -1,0 +1,17 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fptr;
+int i,n;
+clrscr();
+fptr=fopen("b.C","w");
+for(i=1;i<=10;i++)
+{
+printf("enter number");
+scanf("%d",&n);
+putw(n,fptr);
+}
+fclose(fptr);
+getch();
+}

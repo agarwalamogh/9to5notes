@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/oracle1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:09:58 GMT -->
+<head>
+<title>How To Install Oracle Database 11g On Windows</title>
+<link rel="stylesheet" type="text/css" href="artcss.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.rvps2, li.rvps2, div.rvps2
+	{mso-style-name:rvps2;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:9.75pt;
+	margin-left:0in;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.rvps3, li.rvps3, div.rvps3
+	{mso-style-name:rvps3;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:9.75pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.rvps4, li.rvps4, div.rvps4
+	{mso-style-name:rvps4;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:9.75pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.rvts6
+	{mso-style-name:rvts6;
+	color:white;
+	font-weight:bold;}
+span.rvts7
+	{mso-style-name:rvts7;
+	font-weight:bold;}
+span.rvts9
+	{mso-style-name:rvts9;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+span.rvts10
+	{mso-style-name:rvts10;
+	font-family:"Calibri",sans-serif;}
+span.rvts11
+	{mso-style-name:rvts11;
+	font-family:"Calibri",sans-serif;
+	color:#004DBB;}
+span.rvts12
+	{mso-style-name:rvts12;
+	font-family:"Calibri",sans-serif;}
+span.rvts13
+	{mso-style-name:rvts13;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+span.rvts14
+	{mso-style-name:rvts14;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+span.rvts15
+	{mso-style-name:rvts15;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+
+</style>
+</head>
+<body>
+<div class="picture"></div>
+<div class="a">
+<svg width="46px" height="46px" viewBox="0 0 611.997 611.998">
+<path class="a" d="M511.114,300.251c-9.94,0-17.638,7.663-17.638,17.651v241.105H368.401v-98.453c0-9.236-7.697-17.31-17.002-17.31h-90.435
+			c-9.948,0-17.96,8.073-17.96,17.31v98.453h-124.76v-233.1c0-9.306-7.69-17.036-17.638-17.036c-9.298,0-16.995,7.73-16.995,17.036
+			v250.752c0,9.305,7.697,17.036,16.995,17.036h160.358c9.298,0,16.995-7.731,16.995-17.036v-98.454h55.801v98.454
+			c0,9.305,7.697,17.036,17.639,17.036h159.715c9.299,0,16.995-7.731,16.995-17.036V317.903
+			C528.109,307.915,520.413,300.251,511.114,300.251z M607.003,314.003L467.819,174.225V78.919c0-9.921-8.019-17.583-17.96-17.583c-9.305,0-17.001,7.663-17.001,17.583v60.345
+			L318.046,23.774c-3.518-3.558-7.697-5.474-11.864-5.474c-4.81,0-8.983,1.984-12.507,5.474L5.361,312.087
+			c-6.917,6.91-7.375,17.994,0,24.357c6.411,7.389,17.454,6.91,24.371,0l276.45-275.793l275.807,278.393
+			c2.873,2.874,7.054,4.516,12.507,4.516c4.81,0,8.976-1.642,12.507-4.516C613.42,332.613,613.899,320.982,607.003,314.003z" />
+</svg>
+</div>
+<div class="back">
+<svg width="38px" height="38px" viewBox="0 0 309.143 309.143">
+<path d="M112.855,154.571L240.481,26.946c2.929-2.929,2.929-7.678,0-10.606L226.339,2.197
+	C224.933,0.79,223.025,0,221.036,0c-1.989,0-3.897,0.79-5.303,2.197L68.661,149.268c-2.929,2.929-2.929,7.678,0,10.606
+	l147.071,147.071c1.406,1.407,3.314,2.197,5.303,2.197c1.989,0,3.897-0.79,5.303-2.197l14.142-14.143
+	c2.929-2.929,2.929-7.678,0-10.606L112.855,154.571z" />
+</svg>
+</div>
+<div class="howto">
+<h1>HOW &nbspTO</h1>
+</div>
+<div class="saarpn"><p>&nbsp&nbsp&nbsp&nbspS&nbspA&nbspA&nbspR&nbspP&nbspN</p></div>
+<div class="tag"><h1>Oracle</h1></div>
+<div class="page1">
+<div class=WordSection1>
+<p class=rvps2><span class=rvts6><span style='font-size:18.0pt;font-family:
+"Arial",sans-serif;text-decoration:none'>&nbsp;</span></span></p>
+<p class=rvps2><span class=rvts6><span style='font-size:18.0pt;font-family:
+"Arial",sans-serif;text-decoration:none'>&nbsp;</span></span></p>
+<p class=rvps2><span class=rvts6><span style='font-size:18.0pt;font-family:
+"Arial",sans-serif;text-decoration:none'>&nbsp;</span></span></p>
+<p class=rvps2><span class=rvts6><span style='font-size:18.0pt;font-family:
+"Arial",sans-serif;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span class=rvts7><span style='font-size:22.0pt;font-family:"Century Gothic",sans-serif;
+color:black;text-decoration:none'>How To Install Oracle Database 11g On Windows</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts11><span style='font-size:48.0pt;font-family:"Century Gothic",sans-serif;color:black'>T</span></span><span class=rvts12><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>o</span></span><span class=rvts10><span style='font-size:16.0pt;
+font-family:"Century Gothic",sans-serif;color:black'>&nbsp; install the Oracle
+software, you must use the Oracle Universal installer.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>1</span></span><span class=rvts13><span style='font-size:24.0pt;font-family:"Century Gothic",sans-serif;color:#92D050'>.</span></span><span class=rvts10><span style='font-size:11.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>&nbsp;</span></span><span class=rvts10><span style='font-size:
+16.0pt;font-family:"Century Gothic",sans-serif;color:black'> For this
+installation, you need either the DVDs or a downloaded version of the DVDs. In
+this tutorial, you install from the downloaded version. From the directory
+where the DVD files were unzipped, open Windows Explorer and double-click on
+setup.exe from the \db\Disk1 directory.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>2.</span><span style='color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>The product you want to install is Oracle Database 11g. Make sure
+the product is selected and click Next.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=449 id="Picture 9" src="orac_files/image001.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>3.</span></span><span class=rvts13><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;color:#92D050'>
+</span></span><span class=rvts10><span style='font-size:16.0pt;font-family:
+"Century Gothic",sans-serif;color:black'>You will perform a basic installation
+with a starter database. Enter orcl for the Global Database Name and oracle for
+Database Password and Confirm Password. Then, click Next.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+16.0pt;font-family:"Century Gothic",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=451 id="Picture 8" src="orac_files/image002.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>4.</span></span><span class=rvts13><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>Oracle Configuration Manager allows you to associate your
+configuration information with your Metalink account. You can choose to enable
+it on this window. Then, click Next.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=457 id="Picture 7" src="orac_files/image003.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>5</span></span><span class=rvts13><span style='font-size:24.0pt;font-family:"Century Gothic",sans-serif;color:#92D050'>.</span></span><span class=rvts13><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;
+font-family:"Century Gothic",sans-serif;color:black'>Review the Summary window
+to verify what is to be installed. Then, click Install.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=458 id="Picture 6" src="orac_files/image004.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>6.</span><span style='color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>The progress window appears.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=457 id="Picture 5" src="orac_files/image005.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>7.</span><span style='color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>The Configuration Assistants window appears.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=457 id="Picture 4" src="orac_files/image006.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>8.</span><span style='color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'>Your database is now being created.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=576 height=400 id="Picture 3" src="orac_files/image007.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts13><span style='font-size:24.0pt;color:#92D050'>9</span></span><span class=rvts13><span style='font-size:24.0pt;font-family:"Century Gothic",sans-serif;color:#92D050'>.</span></span><span class=rvts13><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;
+font-family:"Century Gothic",sans-serif;color:black'>When the database has been
+created, you can unlock the users you want to use. Click OK.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'><img width=479 height=533 id="Picture 2" src="orac_files/image008.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts14><span style='font-size:24.0pt;color:#92D050'>10</span></span><span class=rvts14><span style='font-size:24.0pt;font-family:"Century Gothic",sans-serif;color:#92D050'>.</span></span><span class=rvts14><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif;
+color:black'> </span></span><span class=rvts10><span style='font-size:16.0pt;
+font-family:"Century Gothic",sans-serif;color:black'>Click Exit. Click Yes to
+confirm exit.</span></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps4 align=center style='margin-left:1.75pt;text-align:center;
+text-indent:-1.75pt'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:black'><img width=576 height=460 id="Picture 1" src="orac_files/image009.jpg"></span></p>
+<p class=rvps3 align=center style='text-align:center'><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:black'>&nbsp;</span></p>
+<p class=rvps3 align=center style='text-align:center'><span class=rvts15><span style='font-size:20.0pt;color:#00B050'>All Done </span></span></p>
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+</div>
+</div>
+<div class="circle1">
+</div>
+<div class="circle2">
+</div>
+<script src="jquery-3.1.1.min.js" type="c39a8676d72681e40048a468-text/javascript"></script>
+<script type="c39a8676d72681e40048a468-text/javascript">
+$(window).ready(function(){
+	    $('.circle1').hide();
+	    $('.circle2').hide();});
+$(window).scroll(function(){
+	    var wScroll=$(window).scrollTop();
+	    $('.howto').css({
+	   'transform':'translate(0px, -'+ wScroll/2+'%)'});
+	   $('.saarpn').css({
+	   'transform':'translate(0px, -'+ wScroll/15+'%)'
+});
+        if ($(this).scrollTop() > 200) {
+            
+	    $('.circle1').fadeIn();
+	    $('.circle2').fadeIn();
+		$('.a').addClass('filler');
+		$('.back').addClass('filler');
+        } 
+	else {
+           
+	    $('.circle1').fadeOut();
+	    $('.circle2').fadeOut();
+	    $('.a').removeClass('filler');
+		$('.back').removeClass('filler');
+	}
+});
+function scrollWin() {
+    window.scrollBy(0, 230);
+}
+
+function scrollWin1() {
+    window.scrollBy(0, -230);
+}
+$(document).ready(function(){
+    $(".circle1").click(function(){
+        window.scrollWin();
+    });
+    $(".circle2").click(function(){
+        window.scrollWin1();
+    });
+});
+
+function resizeIframe(obj) {
+obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+
+</script>
+<script src="../../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c39a8676d72681e40048a468-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/oracle1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:10:10 GMT -->
+</html>

@@ -1,0 +1,19 @@
+#include < stdio.h >
+int sumDigits();
+main()
+{
+    int sum = sumDigits();
+    printf("%d\n", sum);
+    return sum;
+}
+
+int sumDigits()
+{
+    int sum = 0;
+    int digit;
+    for(digit = 0; digit <= 9; ++digit)
+    {
+        sum += digit;
+    }
+    return sum;
+}

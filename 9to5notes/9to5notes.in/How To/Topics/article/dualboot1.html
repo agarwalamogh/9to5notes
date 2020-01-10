@@ -1,0 +1,142 @@
+<html>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/dualboot1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:08 GMT -->
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+</head>
+<body lang=EN-US>
+<div class=WordSection1>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:22.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:22.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:22.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>How
+TO Dual Boot Kali with Windows</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:14.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:48.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>I</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>nstalling
+Kali alongside a Windows installation can be quite useful. However, you need to
+exercise caution during the setup process. First, make sure that you have
+backed up any important data on your Windows installation. Since you will be
+modifying your hard drive, you will want to store this backup on external
+media. Once you have completed the backup, we recommend you peruse Kali Linux
+Hard Disk Install, which explains the normal procedure for a basic Kali install.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>In
+our example, we will be installing Kali Linux alongside an installation of
+Windows 7, which is currently taking up 100% of the disk space in our computer.
+We will start by resizing our current Windows partition to occupy less space
+and then proceed to install Kali Linux in the newly-created empty partition.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Download
+Kali Linux and either burn the ISO to DVD, or prepare a USB stick with Kali
+linux Live as the installation medium. If you do not have a DVD or USB port on
+your computer, check out the Kali Linux Network Install. Ensure you have:</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#00B0F0'>Requirement</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Minimum
+of 20 GB free disk space on Windows</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>2.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>CD-DVD
+/ USB boot support</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#00B0F0'>Preparing for the Installation</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Download
+Kali Linux.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>2.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Burn
+The Kali Linux ISO to DVD or copy Kali Linux Live to USB.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>3.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Ensure
+that your computer is set to boot from CD / USB in your BIOS.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#00B0F0'>Dual Boot Installation Procedure</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>To
+start your installation, boot with your chosen installation medium. You should
+be greeted with the Kali Boot screen. Select <b>Live</b>, and you should be
+booted into the Kali Linux default desktop.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>2.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Now
+launch the <b>gparted </b>program. We will use <b>gparted</b> to shrink the
+existing Windows partition to give us enough room to install Kali Linux.</span></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif'><img width=576 height=432 id="Picture 1" src="dualboot1_files/image001.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>3.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Select
+your Windows partition. Depending on your system, it will usually be the
+second, larger partition. In our example, there are two partitions; the first
+is the System Recovery partition, and Windows is actually installed in
+/dev/sda2. Resize your Windows partition and leave enough space (20 GB minimum)
+for the Kali installation.</span></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif'><img width=576 height=432 id="Picture 2" src="dualboot1_files/image002.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>4.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Once
+you have resized your Windows partition, ensure you <u>Apply All Operations</u>
+on the hard disk. Exit <b>gparted</b> and <b>reboot.</b></span></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif'><img width=576 height=433 id="Picture 3" src="dualboot1_files/image003.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#00B0F0'>Kali Linux Installation Procedure</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>The
+installation procedure from this point onwards is similar to a Kali Linux Hard
+Disk install, until the point of the partitioning, where you need to select   <u>Guided
+– use the largest</u> <u>continuous free space</u>   that you created earlier
+with gparted.</span></p>
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><span style='font-size:16.0pt;font-family:"Century Gothic",sans-serif'><img width=576 height=432 id="Picture 4" src="dualboot1_files/image004.jpg"></span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>2.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Once
+the installation is done, reboot. You should be greeted with a GRUB boot menu,
+which will allow you to boot either into Kali or Windows.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:#00B0F0'>Post Installation</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:24.0pt;line-height:115%;color:#00B0F0'>1.</span><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>Now
+that you have completed installing Kali Linux, it is time to customize your
+system.</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><b><span lang=EN style='font-size:24.0pt;line-height:115%;font-family:"Century Gothic",sans-serif;
+color:black'>All Done</span></b></p>
+<p class=MsoNormal align=center style='text-align:center;text-autospace:none'><span lang=EN style='font-size:16.0pt;line-height:115%;font-family:"Century Gothic",sans-serif'>&nbsp;</span></p>
+<p class=MsoNormal><span style='font-size:16.0pt;line-height:115%;font-family:
+"Century Gothic",sans-serif'>                                                       
+</span></p>
+</div>
+</body>
+
+<!-- Mirrored from 9to5notes.in/How To/Topics/article/dualboot1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:08 GMT -->
+</html>

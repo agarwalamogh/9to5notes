@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class MyEncryptedMessage
+{
+public static void main(String[] ar)
+{
+Scanner s=new Scanner(System.in);
+String msg=s.nextLine();
+System.out.println("Original Message "+msg);
+char[] c=msg.toCharArray();
+for(int i=0;i< c.length;i++)
+c[i]=(char)(c[i]+1);
+String e_msg=new String(c);
+System.out.println("Encrypted Message "+e_msg);
+
+c=e_msg.toCharArray();
+for(int i=0;i< c.length;i++)
+c[i]=(char)(c[i]-1);
+String d_msg=new String(c);
+System.out.println("Decrypted Message "+d_msg);
+}
+}

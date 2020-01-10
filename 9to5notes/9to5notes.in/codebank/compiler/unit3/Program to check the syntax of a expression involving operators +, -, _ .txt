@@ -1,0 +1,48 @@
+-------------------------
+
+L E X    C O D E
+
+-------------------------
+
+ %{  
+ #include "y.tab.h"  
+ %} 
+ %% 
+ [0-9]+ { return NUMBER; } 
+ [a-zA-Z][a-zA-Z0-9_]* { return ID; } 
+ \n { return NL ;} 
+ . { return yytext[0]; } 
+ %%  
+ 
+ 
+-------------------------
+
+Y A C C    C O D E
+
+-------------------------
+
+ %token NUMBER ID NL 
+ %left '+' '-' 
+ %left '*' '/' 
+ %% 
+ stmt : exp NL { printf("Valid Expression"); exit(0);}  
+      ;  
+ exp :    exp '+' exp  
+        | exp '-' exp  
+		| exp '*' exp   
+		| exp '/' exp  
+		| '(' exp ')'  
+		| ID  
+		| NUMBER  
+		; 
+%% 
+int yyerror(char *msg) 
+{  
+	printf("Invalid Expression\n");    
+	exit(0); 
+} 
+main () 
+{  
+	printf("Enter the expression\n");   
+	yyparse(); 
+}  

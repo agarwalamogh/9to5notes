@@ -1,0 +1,36 @@
+abstract class Demo
+{
+abstract void show();
+}
+class DemoB
+{
+void meth(Demo x)
+  {
+  x.show();
+  System.out.println("meth");
+  }
+}
+class DemoA
+{
+public static void main(String arv[])
+  {
+  /*DemoB obj = new DemoB();
+  obj.meth(new Demo() 
+              {
+              void show()
+                {
+                System.out.println("Annonymous class");
+                }
+              }
+          );
+  */
+  Demo obj = new Demo() 
+              {
+              void show()
+                {
+                System.out.println("Annonymous class");
+                }
+              };
+  obj.show();
+  }
+}

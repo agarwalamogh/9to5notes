@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=opengl&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<script type="e76ddbb980827486aa07dbb4-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<script type="e76ddbb980827486aa07dbb4-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="e76ddbb980827486aa07dbb4-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="e76ddbb980827486aa07dbb4-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+
+<script src="prism-2.html" type="e76ddbb980827486aa07dbb4-text/javascript"></script>
+<title>opengl</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+Opengl </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Bitmap ,Lighting And Shading </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Bitmap </div>
+<div class="col">
+<a href="opengl/unit6/Bitmap.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Bitmap</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < GL/glut.h>
+#include < GL/glu.h>
+#include < GL/gl.h>
+#include< math.h>
+
+// A fish bitmap, size is 27x11, but all rows must have a multiple of 8 bits,
+// so we define it like it is 32x11.
+GLubyte fish[] = {
+  0x00, 0x60, 0x01, 0x00,
+  0x00, 0x90, 0x01, 0x00,
+  0x03, 0xf8, 0x02, 0x80,
+  0x1c, 0x37, 0xe4, 0x40,
+  0x20, 0x40, 0x90, 0x40,
+  0xc0, 0x40, 0x78, 0x80,
+  0x41, 0x37, 0x84, 0x80,
+  0x1c, 0x1a, 0x04, 0x80,
+  0x03, 0xe2, 0x02, 0x40,
+  0x00, 0x11, 0x01, 0x40,
+  0x00, 0x0f, 0x00, 0xe0,
+};
+
+
+void display() {
+  glClear(GL_COLOR_BUFFER_BIT);
+    glBitmap(27, 11, -15, -15, 0, 0, fish);
+//    glBitmap(27, 11, -20, -25, 1, 0, fish);
+  glFlush();
+}
+
+ //The usual main() for a GLUT application.
+int main(int argc, char **argv) {
+  glutInit(&argc, argv);
+  glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+  glutInitWindowSize(400, 300);
+  glutCreateWindow("Fishies");
+  //glutReshapeFunc(reshape);
+  glutDisplayFunc(display);
+  glutMainLoop();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e76ddbb980827486aa07dbb4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Lighting and Shading </div>
+<div class="col">
+<a href="opengl/unit6/Lighting%20and%20Shading.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Lighting and Shading</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< gl/GLUT.h>
+#include< stdio.h>
+void display()
+{
+
+
+glOrtho(-100,100,-100,100,-100,100);
+
+
+
+GLfloat direction[]={1.0,0.0,-1.0,0.0};
+
+GLfloat black[]={0.0,0.0,0.0};
+GLfloat white[]={1.0,1.0,1.0};
+GLfloat yellow[]={1.0,1.0,0.0};
+GLfloat cyan[]={1.0,0.0,1.0};
+
+//glMaterialfv(GL_FRONT,GL_AMBIENT_AND_DIFFUSE,yellow);
+//glMaterialfv(GL_FRONT,SPECULAR,white);
+glMaterialfv(GL_FRONT,GL_AMBIENT,yellow);
+//glMaterialfv(GL_FRONT,GL_DIFFUSE,yellow);
+
+glMaterialf(GL_FRONT,GL_SHININESS,55);
+
+glLightfv(GL_LIGHT0,GL_AMBIENT,black);
+//glLightfv(GL_LIGHT0,GL_DIFFUSE,cyan);
+
+glLightfv(GL_LIGHT0,GL_POSITION,direction);
+
+glEnable(GL_DEPTH_TEST);
+glEnable(GL_LIGHTING);
+glEnable(GL_LIGHT0);
+glClear(GL_DEPTH_BUFFER_BIT); 
+
+
+glutSolidTeapot(50);
+glFlush();
+}
+int main(int argc,char** argv)
+{
+glutInit(&argc,argv);
+glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE|GLUT_DEPTH);
+glutInitWindowSize(500,400);
+glutInitWindowPosition(40,50);
+glutCreateWindow("lighting");
+glutDisplayFunc(display);
+glutMainLoop();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e76ddbb980827486aa07dbb4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Lighting </div>
+<div class="col">
+<a href="opengl/unit6/Lighting.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Lighting</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< GL/gl.h>
+#include< GL/glu.h>
+#include< GL/glut.h>
+void display()
+{
+glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+//glPushMatrix();
+glutSolidSphere(0.2,30,30);
+//glPopMatrix();
+	
+//glPushMatrix();
+glTranslatef(0.3,0.0,0.0);
+glRotatef(45,0,1,0);
+glutSolidCone(0.1,0.5,10,15);
+//glPopMatrix();
+glFlush();
+}
+void init()
+{
+GLfloat black[]={0.0,0.0,0.0,1.0};
+GLfloat white[]={1.0,1.0,1.0,1.0};
+GLfloat yellow[]={1.0,1.0,0.0,1.0};
+GLfloat cyan[]={0.0,1.0,1.0,1.0};
+GLfloat direction[]={1.0,1.0,0.0,0.0};
+	
+glMaterialfv(GL_FRONT,GL_AMBIENT_AND_DIFFUSE,cyan);
+glMaterialfv(GL_FRONT,GL_SPECULAR,white);
+glMaterialf(GL_FRONT,GL_SHININESS,45);
+	
+glLightfv(GL_LIGHT0,GL_AMBIENT,black);
+glLightfv(GL_LIGHT0,GL_DIFFUSE,yellow);
+glLightfv(GL_LIGHT0,GL_SPECULAR,white);
+glLightfv(GL_LIGHT0,GL_POSITION,direction);
+	
+glEnable(GL_LIGHTING);
+glEnable(GL_LIGHT0);
+glEnable(GL_DEPTH_TEST);
+}
+main()
+{
+glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE|GLUT_DEPTH);
+glutInitWindowSize(500,500);
+glutInitWindowPosition(50,50);
+glutCreateWindow("lighting");
+glutDisplayFunc(display);
+init();
+glutMainLoop();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e76ddbb980827486aa07dbb4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Other special function </div>
+<div class="col">
+<a href="opengl/unit6/Other%20special%20function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Other special function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < GL\glut.h>
+
+GLfloat xRotated, yRotated, zRotated,xs=1;
+GLdouble size=1;
+
+
+void display(void)
+{
+
+    glMatrixMode(GL_MODELVIEW);
+    // clear the drawing buffer.
+    glClear(GL_COLOR_BUFFER_BIT);
+    // clear the identity matrix.
+    glLoadIdentity();
+    // traslate the draw by z = -4.0
+    // Note this when you decrease z like -8.0 the drawing will looks far , or smaller.
+    glTranslatef(0.0,0.0,-4.5);
+    // Red color used to draw.
+    glColor3f(0.8, 0.2, 0.1); 
+    // changing in transformation matrix.
+    // rotation about X axis
+    glRotatef(xRotated,1.0,0.0,0.0);
+    // rotation about Y axis
+    glRotatef(yRotated,0.0,1.0,0.0);
+    // rotation about Z axis
+    glRotatef(zRotated,0.0,0.0,1.0);
+    // scaling transfomation 
+    glScalef(xs,xs,xs);
+    // built-in (glut library) function , draw you a Teapot.
+    glutSolidTeapot(size);
+    // Flush buffers to screen
+     
+    glFlush();        
+    // sawp buffers called because we are using double buffering 
+   // glutSwapBuffers();
+}
+
+void keyboard(unsigned char key, int x, int y)
+{
+
+	if(key=='1')
+	{
+		yRotated += 1;	
+		display();
+//		glutPostRedisplay();
+	}
+	else if(key=='2')
+	{
+		yRotated -= 1;	
+		display();
+	}
+		else if(key=='3')
+	{
+		xs += .1;	
+		display();
+	}
+		else if(key=='4')
+	{
+		xs -= .05;	
+		display();
+	}
+}
+
+void reshapeFunc(int x, int y)
+{
+    if (y == 0 || x == 0) return;  //Nothing is visible then, so return
+    //Set a new projection matrix
+    glMatrixMode(GL_PROJECTION);  
+//    glLoadIdentity();
+    //Angle of view:40 degrees
+    //Near clipping plane distance: 0.5
+    //Far clipping plane distance: 20.0
+     
+    gluPerspective(40.0,(GLdouble)x/(GLdouble)y,0.5,20.0);
+ 
+    glViewport(0,0,x,y);  //Use the whole window for rendering
+}
+
+void idleFunc(void)
+{
+ 
+     yRotated += 0.01;
+     
+    display();
+}
+
+
+void SpecialInput(int key, int x, int y)
+{
+	if(key==GLUT_KEY_F1)
+	{
+		yRotated += 1;	
+		display();
+//		glutPostRedisplay();
+	}
+	else if(key==GLUT_KEY_F2)
+	{
+		yRotated -= 1;	
+		display();
+	}
+		else if(key==GLUT_KEY_F3)
+	{
+		xs += .1;	
+		display();
+	}
+		else if(key==GLUT_KEY_F4)
+	{
+		xs -= .05;	
+		display();
+	}
+
+display();
+}
+
+
+int main (int argc, char **argv)
+{
+    //Initialize GLUT
+    glutInit(&argc, argv);
+    //double buffering used to avoid flickering problem in animation
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);  
+    // window size
+    glutInitWindowSize(400,350);
+    // create the window 
+    glutCreateWindow("Teapot Rotating Animation");
+    glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
+    xRotated = yRotated = zRotated = 30.0;
+     xRotated=33;
+     yRotated=40;
+    glClearColor(0.0,0.0,0.0,0.0);
+    //Assign  the function used in events
+    glutDisplayFunc(display);
+    glutKeyboardFunc(keyboard);
+    
+   glutReshapeFunc(reshapeFunc);
+   glutSpecialFunc(SpecialInput);
+    glutIdleFunc(idleFunc);
+    
+    //Let start glut loop
+    glutMainLoop();
+    return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e76ddbb980827486aa07dbb4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="e76ddbb980827486aa07dbb4-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="e76ddbb980827486aa07dbb4-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e76ddbb980827486aa07dbb4-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=opengl&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:29 GMT -->
+</html>

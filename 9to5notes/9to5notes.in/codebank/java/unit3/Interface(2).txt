@@ -1,0 +1,27 @@
+interface Predicate
+{
+boolean test(String s);
+}
+class Demo
+{
+public static void main(String arv[])
+  {
+  String s ="abncsdmskls";
+  Predicate p = new Predicate()
+                  {
+                  public boolean test(String s)
+                    {
+                    char c[]=s.toCharArray();
+                    for(int i=0; i< c.length;i++)
+                        {
+                        if(c[i] == 'c')
+                            return true;
+                        }
+                    return false;
+                    
+                    }
+                  };
+                  
+  
+  }
+}

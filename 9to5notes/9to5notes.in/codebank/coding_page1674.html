@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=operating+system&unitid=unit1 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<script type="858a4e2007ceb9158726471e-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<script type="858a4e2007ceb9158726471e-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="858a4e2007ceb9158726471e-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="858a4e2007ceb9158726471e-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="858a4e2007ceb9158726471e-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="858a4e2007ceb9158726471e-text/javascript"></script>
+
+<script src="prism-2.html" type="858a4e2007ceb9158726471e-text/javascript"></script>
+<title>operating system</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+Operating System </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+System Calls And CPU Scheduling </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+CPU Scheduling :First come first serve </div>
+<div class="col">
+<a href="operating%20system/unit1/CPU%20Scheduling%20_First%20come%20first%20serve.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">CPU Scheduling :First come first serve</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code>  #include< stdio.h>
+#include< math.h> 
+#include< stdlib.h> 
+void main() 
+{ 
+int p[20],b[20],w[20],t[20],i,v,n,at; 
+int wt=0; 
+float tw,tr; 
+printf("Enter the number of process : "); 
+scanf("%d",&n); 
+printf("enter CPU burst time : "); 
+for(i=1;i<=n;i++) 
+{ 
+scanf("%d",&b[i]); 
+t[1]=b[1]; 
+w[1]=0; 
+at=t[1]; 
+wt=w[1]; 
+for(i=2;i<=n;i++) 
+{ 
+t[i]=b[i]+t[i-1]; 
+at=at+t[i]; 
+w[i]=t[i-1]; 
+wt=wt+w[i]; 
+} 
+} 
+printf("process \t burst_time \t wait_time \t turn_around \t \n"); 
+for(i=1;i<=n;i++) 
+{ 
+printf("%d \t\t %d \t\t %d \t\t %d",i,b[i],w[i],t[i]); 
+printf("\n"); 
+} 
+printf("\n average wait time"); 
+tw=wt/n; 
+printf("%f",tw); 
+printf("\n Average turn around time"); 
+tr=at/n; 
+printf("%f",tr); 
+} 
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-858a4e2007ceb9158726471e-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+CPU Scheduling :Priority scheduling </div>
+<div class="col">
+<a href="operating%20system/unit1/CPU%20Scheduling%20_Priority%20scheduling%20.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">CPU Scheduling :Priority scheduling </h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+int main() 
+{ 
+int n; 
+printf("enter no of process\n"); 
+scanf("%d",&n); 
+int a[n],b[n],c[n],t[n],w[n],i,j,x,time=0,f[n],bt=0,s,in,p[n]; 
+printf("Enter arrival time"); 
+for(i=0;i< n;i++) 
+scanf("%d",&a[i]); 
+for(i=0;i< n;i++) 
+f[i]=0; 
+printf("Enter burst time"); 
+for(i=0;i< n;i++) 
+{scanf("%d",&b[i]); 
+} 
+printf("Enter priority"); 
+for(i=0;i< n;i++) 
+{scanf("%d",&p[i]); 
+} 
+for(i=0;i< n;i++) 
+bt=bt+b[i]; 
+printf("total time%d\n",bt); 
+for(i=0;i< n;i++) 
+{ 
+for(j=n+1;j< n;j++) 
+{ 
+if(a[i]>a[j]) 
+{ 
+x=a[i]; 
+a[i]=a[j]; 
+a[j]=x; 
+x=b[i]; 
+b[i]=b[j]; 
+b[j]=x; 
+x=p[i]; 
+p[i]=p[j]; 
+p[j]=x; 
+} 
+
+} 
+} 
+c[0]=b[0]; 
+time=c[0]; 
+f[0]=1; 
+j=0; 
+while(time!=bt) 
+{ 
+s=9999; 
+for(i=1;i< n;i++) 
+{ 
+if(a[i]<=c[j]&&f[i]==0&&s>p[i]) 
+{ 
+s=b[i]; 
+in=i; 
+} 
+} 
+f[in]=1; 
+c[in]=c[j]+b[in]; 
+time=time+b[in]; 
+j=in; 
+} 
+for(i=0;i< n;i++) 
+printf("%d\t%d\t%d\t%d\n",a[i],b[i],p[i],c[i]); 
+return 0; 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-858a4e2007ceb9158726471e-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+CPU Scheduling :Round Robin scheduling </div>
+<div class="col">
+<a href="operating%20system/unit1/CPU%20Scheduling%20_Round%20Robin%20scheduling.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">CPU Scheduling :Round Robin scheduling</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+void main() 
+{ 
+int ts,pid[10],need[10],wt[10],tat[10],i,j,n,n1; 
+int bt[10],flag[10],ttat=0,twt=0; 
+float awt,atat; 
+clrscr(); 
+printf("\t\t ROUND ROBIN SCHEDULING \n"); 
+printf("Enter the number of Processors \n"); 
+scanf("%d",&n); 
+n1=n; 
+printf("\n Enter the Timeslice \n"); 
+scanf("%d",&ts); 
+for(i=1;i<=n;i++) 
+{ 
+printf("\n Enter the process ID %d",i); 
+scanf("%d",&pid[i]); 
+printf("\n Enter the Burst Time for the process"); 
+scanf("%d",&bt[i]); 
+need[i]=bt[i]; 
+} 
+for(i=1;i<=n;i++) 
+{ 
+flag[i]=1; 
+wt[i]=0; 
+} 
+while(n!=0) 
+{ 
+for(i=1;i<=n;i++) 
+{ 
+if(need[i]>=ts) 
+{ 
+for(j=1;j<=n;j++) 
+{ 
+if((i!=j)&&(flag[i]==1)&&(need[j]!=0)) 
+wt[j]+=ts; 
+} 
+
+need[i]-=ts; 
+if(need[i]==0) 
+{ 
+flag[i]=0; 
+n--; 
+} 
+} 
+else 
+{ 
+for(j=1;j<=n;j++) 
+{ 
+if((i!=j)&&(flag[i]==1)&&(need[j]!=0)) 
+wt[j]+=need[i]; 
+} 
+need[i]=0; 
+n--; 
+flag[i]=0; 
+} 
+} 
+} 
+for(i=1;i<=n1;i++) 
+{ 
+tat[i]=wt[i]+bt[i]; 
+twt=twt+wt[i]; 
+ttat=ttat+tat[i]; 
+} 
+awt=(float)twt/n1; 
+atat=(float)ttat/n1; 
+printf("\n\n ROUND ROBIN SCHEDULING ALGORITHM \n\n"); 
+printf("\n\n Process \t Process ID \t BurstTime \t Waiting Time \t TurnaroundTime \n "); 
+for(i=1;i<=n1;i++) 
+{ 
+printf("\n %5d \t %5d \t\t %5d \t\t %5d \t\t %5d \n", i,pid[i],bt[i],wt[i],tat[i]); 
+} 
+printf("\n The average Waiting Time=4.2f",awt); 
+printf("\n The average Turn around Time=4.2f",atat); 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-858a4e2007ceb9158726471e-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+CPU Scheduling :Shortest job first </div>
+<div class="col">
+<a href="operating%20system/unit1/CPU%20Scheduling%20_Shortest%20job%20first.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">CPU Scheduling :Shortest job first</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+int main() 
+{ 
+int n; 
+printf("enter no of process\n"); 
+scanf("%d",&n); 
+int a[n],b[n],c[n],t[n],w[n],i,j,x,time=0,f[n],bt=0,s,in; 
+printf("Enter arrival time"); 
+for(i=0;i< n;i++) 
+scanf("%d",&a[i]); 
+for(i=0;i< n;i++) 
+f[i]=0; 
+printf("Enter burst time"); 
+for(i=0;i< n;i++) 
+{scanf("%d",&b[i]); 
+} 
+for(i=0;i< n;i++) 
+bt=bt+b[i]; 
+printf("total time%d\n",bt); 
+for(i=0;i< n;i++) 
+{ 
+for(j=n+1;j< n;j++) 
+{ 
+if(a[i]>a[j]) 
+{ 
+x=a[i]; 
+a[i]=a[j]; 
+a[j]=x; 
+x=b[i]; 
+b[i]=b[j]; 
+b[j]=x; 
+} 
+} 
+} 
+c[0]=b[0]; 
+time=c[0]; 
+f[0]=1; 
+j=0; 
+while(time!=bt) 
+
+{ 
+s=9999; 
+for(i=1;i< n;i++) 
+{ 
+if(a[i]<=c[j]&&f[i]==0&&s>b[i]) 
+{ 
+s=b[i]; 
+in=i; 
+} 
+} 
+f[in]=1; 
+c[in]=c[j]+b[in]; 
+time=time+b[in]; 
+j=in; 
+} 
+for(i=0;i< n;i++) 
+printf("%d\t%d\t%d\n",a[i],b[i],c[i]); 
+return 0; 
+}  </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-858a4e2007ceb9158726471e-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+System calls </div>
+<div class="col">
+<a href="operating%20system/unit1/System%20calls.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">System calls</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> // SYSTEM CALLS(1)
+---------------------		
+#include < unistd.h> 
+#include < stdlib.h> 
+int main() 
+{ 
+char buffer[10]; 
+read(0, buffer,10); 
+write(1,buffer,10); 
+}
+
+
+//SYSTEM CALLS(2) 
+---------------------
+#include< stdio.h> 
+#include < unistd.h> 
+#include < stdlib.h> 
+int main() 
+{ 
+char buffer[128]; 
+int nread; 
+nread=read(0, buffer,128); 
+write(1,buffer,nread); 
+printf("%d",nread); 
+}
+
+
+ //SYSTEM CALLS(3)
+ ---------------------
+#include < unistd.h> 
+#include < stdlib.h> 
+#include< stdio.h> 
+int main() 
+{ 
+int n; 
+write(1, "some", 4); 
+} 
+
+
+//SYSTEM CALLS(4) 
+----------------------
+#include< unistd.h> 
+#include< stdio.h> 
+#include< fcntl.h> 
+#include< sys/types.h> 
+#include< sys/stat.h> 
+int main() 
+{ 
+int n,m; 
+char buffer[100]; 
+n=open("new_file",O_RDONLY); 
+printf("file descriptor is %d\n",n); 
+m=open("new_file1",O_CREAT|O_WRONLY,0777); 
+printf("file descriptor is %d\n",m); 
+read(n,buffer,10); 
+write(m,buffer,10); 
+printf("copy completed"); 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-858a4e2007ceb9158726471e-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="858a4e2007ceb9158726471e-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="858a4e2007ceb9158726471e-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="858a4e2007ceb9158726471e-|49" defer=""></script></body>
+
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=operating+system&unitid=unit1 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:33 GMT -->
+</html>

@@ -1,0 +1,17 @@
+#include< stdio.h> 
+#include< time.h> 
+int main() 
+{ 
+int i; 
+double total_time; 
+clock_t start,end; 
+start = clock(); 
+for(i=0;i< 20;i++); 
+{
+  printf("\n Hello"); 
+} 
+End  = clock(); 
+total_time = ((double)(end-start))/CLOCKS_PER_SEC; 
+printf("%f \n Total Time:",total_time); 
+return 0; 
+} 

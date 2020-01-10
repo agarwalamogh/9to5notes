@@ -1,0 +1,56 @@
+//This will require three different programs to work
+ 
+//Program 1: Creating fifo/named pipe ( 1.c )
+
+	#include< unistd.h>
+	#include< stdlib.h>
+	#include< stdio.h>
+	int main()
+	{
+		int res;
+        res = mkfifo("fifo1",0777); //creates a named pipe with the name fifo1
+		printf("named pipe created\n");
+	}
+//Now compile and run this program. 
+------------------------------------------------------------
+
+//Program 2: Writing to a fifo/named pipe ( 2.c )
+
+	#include< stdlib.h>
+	#include< stdio.h>
+	#include< fcntl.h>
+	int main()
+	{
+		int res,n;
+		res=open("fifo1",O_WRONLY);
+		write(res,"written",7);
+				printf("Process %d finished\n",getpid());
+	}
+	
+/*Compile this program as
+     gcc -o 2 2.c
+Note: If you run this you will not see any output*/
+--------------------------------------------------------------
+
+//Program 3: Reading from the named pipe ( 3.c )
+
+	#include< stdlib.h>
+	#include< stdio.h>
+	#include< fcntl.h>
+	int main()
+	{
+		int res,n;
+		char buffer[100];
+		res=open("fifo1",O_RDONLY);
+		n=read(res,buffer,100);
+		printf("Total bytes read: %d\n",n);
+		printf("%s was passed to me \n",buffer);
+		printf("Process %d finished\n",getpid());
+		
+	}
+	
+/*Compile the program as
+     gcc  -o  3  3.c*/
+
+Now run both the object files simultaneously as
+    ./2  &  ./3

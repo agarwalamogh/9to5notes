@@ -1,0 +1,24 @@
+#include< stdio.h>
+
+int main()
+{
+    int i=0,ccnt=0;
+    char ch,opt[13]={'+','-','*','/','.',',','%','|','&','^','!','=','~'};
+    FILE *fp;
+    fp=fopen("ne.txt","r");
+    if(fp==NULL) {
+        printf("Error in file opening");
+    }
+    ch=(char)fgetc(fp);
+
+    while(ch!=EOF) {
+        for(i=0;i< 13;i++) {
+            if(ch==opt[i]) {
+                ccnt++;
+            }
+        }
+        ch=(char)fgetc(fp);
+        }
+        printf("Total operator occurrences are: %d\n",ccnt);
+    return 0;
+}

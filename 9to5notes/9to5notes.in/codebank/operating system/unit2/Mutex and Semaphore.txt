@@ -1,0 +1,33 @@
+#include< pthread.h>
+#include< stdio.h>
+int s=1;
+pthread_mutex_t m;//sem_t mm;
+void *thread1()
+{
+int x;
+pthread_mutex_lock(&m);//sem_wait(&m);
+x=s;
+x++;
+sleep(1);
+pthread_mutex_unlock(&m);//sem_mutex(&m)
+s=x;
+}
+void *thread2()
+{
+int y;
+pthread_mutex_lock(&m);//sem_wait(&m);
+y=s;
+y--;
+sleep(1);
+pthread_mutex_unlock(&m);//sem_mutex(&m)
+s=y;
+}
+int main()
+{
+pthread_t t1,t2;
+pthread_mutex_init(&m,NULL);//sem_init(&mm,0,1);
+pthread_create(&t1,NULL,thread1,NULL);
+pthread_create(&t2,NULL,thread2,NULL0;
+pthread_join(t1,NULL)
+pthread_join(t2,NULL)
+}

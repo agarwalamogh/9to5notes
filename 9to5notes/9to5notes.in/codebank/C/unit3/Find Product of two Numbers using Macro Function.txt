@@ -1,0 +1,13 @@
+#include < stdio.h >
+#include < conio.h >
+#define mul(a,b) (a*b)
+main()
+{
+int a,b,c;
+printf("\n enter the values of a and b");
+scanf("%d %d",&a,&b);
+c = mul(a,b);
+printf("\n the mul of two numbers is %d",c);
+getch();
+return 0;
+}

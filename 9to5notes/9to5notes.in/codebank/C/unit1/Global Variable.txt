@@ -1,0 +1,18 @@
+#include < stdio.h >
+int var=10;
+void message();
+main()
+{
+int var=20;
+  {
+  int var = 30;
+  printf("%d ",var); 
+  }
+printf("%d ",var);
+message();   
+}
+
+void message()
+{
+printf("%d ",var);   
+}

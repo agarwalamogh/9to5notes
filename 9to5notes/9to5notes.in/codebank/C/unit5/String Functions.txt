@@ -1,0 +1,19 @@
+#include < stdio.h >
+#include < conio.h >
+#include < string.h >
+ main()
+{
+char str[20];
+int len;
+printf("Enter first string\n");
+gets(str);
+len=strlen(str);
+printf("Length of string is %d\n",len);
+printf("Upper case transformation is : \n");
+puts(strupr(str));
+printf("Lower case transformation is : \n");
+puts(strlwr(str));
+printf("Reverse is : \n");
+puts(strrev(str));
+getch();
+}

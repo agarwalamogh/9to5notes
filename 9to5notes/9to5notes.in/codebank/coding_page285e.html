@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<script type="3901914cf94b1a7a9236afd4-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<script type="3901914cf94b1a7a9236afd4-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="3901914cf94b1a7a9236afd4-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="3901914cf94b1a7a9236afd4-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+
+<script src="prism-2.html" type="3901914cf94b1a7a9236afd4-text/javascript"></script>
+<title>c++</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C++ </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Exception Handling And Standard Template Library </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Exception Handling </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Exception%20Handling.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Exception Handling</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+using namespace std;
+
+int main()
+{
+    int a,b;
+    cout << "Enter 2 numbers: ";
+    cin >> a >> b;
+    try
+    {
+        if (b != 0)
+        {
+            float div = (float)a/b;
+            if (div < 0)
+                throw 'e';
+            cout << "a/b = " << div;
+        }
+        else
+            throw b;
+            
+    }
+    catch (int e)
+    {
+        cout << "Exception: Division by zero";
+    }
+    catch (char st)
+    {
+        cout << "Exception: Division is less than 1";
+    }
+    catch(...)
+    {
+        cout << "Exception: Unknown";
+    }
+    getch();
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Function Template to Find the Largest Number </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Function%20Template%20to%20Find%20the%20Largest%20Number.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Function Template to Find the Largest Number</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+// template function
+template < class T >
+T Large(T n1, T n2)
+{
+	return (n1 > n2) ? n1 : n2;
+}
+
+int main()
+{
+	int i1, i2;
+	float f1, f2;
+	char c1, c2;
+
+	cout << "Enter two integers:\n";
+	cin >> i1 >> i2;
+	cout << Large(i1, i2) <<" is larger." << endl;
+
+	cout << "\nEnter two floating-point numbers:\n";
+	cin >> f1 >> f2;
+	cout << Large(f1, f2) <<" is larger." << endl;
+
+	cout << "\nEnter two characters:\n";
+	cin >> c1 >> c2;
+	cout << Large(c1, c2) << " has larger ASCII value.";
+
+	return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Implementation of Vector in STL </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Implementation%20of%20Vector%20in%20STL.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Implementation of Vector in STL</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code>     1. #include < iostream >
+    2. #include < vector >
+    3. #include < string >
+    4. #include < cstdlib >
+    5. using namespace std;
+    6. int main()
+    7. {
+    8.     vector< int > ss;
+    9.     vector< int >::iterator it;
+    10.     int choice, item;
+    11.     while (1)
+    12.     {
+    13.         cout<<"\n---------------------"<< endl;
+    14.         cout<<"Vector Implementation in Stl"<< endl;
+    15.         cout<<"\n---------------------"<< endl;
+    16.         cout<<"1.Insert Element into the Vector"<< endl;
+    17.         cout<<"2.Delete Last Element of the Vector"<< endl;
+    18.         cout<<"3.Size of the Vector"<< endl;
+    19.         cout<<"4.Display by Index"<< endl;
+    20.         cout<<"5.Dislplay by Iterator"<< endl;
+    21.         cout<<"6.Clear the Vector"<< endl;
+    22.         cout<<"7.Exit"<< endl;
+    23.         cout<<"Enter your Choice: ";
+    24.         cin>>choice;
+    25.         switch(choice)
+    26.         {
+    27.         case 1:
+    28.             cout<<"Enter value to be inserted: ";
+    29.             cin>>item;
+    30.             ss.push_back(item);
+    31.             break;
+    32.         case 2:
+    33.             cout<<"Delete Last Element Inserted:"<< endl;
+    34.             ss.pop_back();
+    35.             break;
+    36.         case 3:
+    37.             cout<<"Size of Vector: ";
+    38.             cout<< ss.size()<< endl;
+    39.             break;
+    40.         case 4:
+    41.             cout<<"Displaying Vector by Index: ";
+    42.             for (int i = 0; i < ss.size(); i++)
+    43.             {
+    44.                 cout<< ss[i]<<" ";
+    45.             }
+    46.             cout<< endl;
+    47.             break;
+    48.         case 5:
+    49.             cout<<"Displaying Vector by Iterator: ";
+    50.             for (it = ss.begin(); it != ss.end(); it++)
+    51.             {
+    52.                 cout<< *it<<" ";
+    53.             }
+    54.             cout<< endl;
+    55.             break;
+    56.         case 6:
+    57.             ss.clear();
+    58.             cout<<"Vector Cleared"<< endl;
+    59.             break;
+    60.         case 7:
+    61.             exit(1);
+    62.             break;
+    63.         default:
+    64.             cout<<"Wrong Choice"<< endl;
+    65.         }
+    66.     }
+    67.     return 0;
+    68. }
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Rethrowing an Exception </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Rethrowing%20an%20Exception.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Rethrowing an Exception</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream >
+using namespace std;
+int main()
+{
+	try
+	{
+		int a, b;
+		cout<<"Enter two integer values: ";
+		cin>>a>>b;
+		try
+		{
+			if(b == 0)
+			{
+				throw b;
+			}
+			else
+			{
+				cout<<(a/b);
+			}
+		}
+		catch(...)
+		{
+			throw; //rethrowing the exception
+		}
+	}
+	catch(int)
+	{
+		cout<<"Second value cannot be zero";
+	}
+	return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Simple Calculator using Class Template </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Simple%20Calculator%20using%20Class%20Template.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Simple Calculator using Class Template</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+template < class T >
+class Calculator
+{
+private:
+	T num1, num2;
+	
+public:
+	Calculator(T n1, T n2)
+	{
+		num1 = n1;
+		num2 = n2;
+	}
+	
+	void displayResult()
+	{
+		cout << "Numbers are: " << num1 << " and " << num2 << "." << endl;
+		cout << "Addition is: " << add() << endl;
+		cout << "Subtraction is: " << subtract() << endl;
+		cout << "Product is: " << multiply() << endl;
+		cout << "Division is: " << divide() << endl;
+	}
+	
+	T add() { return num1 + num2; }
+	
+	T subtract() { return num1 - num2; }
+	
+	T multiply() { return num1 * num2; }
+	
+	T divide() { return num1 / num2; }
+};
+
+int main()
+{
+	Calculator< int > intCalc(2, 1);
+	Calculator< float > floatCalc(2.4, 1.2);
+	
+	cout << "Int results:" << endl;
+	intCalc.displayResult();
+	
+	cout << endl << "Float results:" << endl;
+	floatCalc.displayResult();
+	
+	return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Swap Data using Function Template </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Swap%20Data%20using%20Function%20Template.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Swap Data using Function Template</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream >
+using namespace std;
+
+template < typename T >
+void Swap(T &n1, T &n2)
+{
+	T temp;
+	temp = n1;
+	n1 = n2;
+	n2 = temp;
+}
+
+int main()
+{
+	int i1 = 1, i2 = 2;
+	float f1 = 1.1, f2 = 2.2;
+	char c1 = 'a', c2 = 'b';
+
+	cout << "Before passing data to function template.\n";
+	cout << "i1 = " << i1 << "\ni2 = " << i2;
+	cout << "\nf1 = " << f1 << "\nf2 = " << f2;
+	cout << "\nc1 = " << c1 << "\nc2 = " << c2;
+
+	Swap(i1, i2);
+	Swap(f1, f2);
+	Swap(c1, c2);
+
+        cout << "\n\nAfter passing data to function template.\n";
+	cout << "i1 = " << i1 << "\ni2 = " << i2;
+	cout << "\nf1 = " << f1 << "\nf2 = " << f2;
+	cout << "\nc1 = " << c1 << "\nc2 = " << c2;
+
+	return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Use of Try, Catch and Throw </div>
+<div class="col">
+<a href="c%2b%2b/unit6/Use%20of%20Try%2c%20Catch%20and%20Throw.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Use of Try, Catch and Throw</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream >
+using namespace std;
+int main()
+{
+	int p,c,m,err=0;
+	string name;
+	
+	do
+	{
+		try //using try block to check error;
+		{
+			cout<<"Enter sudentname : ";
+			cin>>name;
+			cout<<"Enter physics marks : ";
+			cin>>p;
+			
+			if(!(p>=0 && p<=100)) //checking that marks entered is valid or not;
+			{
+				throw(p); //using throw block to transfer error to catch block;
+			}
+			cout<<"Enter chemistry marks : ";
+			cin>>c;
+			
+			if(!(c>=0 && c<=100)) //checking that marks entered is valid or not;
+			{
+				throw(c); //using throw block to transfer error to catch block;
+			}
+			
+			cout<<"Enter mathsmarks : ";
+			cin>>m;
+			
+			if(!(m>=0 && m<=100)) //checking that marks entered is valid or not;
+			{
+				throw(m); //using throw block to transfer error to catch block;
+			}
+			err=0; //if all the conditions are false then value of error variable is 0
+		}
+		catch(int e)
+		{
+			cout<<"Invalid Marks"<< endl; //Showing error;
+			err=1; //Changing value of variable to retke input;
+		}
+
+	}while(err); //it takes input until all inputs are valid;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3901914cf94b1a7a9236afd4-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="3901914cf94b1a7a9236afd4-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="3901914cf94b1a7a9236afd4-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3901914cf94b1a7a9236afd4-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit6 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:59 GMT -->
+</html>

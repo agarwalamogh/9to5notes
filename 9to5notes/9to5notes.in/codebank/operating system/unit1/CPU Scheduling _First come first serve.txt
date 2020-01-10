@@ -1,0 +1,39 @@
+ #include< stdio.h>
+#include< math.h> 
+#include< stdlib.h> 
+void main() 
+{ 
+int p[20],b[20],w[20],t[20],i,v,n,at; 
+int wt=0; 
+float tw,tr; 
+printf("Enter the number of process : "); 
+scanf("%d",&n); 
+printf("enter CPU burst time : "); 
+for(i=1;i<=n;i++) 
+{ 
+scanf("%d",&b[i]); 
+t[1]=b[1]; 
+w[1]=0; 
+at=t[1]; 
+wt=w[1]; 
+for(i=2;i<=n;i++) 
+{ 
+t[i]=b[i]+t[i-1]; 
+at=at+t[i]; 
+w[i]=t[i-1]; 
+wt=wt+w[i]; 
+} 
+} 
+printf("process \t burst_time \t wait_time \t turn_around \t \n"); 
+for(i=1;i<=n;i++) 
+{ 
+printf("%d \t\t %d \t\t %d \t\t %d",i,b[i],w[i],t[i]); 
+printf("\n"); 
+} 
+printf("\n average wait time"); 
+tw=wt/n; 
+printf("%f",tw); 
+printf("\n Average turn around time"); 
+tr=at/n; 
+printf("%f",tr); 
+} 

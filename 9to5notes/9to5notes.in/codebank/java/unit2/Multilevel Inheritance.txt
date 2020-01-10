@@ -1,0 +1,35 @@
+//multilevel inheritance
+class person
+{ private String name;
+  person(String s) { setname(s);}
+  public void setname(String s) {name =s; }
+  public String getname() { return name;}
+  public void display() { System.out.println("name="+name); }
+}
+class employee extends person
+{
+  private int empid;
+  employee(String sname,int id) { super(sname); setempid(id); }
+  public void setempid(int id) {  empid=id; }
+  public int getempid() {  return empid; }
+  public void display(){super.display();System.out.println("empid="+empid);}
+};
+class hourlyemployee extends employee
+{
+ private double hourlyrate;
+ private int hoursworked;
+ hourlyemployee(String sname, int id, double hr,int hw)
+ {super(sname,id);
+ hourlyrate=hr;
+ hoursworked=hw;}
+ public double getgrosspay() {return (hourlyrate*hoursworked);}
+ public void display()
+{
+super.display();System.out.println("hourly rate="+hourlyrate);
+System.out.println("hours worked="+hoursworked);
+System.out.println("Get gross pay="+getgrosspay());}
+};
+class multilevel
+{ public static void main(String[] args) {
+hourlyemployee emp=new hourlyemployee("honey",101,100,200); emp.display();}
+}

@@ -1,0 +1,23 @@
+class parent
+{
+	int b=10;
+	parent(int b)
+	{
+		this.b=b;
+		System.out.println("Constructer of superclass is called");
+		System.out.println("b="+b);
+	}
+}
+class child extends parent
+{
+	child(int b)
+	{
+		super(b);
+		System.out.println("Constructer of subclass is called");
+		
+	}
+	public static void main(String a[])
+	{
+		child obj=new child(10);
+	}
+}

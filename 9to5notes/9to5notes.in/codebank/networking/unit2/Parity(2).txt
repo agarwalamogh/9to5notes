@@ -1,0 +1,30 @@
+#include< iostream>
+#include< conio.h>
+#include< string.h>
+using namespace std;
+int main()
+{
+	int i,count=0,parity;
+	char data[10];
+	cout<<"Enter the bit";
+	cin>>data;
+	cout<<"Enter 0:even or 1:odd";
+	cin>>parity;
+	for(i=0;i< strlen(data);i++)
+	{
+		if(data[i]==1)
+		count++;
+	}
+	if(parity==0&&count%2==0)
+	{
+		cout<<"No error in even";
+	}
+	else if(parity==1&&count%2==1)
+	{
+		cout<<"No error in odd";
+	}
+	else
+	{
+		cout<<"error";
+	}
+}

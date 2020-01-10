@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit5 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<script type="ac857bcc29a46954bb317420-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<script type="ac857bcc29a46954bb317420-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="ac857bcc29a46954bb317420-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="ac857bcc29a46954bb317420-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="ac857bcc29a46954bb317420-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="ac857bcc29a46954bb317420-text/javascript"></script>
+
+<script src="prism-2.html" type="ac857bcc29a46954bb317420-text/javascript"></script>
+<title>c++</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+C++ </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Dynamic Memory Management And Polymorphism </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Abstract Class or Pure Virtual Function </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Abstract%20Class%20or%20Pure%20Virtual%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Abstract Class or Pure Virtual Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+       #include< conio.h>
+       using namespace std;
+
+       class BaseClass       //Abstract class
+       {
+
+              public:
+               virtual void Display1()=0;     //Pure virtual function or abstract function
+               virtual void Display2()=0;     //Pure virtual function or abstract function
+
+               void Display3()
+               {
+                      cout<<"\n\tThis is Display3() method of Base Class";
+               }
+
+       };
+
+       class DerivedClass : public BaseClass
+       {
+
+              public:
+               void Display1()
+               {
+                      cout<<"\n\tThis is Display1() method of Derived Class";
+               }
+
+               void Display2()
+               {
+                      cout<<"\n\tThis is Display2() method of Derived Class";
+               }
+
+       };
+
+       int main()
+       {
+
+              DerivedClass D;
+
+              D.Display1();            // This will invoke Display1() method of Derived Class
+              D.Display2();            // This will invoke Display2() method of Derived Class
+              D.Display3();            // This will invoke Display3() method of Base Class
+
+       }
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Displaying GPA using Dynamic Memory Mangement </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Displaying%20GPA%20using%20Dynamic%20Memory%20Mangement.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Displaying GPA using Dynamic Memory Mangement</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Test
+{
+private:
+    int num;
+    float *ptr;
+
+public:
+    Test()
+    {
+        cout << "Enter total number of students: ";
+        cin >> num;
+        
+        ptr = new float[num];
+        
+        cout << "Enter GPA of students." << endl;
+        for (int i = 0; i < num; ++i)
+        {
+            cout << "Student" << i + 1 << ": ";
+            cin >> *(ptr + i);
+        }
+    }
+    
+    ~Test() {
+        delete[] ptr;
+    }
+
+    void Display() {
+        cout << "\nDisplaying GPA of students." << endl;
+        for (int i = 0; i < num; ++i) {
+            cout << "Student" << i+1 << " :" << *(ptr + i) << endl;
+        }
+    }
+    
+};
+int main() {
+    Test s;
+    s.Display();
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Early Binding or Static Binding </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Early%20Binding%20or%20Static%20Binding.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+ <h4 class="modal-title">Early Binding or Static Binding</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+
+using namespace std;
+
+class Animals
+{
+	public:
+		void sound()
+		{
+			cout << "This is parent class" << endl;
+		}
+};
+
+class Dogs : public Animals
+{
+	public:
+		void sound()
+		{
+			cout << "Dogs bark" << endl;
+		}
+};
+
+int main()
+{
+	Animals *a;
+	Dogs d;
+	a= &d;
+	a -> sound();   //  early binding
+	return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Late Binding or Dynamic Binding </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Late%20Binding%20or%20Dynamic%20Binding.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Late Binding or Dynamic Binding</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream> 
+using namespace std; 
+
+class Base 
+{ 
+public: 
+virtual void show() { cout<<" In Base \n"; } 
+}; 
+
+class Derived: public Base 
+{ 
+public: 
+void show() { cout<<"In Derived \n"; } 
+}; 
+
+int main(void) 
+{ 
+Base *bp = new Derived; 
+bp->show(); // RUN-TIME POLYMORPHISM 
+return 0; 
+} 
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+ Object Destruction Sequence using Virtual Destructor </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Object%20Destruction%20Sequence%20using%20Virtual%20Destructor.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Object Destruction Sequence using Virtual Destructor</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+
+using namespace std;
+
+class Base {
+
+    public:
+        Base() {
+            cout << "Base class constructor ..." << endl;
+        }
+        virtual ~Base() {
+            cout << "Base class destructor ..." << endl;
+        }
+};
+
+class Derived : public Base {
+
+    public:
+        Derived() {
+            cout << "Derived class constructor ..." << endl;
+        }
+        ~Derived() {
+            cout << "Derived class destructor ..." << endl;
+        }
+};
+
+int main()
+{
+    Base* base;
+    base = new Derived();
+    delete base;
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Virtual Function </div>
+<div class="col">
+<a href="c%2b%2b/unit5/Virtual%20Function.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Virtual Function</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+ 
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+using namespace std;
+
+class Weapon
+{
+    public:
+       void loadFeatures()
+         { cout << "Loading weapon features.\n"; }
+};
+
+class Bomb : public Weapon
+{
+    public:
+       void loadFeatures()
+         { cout << "Loading bomb features.\n"; }
+};
+
+class Gun : public Weapon
+{
+    public:
+       void loadFeatures()
+         { cout << "Loading gun features.\n"; }
+};
+
+int main()
+{
+    Weapon *w = new Weapon;
+    Bomb *b = new Bomb;
+    Gun *g = new Gun;
+
+    w->loadFeatures();
+    b->loadFeatures();
+    g->loadFeatures();
+
+    return 0;
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-ac857bcc29a46954bb317420-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="ac857bcc29a46954bb317420-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="ac857bcc29a46954bb317420-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="ac857bcc29a46954bb317420-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=c%2B%2B&unitid=unit5 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:51:56 GMT -->
+</html>

@@ -1,0 +1,24 @@
+class LocalInner 
+{
+  private int a=10;
+  void display()  
+    {
+    final int b=20;
+    class Inner
+      {
+      void msg()
+        {
+        System.out.println("a=" + a);
+        System.out.println("b=" + b);
+        }
+      }
+    Inner I = new Inner();
+    I.msg();
+    }
+  
+  public static void main(String []arg)
+    {
+    LocalInner obj = new LocalInner();
+    obj.display();
+    }
+}

@@ -1,0 +1,23 @@
+#include< stdio.h >
+#include< conio.h >
+int reverse(int);
+main()
+{
+   int n,rev;
+   printf("Enter an integer number");
+   scanf("%d",&n);
+   rev=reverse(n);
+   printf("Reversed number is =%d",rev);
+   getch();
+}
+int reverse(int n)
+{
+   int r,rev=0;
+   while(n  > 0)
+   {
+      r=n%10;
+      n=n/10;
+      rev=rev*10+r;
+   }
+   return(rev);
+}

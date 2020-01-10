@@ -1,0 +1,33 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 14 Dec 2019 15:31:54 at https://9to5notes.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://9to5notes.in/ -O1 "D:\New folder\9to5notes" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:32:28	Error: 	"Not Found" (404) at link https://9to5notes.in/sidebar/sidebar-style.css (from https://9to5notes.in/)
+15:34:01	Warning: 	Link https://9to5notes.in/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+15:34:02	Warning: 	Retry after error 500 (Internal Server Error) at link https://9to5notes.in/newsletter.php (from https://9to5notes.in/)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/g.jpeg (from https://9to5notes.in/examples.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/ajax-loader.gif (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/fonts/slick.eot (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/fonts/slick.eot? (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/fonts/slick.woff (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/fonts/slick.ttf (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/fonts/slick.svg (from https://9to5notes.in/slick-theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://9to5notes.in/u/Form/images/icons/favicon.ico (from https://9to5notes.in/u/Form/)
+15:34:13	Error: 	"Not Found" (404) at link https://9to5notes.in/u/Form/dropzone.css (from https://9to5notes.in/u/Form/)
+15:40:39	Error: 	"Not Found" (404) at link https://9to5notes.in/codebank/prism.css (from https://9to5notes.in/codebank/codepage.php?id=1)
+15:40:39	Error: 	"Not Found" (404) at link https://9to5notes.in/codebank/prism.js (from https://9to5notes.in/codebank/codepage.php?id=1)
+15:41:58	Warning: 	Retry after error 500 (Internal Server Error) at link https://9to5notes.in/newsletter.php (from https://9to5notes.in/)
+16:20:47	Error: 	"Not Found" (404) at link https://9to5notes.in/How To/Topics/15.jpg (from https://9to5notes.in/How To/Topics/p2css.css)
+16:20:47	Error: 	"Not Found" (404) at link https://9to5notes.in/How To/Topics/17.jpg (from https://9to5notes.in/How To/Topics/p2css.css)
+16:20:47	Error: 	"Not Found" (404) at link https://9to5notes.in/How To/Topics/18.jpg (from https://9to5notes.in/How To/Topics/p2css.css)
+16:23:44	Error: 	"Not Found" (404) at link https://9to5notes.in/codebank/a.txt (from https://9to5notes.in/codebank/coding_page.php?categname=C&unitid=unit4)
+16:23:44	Error: 	"Internal Server Error" (500) after 2 retries at link https://9to5notes.in/newsletter.php (from https://9to5notes.in/)
+16:23:44	Error: 	"Not Found" (404) at link https://9to5notes.in/unit/.gif (from https://9to5notes.in/unit/unit.php?full_id=CSE_1st_Year&subject=Applied%20Physics&unit=Unit%201)
+17:19:37	Error: 	"Not Found" (404) at link https://9to5notes.in/codebank/ne.txt (from https://9to5notes.in/codebank/coding_page.php?categname=compiler&unitid=unit1)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 47 minutes 52 seconds : 4297 links scanned, 4275 files written (3365874055 bytes overall) [3359352597 bytes received at 519059 bytes/sec], 17297028 bytes transferred using HTTP compression in 1769 files, ratio 36%, 19.3 requests per connection
+(19 errors, 3 warnings, 0 messages)

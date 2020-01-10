@@ -1,0 +1,40 @@
+/*polymorphism-dynamic binding-to declare a variable that references an object 
+       classname variablename; is used. It can also be used to reference object of subclass.
+polymorphic behaviour can be achieved if-
+1. method call for subclass object must be through a superclass reference variable.
+2.method called must be declared in super class and redefined in subcla
+3.method in superclass and subclass must have same name and parameter list with same number of parameters.*/
+class base
+{
+ public void display()
+{
+System.out.println("Base class display method is called");
+}
+}
+class derv1 extends base
+{
+public void display()
+{
+System.out.println("derv1 class display is called");
+}
+}
+class derv2 extends base
+{
+public void display()
+{
+System.out.println("derv2 class display is called");
+}
+}
+public class poly
+{
+public static void main(String[] args)
+{
+base a;
+derv1 d1=new derv1();
+derv2 d2=new derv2();
+a=d1;// a contain reference of derv1 object 
+a.display();
+a=d2;
+a.display();
+}
+}

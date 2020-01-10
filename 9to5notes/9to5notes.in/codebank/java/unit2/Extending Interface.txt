@@ -1,0 +1,41 @@
+/*1.entending interface(creating sub-interface) means interface2 contains members of interface1 in addition to its own members.
+2.the way we perform inheritance with classes, same we can do with interfaces.
+3. In classes we can extend only one class at a time but using interfacs we can extend multiple interfaces.list of extended interfaces are super-interfaces.*/ 
+
+interface interface1
+{
+public void f1();
+}
+interface interface2 extends interface1  //interface2 extends interface1
+{
+public void f2();
+}
+/*class x implements interface2 so it will provide implementation of f2() of interface2 but I2 extends   I1 so class implementing X2 should must provide implementation of I1 also.*/ 
+class x implements interface2
+{
+ //definition of method declared in interface1
+ public void f1()
+ {
+System.out.println("Contents of method f1() in interface1");
+ }
+ public void f2()
+ {
+System.out.println("Contents of method f2() in interface2");
+ }
+ public void f3()
+ {
+System.out.println("Contents of method f3() in class x");
+ }
+}
+class extendinginterface
+{
+  public static void main(String[] args)
+ {
+  interface2 v2;
+  v2=new x();
+  v2.f1();
+  v2.f2();
+  x x1=new x();
+  x1.f3();
+ }
+}

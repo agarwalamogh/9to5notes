@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=datastructure&unitid=unit1 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:52:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<script type="e894e4585b486ae49ff5e512-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<script type="e894e4585b486ae49ff5e512-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="e894e4585b486ae49ff5e512-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="e894e4585b486ae49ff5e512-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+
+<script src="prism-2.html" type="e894e4585b486ae49ff5e512-text/javascript"></script>
+<title>datastructure</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+Datastructure </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Basics </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+2D Array Addition </div>
+<div class="col">
+<a href="datastructure/unit1/2D%20Array%20Addition.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">2D Array Addition</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h>
+#include< conio.h>
+main()
+{
+  int a[3][3],b[3][3],c[3][3],i,j;
+  printf("Enter the First matrix->");
+  for(i=0;i< 3;i++)
+  {
+      for(j=0;j< 3;j++)
+      {
+           scanf("%d",&a[i][j]);
+      }
+  }
+  printf("\nEnter the Second matrix->");
+  for(i=0;i< 3;i++)
+  {
+      for(j=0;j< 3;j++)
+      {
+           scanf("%d",&b[i][j]);
+      }
+  }
+  printf("\nThe First matrix is\n");
+  for(i=0;i< 3;i++){
+      printf("\n");
+      for(j=0;j< 3;j++)
+           printf("%d\t",a[i][j]);
+  }
+  printf("\nThe Second matrix is\n");
+  for(i=0;i< 3;i++){
+      printf("\n");
+      for(j=0;j< 3;j++)
+      printf("%d\t",b[i][j]);
+   }
+   for(i=0;i< 3;i++)
+   {
+       for(j=0;j< 3;j++)
+            c[i][j]=a[i][j]+b[i][j];
+   }
+   printf("\nThe Addition of two matrix is\n");
+   for(i=0;i< 3;i++){
+       printf("\n");
+       for(j=0;j< 3;j++)
+            printf("%d\t",c[i][j]);
+   }
+   getch();
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e894e4585b486ae49ff5e512-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Basic operations on Arrays </div>
+<div class="col">
+<a href="datastructure/unit1/Basic%20operations%20on%20Arrays.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Basic operations on Arrays</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+int n,i,t,f,g,e,a[50],temp,temp1,sum1=0;
+void insertion();
+//void deletion();
+void max();
+void min();
+void sum();
+void insertion()
+{
+	cout<<"enter the position to insert an element"<< endl;
+	cin>>f;
+	cout<<"enter the values"<< endl;
+	cin>>e;
+	for(i=n-1;i>=f;i--)
+	{
+		a[i+1]=a[i];
+	}
+	n=n+1;
+	a[f]=e;
+	for(i=0;i< n;i++)
+	{
+		cout<< a[i]<< endl;
+	}
+}
+void sum()
+{
+for (i=0;i< n;i++)
+{
+	sum1=sum1+a[i];
+}
+cout<< sum1<< endl;
+}
+void max()
+{
+	for(i=0;i< n-1;i++)
+	{
+		if(a[i]>a[i+1])
+		{
+		temp=a[i];
+		a[i]=a[i+1];
+		a[i+1]=temp;
+	    }
+	}
+	cout<<"max element is:"<< a[n-1]<< endl;
+}
+void min()
+{
+	for(i=0;i< n-1;i++)
+	{
+		if(a[i]>a[i+1])
+		{
+		temp=a[i];
+		a[i]=a[i+1];
+		a[i+1]=temp;
+	    }
+	}
+	cout<<"min element is:"<< a[0]<< endl;
+}
+
+
+
+int main()
+{
+	
+	cout<<"enter number of terms"<< endl;
+	cin>>n;
+	cout<<"enter the array"<< endl;
+	for(i=0;i< n;i++)
+	{
+	cin>>a[i];	
+	}
+
+	while(1)
+	{
+		cout<<"operations of array"<< endl;
+		cout<<"1 for insertion"<< endl;
+		cout<<"2 for deletion"<< endl;
+		cout<<"3 for max element"<< endl;
+		cout<<"4 for min element"<< endl;
+		cout<<"5 for sum of a array"<< endl;
+	cout<<"enter your choice"<< endl;
+	cin>>t;
+	switch(t)
+	{
+		case 1: insertion();
+		break;
+		//case 2: deletion();
+		//break;
+		case 3: max();
+		break;
+		case 4: min();
+		break;
+		case 5: sum(); sum1=0;
+		break;
+		default :
+			cout<<"please enter the correct choice"<< endl;
+	}
+		
+	}
+	
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e894e4585b486ae49ff5e512-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Frequency of characters in a string </div>
+<div class="col">
+<a href="datastructure/unit1/Frequency%20of%20characters%20in%20a%20string.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+ </div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Frequency of characters in a string</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h>
+#include< string.h>
+ 
+int main()
+{
+   char string[100];
+   int c = 0, count[26] = {0};
+ 
+   printf("Enter a string\n");
+   gets(string);
+ 
+   while (string[c] != '\0')
+   {
+      /** Considering characters from 'a' to 'z' only
+          and ignoring others */
+ 
+      if (string[c] >= 'a' && string[c] <= 'z') 
+         count[string[c]-'a']++;
+ 
+      c++;
+   }
+ 
+   for (c = 0; c < 26; c++)
+   {
+      /** Printing only those characters 
+          whose count is at least 1 */
+ 
+      if (count[c] != 0)
+         printf("%c occurs %d times in the entered string.\n",c+'a',count[c]);
+   }
+ 
+   return 0;
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e894e4585b486ae49ff5e512-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Merge two Arrays </div>
+<div class="col">
+<a href="datastructure/unit1/Merge%20two%20Arrays.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Merge two Arrays</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< stdio.h>
+#include< conio.h>
+using namespace std;
+int main()
+{
+	int arr1[50], arr2[50], size1, size2, size, i, j, k, merge[100];
+	cout<<"Enter Array 1 Size : ";
+	cin>>size1;
+	cout<<"Enter Array 1 Elements : ";
+	for(i=0; i< size1; i++)
+	{
+		cin>>arr1[i];
+	}
+	cout<<"Enter Array 2 Size : ";
+	cin>>size2;
+	cout<<"Enter Array 2 Elements : ";
+	for(i=0; i< size2; i++)
+	{
+		cin>>arr2[i];
+	}
+	for(i=0; i< size1; i++)
+	{
+		merge[i]=arr1[i];
+	}
+	size=size1+size2;
+	for(i=0, k=size1; k< size && i< size2; i++, k++)
+	{
+		merge[k]=arr2[i];
+	}
+	cout<<"Now the new array after merging is :\n";
+	for(i=0; i< size; i++)
+	{
+		cout<< merge[i]<<" ";
+	}
+	getch();
+}
+    </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e894e4585b486ae49ff5e512-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Number of Even numbers in a Array </div>
+<div class="col">
+<a href="datastructure/unit1/Number%20of%20Even%20numbers%20in%20a%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Number of Even numbers in a Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h>
+#include< conio.h>
+using namespace std;
+ 
+int main()
+{
+    int array[100], i, num;
+ 
+    printf("Enter the size of an array \n");
+    scanf("%d", &num);
+    printf("Enter the elements of the array \n");
+    for (i = 0; i < num; i++)
+    {
+        scanf("%d", &array[i]);
+    }
+    printf("Even numbers in the array are : ");
+    for (i = 0; i < num; i++)
+    {
+        if (array[i] % 2 == 0)
+        {
+            printf("%d \t", array[i]);
+        }
+    }
+    printf("\n Odd numbers in the array are :");
+    for (i = 0; i < num; i++)
+    {
+        if (array[i] % 2 != 0)
+        {
+            printf("%d \t", array[i]);
+        }
+    }
+    getch();
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-e894e4585b486ae49ff5e512-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="e894e4585b486ae49ff5e512-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="e894e4585b486ae49ff5e512-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e894e4585b486ae49ff5e512-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=datastructure&unitid=unit1 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:52:17 GMT -->
+</html>

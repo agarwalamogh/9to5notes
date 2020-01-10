@@ -1,0 +1,867 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=operating+system&unitid=unit3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<script type="a188ff374782dd89cdbfa2d2-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<script type="a188ff374782dd89cdbfa2d2-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="a188ff374782dd89cdbfa2d2-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="a188ff374782dd89cdbfa2d2-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+
+<script src="prism-2.html" type="a188ff374782dd89cdbfa2d2-text/javascript"></script>
+<title>operating system</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+Operating System </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Device Management And IPC Programs </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Disc Scheduling algorithms : FCFS |SSTF |SCAN </div>
+<div class="col">
+<a href="operating%20system/unit3/Disc%20Scheduling%20algorithms%20_%20FCFS%20_SSTF%20_SCAN.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Disc Scheduling algorithms : FCFS |SSTF |SCAN</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code>  //-------FCFS/SSTF/SCAN---------
+ 
+#include< stdio.h> 
+#include< math.h> 
+void fcfs(int noq, int qu[10], int st) 
+{ 
+int i,s=0; 
+for(i=0;i< noq;i++) 
+{ 
+s=s+abs(st-qu[i]); 
+st=qu[i]; 
+} 
+printf("\n Total seek time :%d",s); 
+} 
+void sstf(int noq, int qu[10], int st, int visit[10]) 
+{ 
+int min,s=0,p,i; 
+while(1) 
+{ 
+min=999; 
+for(i=0;i< noq;i++) 
+if (visit[i] == 0) 
+{ 
+if(min > abs(st - qu[i])) 
+{ 
+min = abs(st-qu[i]); 
+p = i; 
+} 
+} 
+if(min == 999) 
+break; 
+visit[p]=1; 
+s=s + min; 
+st = qu[p]; 
+} 
+printf("\n Total seek time is: %d",s); 
+} 
+
+void scan(int noq, int qu[10], int st, int ch) 
+{ 
+int i,j,s=0; 
+for(i=0;i< noq;i++) 
+{ 
+if(st < qu[i]) 
+{ 
+for(j=i-1; j>= 0;j--) 
+{ 
+s=s+abs(st - qu[j]); 
+st = qu[j]; 
+} 
+if(ch == 3) 
+{ 
+s = s + abs(st - 0); 
+st = 0; 
+} 
+for(j = 1;j < noq;j++) 
+{ 
+s= s + abs(st - qu[j]); 
+st = qu[j]; 
+} 
+break; 
+} 
+} 
+printf("\n Total seek time : %d",s); 
+} 
+int main() 
+{ 
+int n,qu[20],st,i,j,t,noq,ch,visit[20]; 
+printf("\n Enter the maximum number of cylinders : "); 
+scanf("%d",&n); 
+printf("enter number of queue elements"); 
+scanf("%d",&noq); 
+printf("\n Enter the work queue"); 
+for(i=0;i< noq;i++) 
+{ 
+scanf("%d",&qu[i]); 
+visit[i] = 0; 
+} 
+printf("\n Enter the disk head starting posision: \n"); 
+scanf("%d",&st);
+
+while(1) 
+{ 
+printf("\n\n\t\t MENU \n"); 
+printf("\n\n\t\t 1. FCFS \n"); 
+printf("\n\n\t\t 2. SSTF \n"); 
+printf("\n\n\t\t 3. SCAN \n"); 
+printf("\n\n\t\t 4. EXIT \n"); 
+printf("\nEnter your choice: "); 
+scanf("%d",&ch); 
+if(ch > 2) 
+{ 
+for(i=0;i< noq;i++) 
+for(j=i+1;j< noq;j++) 
+if(qu[i]>qu[j]) 
+{ 
+t=qu[i]; 
+qu[i] = qu[j]; 
+qu[j] = t; 
+} 
+} 
+switch(ch) 
+{ 
+case 1: printf("\n FCFS \n"); 
+printf("\n*****\n"); 
+fcfs(noq,qu,st); 
+break; 
+ 
+case 2: printf("\n SSTF \n"); 
+printf("\n*****\n"); 
+sstf(noq,qu,st,visit); 
+break; 
+case 3: printf("\n SCAN \n"); 
+printf("\n*****\n"); 
+scan(noq,qu,st,ch); 
+break; 
+case 4: exit(0); 
+} 
+} 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+FIFO Page Replacement </div>
+<div class="col">
+<a href="operating%20system/unit3/FIFO%20Page%20Replacement.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">FIFO Page Replacement</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+int main() 
+{ 
+int i,j,n,a[50],frame[10],no,k,avail,count=0; 
+printf("\n ENTER THE NUMBER OF PAGES:\n"); 
+scanf("%d",&n); 
+printf("\n ENTER THE PAGE NUMBER :\n"); 
+for(i=1;i<=n;i++) 
+scanf("%d",&a[i]); 
+printf("\n ENTER THE NUMBER OF FRAMES :"); 
+scanf("%d",&no); 
+for(i=0;i< no;i++) 
+frame[i]= -1; 
+j=0; 
+printf("\tref string\t page frames\n"); 
+for(i=1;i<=n;i++) 
+{ 
+printf("%d\t\t",a[i]); 
+avail=0; 
+for(k=0;k< no;k++) 
+if(frame[k]==a[i]) 
+avail=1; 
+if (avail==0) 
+{ 
+frame[j]=a[i]; 
+j=(j+1)%no; 
+count++; 
+for(k=0;k< no;k++) 
+printf("%d\t",frame[k]); 
+} 
+printf("\n"); 
+} 
+printf("Page Fault Is %d",count); 
+return 0; 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+IPC Programs : Program 1 </div>
+<div class="col">
+<a href="operating%20system/unit3/IPC%20Programs%20_%20Program%201.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">IPC Programs : Program 1</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< unistd.h>
+#include< stdlib.h>
+#include< stdio.h>
+#include< string.h>
+#include< sys/shm.h>
+int main()
+{
+    int i;
+    void *shared_memory;
+    char buff[100];
+    int shmid;
+    shmid=shmget((key_t)2345, 1000,0666|IPC_CREAT); \\creates shared memory segment
+    printf("Key of shared memory is %d\n",shmid);
+    shared_memory=shmat(shmid,NULL,0); \\process attached to shared memory segment
+    printf("Process attached at %X\n",(int)shared_memory);
+    printf("Enter some data to write to shared memory\n");
+    read(0,buff,100); \\get some input from user
+    strcpy(shared_memory,buff); \\data written to shared memory
+    printf("You wrote : %s\n",shared_memory);
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+IPC Programs : Program 2 </div>
+<div class="col">
+<a href="operating%20system/unit3/IPC%20Programs%20_%20Program%202.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">IPC Programs : Program 2</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< unistd.h>
+#include< stdlib.h>
+#include< stdio.h>
+#include< string.h>
+#include< sys/shm.h>
+int main()
+{
+    int i;
+    void *shared_memory;
+    char buff[100];
+    int shmid;
+    shmid=shmget((key_t)2345, 1000,0666);
+    printf("Key of shared memory is %d\n",shmid);
+    shared_memory=shmat(shmid,NULL,0); \\process attached to shared memory segment
+    printf("Process attached at %X\n",(int)shared_memory);
+    printf("Data read from shared memory is : %s\n",shared_memory);
+}
+
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+LRU Page Replacement </div>
+<div class="col">
+<a href="operating%20system/unit3/LRU%20Page%20Replacement.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">LRU Page Replacement</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+int fr[3]; 
+void main() 
+{ 
+void display(); 
+int p[12]={2,3,2,1,5,2,4,5,3,2,5,2},i,j,fs[3]; 
+int index,k,l,flag1=0,flag2=0,pf=0,frsize=3; 
+for(i=0;i< 3;i++) 
+{ 
+fr[i]=-1; 
+} 
+for(j=0;j< 12;j++) 
+{ 
+flag1=0,flag2=0; 
+for(i=0;i< 3;i++) 
+{ 
+if(fr[i]==p[j]) 
+{ 
+flag1=1; 
+flag2=1; 
+break; 
+} 
+} 
+if(flag1==0) 
+{ 
+for(i=0;i< 3;i++) 
+{ 
+if(fr[i]==-1) 
+{ 
+fr[i]=p[j]; 
+flag2=1; 
+break; 
+} 
+} 
+} 
+if(flag2==0) 
+{ 
+for(i=0;i< 3;i++) 
+fs[i]=0; 
+for(k=j-1,l=1;l<=frsize-1;l++,k--)
+
+{ 
+for(i=0;i< 3;i++) 
+{ 
+if(fr[i]==p[k]) 
+fs[i]=1; 
+} 
+} 
+for(i=0;i< 3;i++) 
+{ 
+if(fs[i]==0) 
+index=i; 
+} 
+fr[index]=p[j]; 
+pf++; 
+} 
+display(); 
+} 
+printf("\n no of page faults :%d",pf); 
+} 
+void display() 
+{ 
+int i; 
+printf("\n"); 
+for(i=0;i< 3;i++) 
+printf("\t%d",fr[i]); 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Optimal Page Replacement </div>
+<div class="col">
+<a href="operating%20system/unit3/Optimal%20Page%20Replacement.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Optimal Page Replacement</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+main() 
+{ 
+int fr[5],i,j,k,t[5],p=1,flag=0,page[25],psz,nf,t1,u[5]; 
+clrscr(); 
+printf("enter the number of frames:"); 
+scanf("%d",&nf); 
+printf("\n enter the page size"); 
+scanf("%d",&psz); 
+printf("\nenter the page sequence:"); 
+for(i=1; i<=psz; i++) 
+scanf("%d",&page[i]); 
+for(i=1; i<=nf; i++) 
+fr[i]=-1; 
+for(i=1; i<=psz; i++) 
+{ 
+if(full(fr,nf)==1) 
+break; 
+else 
+{ 
+flag=0; 
+for(j=1; j<=nf; j++) 
+{ 
+if(page[i]==fr[j]) 
+{ 
+flag=1; 
+printf(" \t%d:\t",page[i]); 
+break; 
+} 
+} 
+if(flag==0) 
+{ 
+fr[p]=page[i]; 
+printf(" \t%d:\t",page[i]); 
+p++; 
+} 
+for(j=1; j<=nf; j++)
+
+printf(" %d ",fr[j]); 
+printf("\n"); 
+} 
+} 
+p=0; 
+for(; i<=psz; i++) 
+{ 
+flag=0; 
+for(j=1; j<=nf; j++) 
+{ 
+if(page[i]==fr[j]) 
+{ 
+flag=1; 
+break; 
+} 
+} 
+if(flag==0) 
+{ 
+p++; 
+for(j=1; j<=nf; j++) 
+{ 
+for(k=i+1; k<=psz; k++) 
+{ 
+if(fr[j]==page[k]) 
+{ 
+u[j]=k; 
+break; 
+} 
+else 
+u[j]=21; 
+} 
+} 
+for(j=1; j<=nf; j++) 
+t[j]=u[j]; 
+for(j=1; j<=nf; j++) 
+{ 
+for(k=j+1; k<=nf; k++) 
+{ 
+if(t[j]< t[k]) 
+{ 
+t1=t[j]; 
+t[j]=t[k]; 
+t[k]=t1; 
+}
+
+} 
+} 
+for(j=1; j<=nf; j++) 
+{ 
+if(t[1]==u[j]) 
+{ 
+fr[j]=page[i]; 
+u[j]=i; 
+} 
+} 
+printf("page fault\t"); 
+} 
+else 
+printf(" \t"); 
+printf("%d:\t",page[i]); 
+for(j=1; j<=nf; j++) 
+printf(" %d ",fr[j]); 
+printf("\n"); 
+} 
+printf("\ntotal page faults: %d",p+3); 
+} 
+int full(int a[],int n) 
+{ 
+int k; 
+for(k=1; k<=n; k++) 
+{ 
+if(a[k]==-1) 
+return 0; 
+} 
+return 1; 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+PIPE </div>
+<div class="col">
+<a href="operating%20system/unit3/PIPE.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">PIPE</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+#include< stdlib.h> 
+#include< unistd.h> 
+int main() 
+{  
+   int fd[2],n;  
+   char buffer[100];  
+   pid_t p;  
+   pipe(fd);  
+   p=fork();  
+   if(p>0)  
+     {   
+	    close(fd[0]);   
+		printf("Passing value to child\n");   
+		write(fd[1],"hello\n",6);   
+		wait();     
+	 }  
+   else  
+    {   
+	    close(fd[1]);     
+		n=read(fd[0],buffer,100);   
+		write(1,buffer,n);  
+	} 
+	exit(0); 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+POPEN PCLOSE </div>
+<div class="col">
+<a href="operating%20system/unit3/POPEN%20PCLOSE.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">POPEN PCLOSE</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < stdio.h>  
+#define MAXSTRS 5  
+int main(void)  
+{  
+   int cntr;  
+   FILE *pipe_fp;  
+   char *strings[MAXSTRS] = { "echo", "bravo", "alpha", "charlie", "delta"};  
+   pipe_fp = popen("sort", "w");  
+   for(cntr=0; cntr< MAXSTRS; cntr++)  
+     {  
+	    fputs(strings[cntr], pipe_fp);  
+		fputc('\n', pipe_fp);  
+	 }  
+   pclose(pipe_fp);  
+   return(0); 
+ }          </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+ <div class="col">
+POPEN </div>
+<div class="col">
+<a href="operating%20system/unit3/POPEN.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal9">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal9">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">POPEN</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< stdio.h> 
+#include< stdlib.h> 
+#include< unistd.h> 
+#include< string.h> 
+int main() 
+{  
+    FILE *rd;  
+	char buffer[500];  
+	int n;  
+	sprintf(buffer,"name first");  
+	rd=popen("wc -c","w");  
+	if(rd !=NULL)  
+	   fwrite(buffer,sizeof(char),strlen(buffer),rd);  
+	pclose(rd); //required 
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Program for inter process communication using named pipes </div>
+<div class="col">
+<a href="operating%20system/unit3/Program%20for%20inter%20process%20communication%20using%20named%20pipes.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal10">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal10">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Program for inter process communication using named pipes</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> //This will require three different programs to work
+ 
+//Program 1: Creating fifo/named pipe ( 1.c )
+
+	#include< unistd.h>
+	#include< stdlib.h>
+	#include< stdio.h>
+	int main()
+	{
+		int res;
+        res = mkfifo("fifo1",0777); //creates a named pipe with the name fifo1
+		printf("named pipe created\n");
+	}
+//Now compile and run this program. 
+------------------------------------------------------------
+
+//Program 2: Writing to a fifo/named pipe ( 2.c )
+
+	#include< stdlib.h>
+	#include< stdio.h>
+	#include< fcntl.h>
+	int main()
+	{
+		int res,n;
+		res=open("fifo1",O_WRONLY);
+		write(res,"written",7);
+				printf("Process %d finished\n",getpid());
+	}
+	
+/*Compile this program as
+     gcc -o 2 2.c
+Note: If you run this you will not see any output*/
+--------------------------------------------------------------
+
+//Program 3: Reading from the named pipe ( 3.c )
+
+	#include< stdlib.h>
+	#include< stdio.h>
+	#include< fcntl.h>
+	int main()
+	{
+		int res,n;
+		char buffer[100];
+		res=open("fifo1",O_RDONLY);
+		n=read(res,buffer,100);
+		printf("Total bytes read: %d\n",n);
+		printf("%s was passed to me \n",buffer);
+		printf("Process %d finished\n",getpid());
+		
+	}
+	
+/*Compile the program as
+     gcc  -o  3  3.c*/
+
+Now run both the object files simultaneously as
+    ./2  &  ./3 </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-a188ff374782dd89cdbfa2d2-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="a188ff374782dd89cdbfa2d2-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="a188ff374782dd89cdbfa2d2-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="a188ff374782dd89cdbfa2d2-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=operating+system&unitid=unit3 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:53:44 GMT -->
+</html>

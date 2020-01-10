@@ -1,0 +1,16 @@
+#include < stdio.h>  
+#define MAXSTRS 5  
+int main(void)  
+{  
+   int cntr;  
+   FILE *pipe_fp;  
+   char *strings[MAXSTRS] = { "echo", "bravo", "alpha", "charlie", "delta"};  
+   pipe_fp = popen("sort", "w");  
+   for(cntr=0; cntr< MAXSTRS; cntr++)  
+     {  
+	    fputs(strings[cntr], pipe_fp);  
+		fputc('\n', pipe_fp);  
+	 }  
+   pclose(pipe_fp);  
+   return(0); 
+ }         

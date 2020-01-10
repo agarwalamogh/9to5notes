@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 9to5notes.in/u/Form/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:02:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Upload Notes | Help Us Grow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="images/icons/favicon.html" />
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="dropzone.html">
+<style>
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            background: rgba(256,256,256,1)!important;
+        }
+        .hamburger--collapse.is-active .hamburger-inner {
+            background:#fff!important;
+            }
+      .hamburger--collapse.is-active .hamburger-inner::after {
+            background:#fff!important;
+            }
+      .hamburger--collapse.is-active .hamburger-inner::before {
+            background:#fff!important;
+            }
+    </style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="1dabba366cd8190d66549122-text/javascript"></script>
+<script type="1dabba366cd8190d66549122-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+</head>
+<body>
+<div class="sidebar-loader">
+</div>
+<div class="container-contact100">
+<div class="wrap-contact100">
+<form action="https://9to5notes.in/u/Form/upload.php" method="post" enctype="multipart/form-data" class="contact100-form validate-form">
+<span class="contact100-form-title">
+Help Us Grow!</br> <span style="font-size:20px;font-weight:100;">Upload Your Notes</span>
+</span>
+<div class="wrap-input100 validate-input" data-validate="Name is required">
+<span class="label-input100">Your Name</span>
+<input class="input100" type="text" name="name" placeholder="Enter your name">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+<span class="label-input100">Email</span>
+<input class="input100" type="text" name="email" placeholder="Enter your email addess">
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 input100-select drp">
+<span class="label-input100">Select Course</span>
+<div>
+<select id="courses" class="selection-2 drp" name="service">
+<option value="n">Choose Course</option>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="ECE">CIV</option>
+<option value="ECE">ME</option>
+<option value="IT">IT</option>
+</select>
+</div>
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 input100-select">
+<span class="label-input100">Select Year</span>
+<div>
+<select id="year" class="selection-2" name="year">
+<option value="n">Select Year</option>
+<option value="One">I Year</option>
+<option value="Two">II Year</option>
+<option value="Three">III Year</option>
+<option value="Four">IV Year</option>
+</select>
+</div>
+<span class="focus-input100"></span>
+</div>
+<div class="wrap-input100 validate-input" data-validate="Message is required">
+<span class="label-input100">Subject Name</span>
+<input class="input100" type="text" name="message" placeholder="Enter The Name Of The Subject">
+<span class="focus-input100"></span>
+</div>
+<input type="file" name="fileToUpload[]" multiple="multiple" accept=".ppt,.pptx,.doc,.txt,.jpg,.jpeg,.img,.png,.gif,.pdf" class="inputfile" id="file" data-multiple-caption="{count} files selected" hidden />
+<label for="file" id="upload-label"><span id="upload-label-span">Click To Select Files</span></label>
+<div class="container-contact100-form-btn">
+<div class="wrap-contact100-form-btn">
+<div class="contact100-form-bgbtn"></div>
+<button class="contact100-form-btn" name="submit" type="submit" formmethod="post">
+<span>Upload
+<i class="fa fa-long-arrow-up m-l-7" aria-hidden="true"></i>
+</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<script src="vendor/jquery/jquery-3.2.1.min.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+
+<script src="vendor/animsition/js/animsition.min.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+
+<script src="vendor/bootstrap/js/popper.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+
+<script src="vendor/select2/select2.min.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+<script type="1dabba366cd8190d66549122-text/javascript">
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+		
+		
+	</script>
+
+<script src="vendor/daterangepicker/moment.min.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+<script src="vendor/daterangepicker/daterangepicker.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+
+<script src="vendor/countdowntime/countdowntime.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+
+<script src="js/main.js" type="1dabba366cd8190d66549122-text/javascript"></script>
+<script type="1dabba366cd8190d66549122-text/javascript">
+/**
+    var inputs = document.querySelectorAll( '.inputfile' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+	var label	 = input.nextElementSibling,
+		labelVal = label.innerHTML;
+
+	input.addEventListener( 'change', function( e )
+	{
+		var fileName = '';
+		if( this.files && this.files.length > 1 )
+			fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+		else
+			fileName = e.target.value.split( '\' ).pop();
+
+		if( fileName )
+			label.querySelector( 'span' ).innerHTML = fileName;
+		else
+			label.innerHTML = labelVal;
+	});
+});
+**/
+
+
+$('input#file').change(function(){
+    var files = $(this)[0].files;
+    var input = event.srcElement;
+  
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+    var count = files.length;
+    if(count > 1)
+    {
+        document.getElementById('upload-label-span').innerHTML = count+' files selected';   
+    }
+    else
+    {
+        document.getElementById('upload-label-span').innerHTML = fileName;
+    }
+});
+
+
+
+$(".sidebar-loader").load("../../sidebar/sidebar.html");
+</script>
+<script src="../../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="1dabba366cd8190d66549122-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/u/Form/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:02:35 GMT -->
+</html>

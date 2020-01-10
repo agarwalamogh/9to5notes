@@ -1,0 +1,26 @@
+	#include < stdio.h >
+	#include < conio.h >
+	main()
+	{
+		int n,x=0,y=1,z,i;
+		printf("Enter the value of n:-");
+		scanf("%d",&n);
+		if(n<1)
+			printf("Invalid Terms");
+		if(n==1)
+			printf("%d",x);
+		if(n==2)
+			printf("%d\t%d",x,y);
+		if(n > 2)
+		{
+			printf("%d\t%d",x,y);
+			for(i=3;i<=n;i++)
+			{
+				z=x+y;
+				printf("\t%d",z);
+				x=y;
+				y=z;
+			}
+		}
+		getch();
+	}

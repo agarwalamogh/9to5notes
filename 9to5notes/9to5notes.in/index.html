@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from 9to5notes.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:01:57 GMT -->
+<head>
+<title>B.Tech. Study Material | 9to5notes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="theme-color" content="#1cb5e0">
+<meta name="msapplication-navbutton-color" content="#1cb5e0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta charset="utf-8" />
+<meta name="description" itemprop="description" content="Download all B.Tech. Notes in a single click. Courses like CSE, ECE, IT, ME, CIV." />
+<link rel="canonical" href="index.html" />
+
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="examples.css" />
+<link rel="stylesheet" type="text/css" href="slick.css">
+<link rel="stylesheet" type="text/css" href="slick-theme.css">
+<link rel="stylesheet" type="text/css" href="index-styleb6f5.css?v=10" />
+<link rel="stylesheet" type="text/css" href="sidebar/sidebar-style.html" />
+
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato|Montserrat|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<script src="../code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous" type="74fae905d22d2860fc91f4bd-text/javascript"></script>
+<script type="74fae905d22d2860fc91f4bd-text/javascript" src="jquery.fullPage.js"></script>
+<script src="slick.js" type="74fae905d22d2860fc91f4bd-text/javascript" charset="utf-8"></script>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#fff', '#000', '#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'How To', 'Codes','Why Us','Why Us','Why Us','About Us'],
+				afterLoad: function (anchorLink, index) {
+
+				    //section 2
+				    if (index == 2) {
+				        $(document).ready(function () {
+				            $('.section').find(".second").addClass("animate");
+				            $(".card_container").addClass("animate");
+				            setTimeout(function () {
+				                $('.section').find(".card_small_guide_svg").addClass("animate");
+				                $('.section').find(".card_medium_guide_svg").addClass("animate");
+				                setTimeout(function () {
+				                    $('.card_small_guide-p').fadeIn('slow');
+				                    $('.card_medium_guide-p').fadeIn('slow');
+				                }, 800);
+				                $('.section').find('.howto-btn').addClass('start-animation-2');
+				            }, 1500);
+				        });
+				    }
+
+				    //section 3
+				    if (index == 3) {
+				        $(document).ready(function () {
+                            $('.section').find('.third-heading-container').addClass('start-animation');
+                            setTimeout(function () {
+                                $('.section').find('.third-heading-container').addClass('start-animation-2');
+                                $('.section').find('.third-heading').addClass('start-animation-2');
+                                setTimeout(function () {
+                                    $('.delete-span').css("opacity", "0");
+                                }, 100);
+                                $('.section').find('.carousel-container').addClass('start-animation-2');
+                                $('.section').find('.code-btn').addClass('start-animation-2');
+                            }, 1500);
+				        });
+				    }
+				    
+				    //section 4
+				    if (index == 4) {
+				        $(document).ready(function () {
+                            $('.section').find('.organised-image').addClass('visible');
+                            $('.section').find('.organised-text').addClass('visible');
+                            $('.section').find('.courses-image').addClass('visible');
+                            $('.section').find('.courses-text').addClass('visible');
+				        });
+				    }
+				    
+				    
+				    //section 5
+				    if (index == 5) {
+				        $(document).ready(function () {
+                            $('.section').find('.preview-image').addClass('visible');
+                            $('.section').find('.preview-text').addClass('visible');
+                            $('.section').find('.design-image').addClass('visible');
+                            $('.section').find('.design-text').addClass('visible');
+				        });
+				    }
+				    
+				    //section 6
+				    if (index == 6) {
+				        $(document).ready(function () {
+                            $('.section').find('.mobile-image').addClass('visible');
+                            $('.section').find('.mobile-text').addClass('visible');
+                            $('.section').find('.signup-image').addClass('visible');
+                            $('.section').find('.signup-text').addClass('visible');
+				        });
+				    }
+				}
+			});
+		});
+    </script>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+    $(document).on('ready', function() {
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '30px',
+            slidesToShow: 3,
+            autoplay: true,
+            arrows:false,
+            autoplaySpeed: 1000,
+            responsive: [
+              {
+                  breakpoint: 768,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 3
+                  }
+              },
+              {
+                  breakpoint: 480,
+                  settings: {
+                      arrows: false,
+                      centerMode: true,
+                      centerPadding: '40px',
+                      slidesToShow: 1
+                  }
+              }
+            ]
+        });
+    });
+    </script>
+
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1205126,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt" type="74fae905d22d2860fc91f4bd-text/javascript"></script>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+<script async custom-element="amp-auto-ads" src="../cdn.ampproject.org/v0/amp-auto-ads-0.1.js" type="74fae905d22d2860fc91f4bd-text/javascript">
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="74fae905d22d2860fc91f4bd-text/javascript"></script>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+</head>
+<body>
+<div class="banner-container">
+<div class="banner-close"></div>
+<a href="u/Form/index.html">
+<div class="banner">
+</div>
+</a>
+</div>
+<amp-auto-ads type="adsense" data-ad-client="ca-pub-5438332058152036">
+</amp-auto-ads>
+<a href="u/Form/index.html">
+<div class="upload-notes-container">
+<span style="display:inline-block;margin:0;">Upload Your Notes &nbsp; </span>
+<div style="display: inline-block; vertical-align: middle">
+<svg width="40px" aria-hidden="true" data-prefix="fas" data-icon="cloud-upload-alt" class="svg-inline--fa fa-cloud-upload-alt fa-w-20" viewBox="0 0 640 512">
+<path fill="currentColor" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zM393.4 288H328v112c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V288h-65.4c-14.3 0-21.4-17.2-11.3-27.3l105.4-105.4c6.2-6.2 16.4-6.2 22.6 0l105.4 105.4c10.1 10.1 2.9 27.3-11.3 27.3z" />
+</svg>
+</div>
+</div>
+</a>
+<h1 style="display: none; visibility: hidden; opacity:0;">Detailed Study Material | 9to5notes </h1>
+<h2 style="display: none; visibility: hidden; opacity:0;">We provide detailed study material for the majority of the under graduate programmes which you can download on a single click.</h2>
+<div class="loading">
+<img alt="loading" style="position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:20%;height:auto;" src="loading.png" />
+</div>
+<div class="sidebar-loader">
+</div>
+<div class="logo-container">
+</div>
+<div id="fullpage">
+<div class="section" id="section0">
+<canvas id="pixie" style="z-index:1;"></canvas>
+<div class="container" style="z-index:1;"></div>
+<div class="svg-container">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 610">
+<path id="XMLID_1_" class="st2" d="M29.8 253.8c58.1-4.3 109.8-7.3 110.2-3.8.6 5.2-112.8 20.9-112.1 26.6.7 5.6 113.7-3.8 114 0 .3 3.8-114.5 16.1-114 22.8.1.9 2.4 1.5 3.4 1.7 28.2 6.1 110.8 3.4 110.6 2.1C141.6 301.7 25.5 321 26 326c.4 5 117.5-2.3 117.8 1.9.3 4.3-122 15.9-121.6 20.9.4 5 121.3-1.1 121.6 3.8.3 4.9-121.9 15-121.6 20.9.2 2.9 29.2 4.8 123.5 3.8" />
+<path id="XMLID_15_" class="st1" d="M22.2 18.2l7.6 235.6" />
+<path id="XMLID_16_" class="st3" d="M145.7 594V377.4" />
+<path id="XMLID_43_" class="st0" d="M22.1 17.1l-8.4 24.4" />
+<path id="XMLID_44_" class="st0" d="M22.1 17.1L34.2 42" />
+</svg>
+<span class="click-it">Click&nbsp;it&nbsp;to&nbsp;access all&nbsp;subjects!</span>
+</div>
+<form action="https://9to5notes.in/Search/search.php" method="post" autocomplete="off" target="_blank" name="search_form">
+<input class="homepage-search" type="text" name="search" placeholder="Search" onblur="if (!window.__cfRLUnblockHandlers) return false; this.value=''" autocomplete="off" required data-cf-modified-74fae905d22d2860fc91f4bd-="">
+</form>
+<div class="first">
+<div class="homepage-ad-1-l-con">
+<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt" type="74fae905d22d2860fc91f4bd-text/javascript"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5438332058152036" data-ad-slot="3841330137"></ins>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="homepage-ad-1-r-con">
+<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt" type="74fae905d22d2860fc91f4bd-text/javascript"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-5438332058152036" data-ad-slot="3841330137"></ins>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="hero-wrapper">
+<div class="hero-inner">
+<div class="main">
+<p class="ss1 active">
+One Stop For
+<b class="rotation-wrapper">
+<span class="s1 active">CSE</span>
+<span class="s2">ECE</span>
+<span class="s3">CIV</span>
+<span class="s4">MEC</span>
+</b>
+Notes!
+</p>
+</div>
+</div>
+</div>
+<div class="laptop-container-1">
+<div class="laptop-screen">
+</div>
+</div>
+<div class="home-text" style="display:none;position:absolute;bottom:5%;left:0;right:0;margin:auto;width:80%;height:30%;z-index:1;">
+<p class="home-text-p" style="color:white;text-align:center;font-size:1.5vw;"><span class="p-block" style="background:rgba(256,256,256,0.2);padding-left:10px;padding-right:10px;border-radius:10px;">We Provide best B.Tech Notes. We cover all 5 Major Programmes.</span><br />
+<span style="background:rgba(256,256,256,0);display:block;border-radius:10px;line-height:100%;">
+<a class="span-lists" href="subject/subject7735.html?id=CSE&amp;full_id=CSE_1st_Year">Computer Science & Engineering</a><br />
+<a class="span-lists" href="subject/subject135a.html?id=ECE&amp;full_id=ECE_1st_Year">Electrical & Computer Engineering</a><br />
+<a class="span-lists" href="subject/subject53d8.html?id=CIV&amp;full_id=CIV_1st_Year">Civil Engineering</a><br />
+<a class="span-lists" href="subject/subject21b5.html?id=ME&amp;full_id=ME_1st_Year">Mechanical Engineering</a><br />
+<a class="span-lists" href="subject/subject9e4a.html?id=IT&amp;full_id=IT_1st_Year">Information Techonology</a><br />
+<a class="span-lists" href="How%20To/Topics/Topics.html">Technical Tutorials</a><br />
+<a class="span-lists" href="codebank/codepage681a.html?id=1">Code Bank</a>
+</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="section1">
+<div class="second">
+<div class="second-page-heading-container">
+<p class="second-page-heading">How To</p>
+</div>
+<div class="card_container">
+<div class="card_large">
+</div>
+<div class="card_meduim">
+</div>
+<div class="card_small">
+</div>
+</div>
+</div>
+<div class="card_medium_guide">
+<svg viewBox="0 0 64.4 42.7" style="position:absolute;top:-40%; left:-10%; width:50%;"><path class="card_medium_guide_svg" d="M2.3 24.7c.7 1.5 2.1 3.7 4.3 4.3 8.3 2 16-22.5 27.2-23.1 5.5-.3 13.4 5.2 23.7 29.9" fill="none" stroke="#000" stroke-miterlimit="10" /></svg>
+<p class="card_small_guide-p">Find 'How To' in the Sidebar</p>
+</div>
+<div class="card_small_guide">
+<svg viewBox="0 0 64.4 42.7" style="position:absolute;bottom:-10%; right:-45%;transform:rotate(-10deg); width:70%;"><path class="card_small_guide_svg" d="M2 7.8c10.8 23.1 38.3 33 61.4 22.2" fill="none" stroke="#000" stroke-miterlimit="10" /></svg>
+<p class="card_small_guide-p">All Awesome Tech Related Tutorials</p>
+</div>
+<button class="howto-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='How%20To/Topics/Topics.html'" data-cf-modified-74fae905d22d2860fc91f4bd-="">Explore Tutorials</button>
+</div>
+<div class="section" id="section2">
+<div class="third">
+<div class="third-overlay">
+</div>
+<div class="third-heading-container">
+<span class="delete-span">We've got you covered with a lot of</span><span class="third-heading">Code Examples!</span>
+</div>
+<div class="carousel-container">
+<section class="center slider">
+<div>
+<img alt="code-a" src="code-a.jpg">
+</div>
+<div>
+<img alt="code-b" src="code-b.jpg">
+</div>
+<div>
+<img alt="code-c" src="code-c.jpg">
+</div>
+<div>
+<img alt="code-d" src="code-d.jpg">
+</div>
+<div>
+<img alt="code-e" src="code-e.jpg">
+</div>
+<div>
+<img alt="code-f" src="code-f.jpg">
+</div>
+<div>
+<img alt="code-g" src="code-g.jpg">
+</div>
+<div>
+<img alt="code-h" src="code-h.jpg">
+</div>
+</section>
+</div>
+<button class="code-btn" onclick="if (!window.__cfRLUnblockHandlers) return false; location.href='codebank/codepage681a.html?id=1'" data-cf-modified-74fae905d22d2860fc91f4bd-="">Go To Code</button>
+</div>
+</div>
+<div class="section" id="section3">
+<div class="organised">
+<div class="organised-image">
+<img alt="organised" class="organised-image" src="icons/extra/organised.jpg" />
+</div>
+<div class="organised-text">
+<div class="dash" style="position:absolute;top:16%; width:15%;height:2.5%;background:#0a60ff;border-radius:20px; opacity:0;"></div>
+<pre class="organised-text-heading" style="font-family:'Raleway';color:#0a84ff;">Not Just Organised, a Whole New Level of Organised.</pre>
+<pre class="organised-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">Carefully arranged data 
+ in the most <span style="color:red;">precised</span> way 
+possible.</pre>
+</div>
+</div>
+<div class="courses">
+<div class="courses-image">
+<img alt="courses" class="courses-image" src="icons/extra/courses.png" />
+</div>
+<div class="courses-text">
+<div class="dash" style="position:absolute;top:16%;width:15%;height:3%;background:#0a60ff;border-radius:20px;opacity:0;"></div>
+<pre class="courses-text-heading" style="font-family:'Raleway';color:#0a84ff;">B.Tech ?  B.Sc ?  B.Com ?</pre>
+<pre class="courses-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">No matter what course you have,
+we have <span style="color:red;">covered</span> them all.</pre>
+</div>
+</div>
+</div>
+<div class="section" id="section4">
+<div class="preview">
+<div class="preview-image">
+<img alt="preview" class="preview-image" src="icons/extra/preview.png" />
+</div>
+<div class="preview-text">
+<div class="dash" style="position:absolute;top:16%;width:15%;height:2.5%;background:#0a60ff;border-radius:20px; opacity:0;"></div>
+<pre class="preview-text-heading" style="font-family:'Raleway';color:#0a84ff;">Wondering, What documents contain ?</pre>
+<pre class="preview-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">We have provided an interactive
+<span style="color:red;">preview</span> button for every document,
+so that you can see what documents have
+before even downloading it.</pre>
+</div>
+</div>
+<div class="design">
+<div class="design-image">
+<img alt="design" class="design-image" src="icons/extra/design.png" />
+</div>
+<div class="design-text">
+<div class="dash" style="position:absolute;top:16%; width:15%;height:3%;background:#0a60ff;border-radius:20px; opacity:0;"></div>
+<pre class="design-text-heading" style="font-family:'Raleway';color:#0a84ff;">Simple, yet Interactive Design.</pre>
+<pre class="design-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">We have kept the design
+amazingly simple,  
+still making it attractive
+for <span style="color:red;">hassle free</span> experience.</pre>
+</div>
+</div>
+</div>
+<div class="section" id="section5">
+<div class="mobile">
+<div class="mobile-image">
+<img alt="mobile" class="mobile-image" src="icons/extra/mobile.png" />
+</div>
+<div class="mobile-text">
+<div class="dash" style="position:absolute;top:16%; width:15%;height:2.5%;background:#0a60ff;border-radius:20px; opacity:0;"></div>
+<pre class="mobile-text-heading" style="font-family:'Raleway';color:#0a84ff;">More fond of mobile ?</pre>
+<pre class="mobile-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">No problem, you can surf
+Our interactive website <span style="color:red;">100%</span>
+with mobiles as well</pre>
+</div>
+</div>
+<div class="signup">
+<div class="signup-image">
+<img alt="signup" class="signup-image" src="icons/extra/signup.png" />
+</div>
+<div class="signup-text">
+<div class="dash" style="position:absolute;top:16%; width:15%;height:3%;background:#0a60ff;border-radius:20px; opacity:0;"></div>
+<pre class="signup-text-heading" style="font-family:'Raleway';color:#0a84ff;">We dont need sign-ups to connect with you.</pre>
+<pre class="signup-text-content" style="position:absolute;font-family:'Californian FB';color:#000000;">You can <span style="color:red;">download</span> any
+document without
+signing up on our website,
+No Sign In, No Sign Up.</pre>
+</div>
+</div>
+</div>
+<div id="section6" class="section fp-auto-height">
+<div class="bottom-page">
+<div class="containers left-part-container">
+<div class="dividing-line line-1"></div>
+<div class="left-part-inner-text">
+<p class="left-part-inner-text-heading">Contact Us</p>
+<a href="https://api.whatsapp.com/send?phone=9165405333&amp;text=Hello%20There%20!"><i class="fab fa-whatsapp fa-lg" style="color:#25d366;"></i><br /><span class="left-part-inner-text-info" style="color:rgba(256,256,256,0.4);">&nbsp; 91654-05333<br /></span></a>
+<i class="far fa-envelope fa-lg" style="color:#dd4b39;"></i><br /><span class="left-part-inner-text-info">&nbsp; <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d8bebdbdbcbab9bbb398e1acb7edb6b7acbdabf6b1b6">[email&#160;protected]</a></span>
+</div>
+</div>
+<div class="containers middle-part-container">
+<div class="middle-part-inner-text">
+<p class="middle-part-inner-text-heading">Services</p>
+<i class="fas fa-code fa-lg"></i><br /><span class="middle-part-inner-text-info">&nbsp; Website&nbsp;Development<br /></span>
+<i class="fas fa-poll-h fa-lg"></i><br /><span class="middle-part-inner-text-info">&nbsp; Survey<br /></span>
+<i class="fas fa-chart-line fa-lg"></i><br /><span class="middle-part-inner-text-info">&nbsp; Paid Promotions</span>
+</div>
+</div>
+<div class="containers right-part-container">
+<div class="dividing-line line-2"></div>
+<div class="right-part-container-heading">
+<div class="right-part-inner-text">
+<div class="thank-you">
+<i class="fas fa-thumbs-up fa-4x"></i><br /><p>Thanks For Your Feedback</p>
+</div>
+<p class="right-part-inner-text-heading">How Are We Doing ?</p>
+<form id="form" action="https://9to5notes.in/newsletter.php">
+<input class="input-box footer-email-input" id="email" required type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><br />
+<input class="input-box footer-comments-input" id="msg" required type="text" name="text" placeholder="Any Comments?" /><br />
+<input id="submit" class="footer-submit-button" type="button" name="submit" value="GO!" />
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="74fae905d22d2860fc91f4bd-text/javascript">
+        function draw() {
+            con.clearRect(0, 0, WIDTH, HEIGHT);
+            for (var e = 0; e < pxs.length; e++) {
+                pxs[e].fade();
+                pxs[e].move();
+                pxs[e].draw()
+            }
+        }
+        function Circle() {
+            WIDTH = window.innerWidth;
+            HEIGHT = window.innerHeight;
+            this.s = {
+                ttl: 8e3,
+                xmax: 5,
+                ymax: 2,
+                rmax: 10,
+                rt: 1,
+                xdef: 960,
+                ydef: 540,
+                xdrift: 4,
+                ydrift: 4,
+                random: true,
+                blink: true
+            };
+            this.reset = function () {
+                this.x = this.s.random ? WIDTH * Math.random() : this.s.xdef;
+                this.y = this.s.random ? HEIGHT * Math.random() : this.s.ydef;
+                this.r = (this.s.rmax - 1) * Math.random() + 1;
+                this.dx = Math.random() * this.s.xmax * (Math.random() < .5 ? -1 : 1);
+                this.dy = Math.random() * this.s.ymax * (Math.random() < .5 ? -1 : 1);
+                this.hl = this.s.ttl / rint * (this.r / this.s.rmax);
+                this.rt = Math.random() * this.hl;
+                this.s.rt = Math.random() + 1;
+                this.stop = Math.random() * .2 + .4;
+                this.s.xdrift *= Math.random() * (Math.random() < .5 ? -1 : 1);
+                this.s.ydrift *= Math.random() * (Math.random() < .5 ? -1 : 1)
+            };
+            this.fade = function () {
+                this.rt += this.s.rt
+            };
+            this.draw = function () {
+                if (this.s.blink && (this.rt <= 0 || this.rt >= this.hl)) this.s.rt = this.s.rt * -1;
+                else if (this.rt >= this.hl) this.reset();
+                var e = 1 - this.rt / this.hl;
+                con.beginPath();
+                con.arc(this.x, this.y, this.r, 0, Math.PI * 2, true);
+                con.closePath();
+                var t = this.r * e;
+                g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, t <= 0 ? 1 : t);
+                g.addColorStop(0, "rgba(255,255,255," + e + ")");
+                g.addColorStop(this.stop, "rgba(77,101,181," + e * .6 + ")");
+                g.addColorStop(1, "rgba(77,101,181,0)");
+                con.fillStyle = g;
+                con.fill()
+            };
+            this.move = function () {
+                WIDTH = window.innerWidth;
+                HEIGHT = window.innerHeight;
+                this.x += this.rt / this.hl * this.dx;
+                this.y += this.rt / this.hl * this.dy;
+                if (this.x > WIDTH || this.x < 0) this.dx *= -1;
+                if (this.y > HEIGHT || this.y < 0) this.dy *= -1
+            };
+            this.getX = function () {
+                return this.x
+            };
+            this.getY = function () {
+                return this.y
+            }
+        }
+        var WIDTH;
+        var HEIGHT;
+        var canvas;
+        var con;
+        var g;
+        var pxs = new Array;
+        var rint = 60;
+        $(document).ready(function () {
+            WIDTH = "100%";
+            HEIGHT = "100%";
+            $("#container").width(WIDTH).height(HEIGHT);
+            WIDTH = window.innerWidth;
+            HEIGHT = window.innerHeight;
+            canvas = document.getElementById("pixie");
+            $(canvas).attr("width", WIDTH).attr("height", HEIGHT);
+            con = canvas.getContext("2d");
+            for (var e = 0; e < 60; e++) {
+                pxs[e] = new Circle;
+                pxs[e].reset()
+            }
+            setInterval(draw, rint)
+        });
+        $(".services .header2 .service-header").hover(function () {
+            var e = $(this);
+            e.find("h3").hide();
+            $(this).parent().find(".header-bg").stop(true, true).animate({
+                width: "100%"
+            }, "fast", function () {
+                e.find("h3").addClass("active").fadeIn("fast")
+            })
+        }, function () {
+            var e = $(this);
+            e.find("h3").hide();
+            e.parent().find(".header-bg").stop(true, true).animate({
+                width: 70
+            }, "fast", function () {
+                e.find("h3").removeClass("active").fadeIn("fast")
+            })
+        })
+
+        $(".sidebar-loader").load("sidebar/sidebar.html");
+
+
+        var currSlogan = 1;
+        var setSlogans = function () {
+            var count = $(".main p.ss1 span").length;
+
+            var cS = currSlogan;
+            var pS = currSlogan - 1;
+            if (pS < 1) pS = count;
+            var ppS = currSlogan - 2;
+            if (currSlogan < 2) ppS = count - currSlogan;
+            if (ppS < 1) ppS = count;
+
+            currSlogan++;
+            if (currSlogan > count) currSlogan = 1;
+            var nS = currSlogan;
+
+            //console.log("count="+count+"/ns="+nS+"/cs="+cS+"/ps="+pS+"/pps="+ppS);
+
+            $(".main p .s" + cS).addClass("removed");
+            $(".main p .s" + pS).addClass("hidden");//.removeClass("active removed");
+            $(".main p .s" + ppS).removeClass("hidden active removed");
+            $(".main p .s" + nS).addClass("active");
+        };
+
+        setInterval(setSlogans, 2000);
+
+        $('.click-it').fadeOut('fast');
+        $('.card_small_guide-p').fadeOut('fastest');
+        $('.card_medium_guide-p').fadeOut('fastest');
+
+        $(window).load(function () {
+            $(".loading").fadeOut("slow");
+            setTimeout(function () {
+                $('.svg-container').addClass('start-animation');
+                setTimeout(function () {
+                    $('.click-it').fadeIn('fast');
+                }, 1500);
+            }, 1200);
+            
+            setTimeout(function(){
+                  $(".upload-notes-container").addClass('hide');
+                }, 1500);
+        });
+
+
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var email = $("#email").val();
+                var msg = $("#msg").val();
+                var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+                if (email == '' || msg == '') {
+                    //alert("Insertion Failed Some Fields are Blank....!!");
+                } else if (testEmail.test(email)) {
+                    // Returns successful data submission message when the entered information is stored in database.
+                    $.post("newsletter.html", {
+                        email1: email,
+                        msg1: msg
+                    }, function (data) {
+                        $('.thank-you').css({ transform: 'translate(0px)' });
+                        setTimeout(function () {
+                            $('#form')[0].reset();
+                        }, 500);
+                        setTimeout(function () {
+                            $('.thank-you').css({ transform: 'translate(700px)' });
+                        },2000);
+                        // To reset form fields
+                    });
+                }
+            });
+        });
+
+    </script>
+<style>
+        .bottom-page {
+            height: 250px;
+            background: #000;
+        }
+        @media screen and (max-width: 1000px)
+{
+    
+        ul
+        {
+            display:none!important;
+        }
+}
+    </style>
+<script type="74fae905d22d2860fc91f4bd-text/javascript">
+        $(document).ready(function() {
+
+    var delay = 2500; // milliseconds
+    var cookie_expire = 30; // days
+
+    var cookie = localStorage.getItem("upload-banner");
+    if(cookie == undefined || cookie == null) {
+        cookie = 0;
+    }
+
+    if(((new Date()).getTime() - cookie) / (1000 * 60 * 60 * 24) > cookie_expire) {
+        $(".banner-container").delay(delay).fadeIn("fast", () => {
+            $(".banner").fadeIn("fast");
+        });
+
+        $(".banner-close").click(() => {
+            $(".banner-container, .banner").fadeOut('fast');
+            localStorage.setItem("upload-banner", (new Date()).getTime());
+        });
+        
+        $(".banner").click(() => {
+            localStorage.setItem("upload-banner", (new Date()).getTime());
+        });
+    }
+
+});
+    </script>
+<script src="../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="74fae905d22d2860fc91f4bd-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:02:19 GMT -->
+</html>

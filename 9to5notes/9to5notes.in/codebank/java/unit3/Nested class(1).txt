@@ -1,0 +1,24 @@
+public class Local
+{
+int a=10;
+void show()
+      {
+      final int b=20;
+      System.out.println("Outer is invoking inner show() method");
+      class LocalInner
+           {
+           void showLocal()
+               {
+               System.out.println("Local, a="+a); 
+               System.out.println("Local, b="+b); 
+               }
+           }
+      LocalInner localinner = new LocalInner();
+      localinner.showLocal();
+       } 
+public static void main(String arv[])
+	   {
+	   Local l = new Local();
+     l.show();
+	   }
+} 

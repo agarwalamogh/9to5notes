@@ -1,0 +1,10 @@
+#include < stdio.h >
+
+main() {
+
+   int a = 17, b = 5;
+   double c;
+
+   c = (double) a / b;
+   printf("Value of mean : %f\n", c );
+}

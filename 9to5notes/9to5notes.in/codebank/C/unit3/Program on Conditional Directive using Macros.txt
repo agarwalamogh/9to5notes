@@ -1,0 +1,15 @@
+
+#include< stdio.h >
+#include< conio.h >
+#define Line 100
+main()
+{
+#if(Line==100)
+printf("line is 100");
+#elif(Line==50)
+printf("LINE IS 50");
+#else
+printf("line is 0");
+#endif
+getch();
+}

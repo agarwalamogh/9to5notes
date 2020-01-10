@@ -1,0 +1,17 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp;
+char s[10];
+fp=fopen("m1.c","w");
+if(fp==NULL)
+{
+printf("can not open file");
+}
+printf("enter string");
+gets(s);
+fputs(s,fp);
+fclose(fp);
+getch();
+}

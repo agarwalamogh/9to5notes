@@ -1,0 +1,76 @@
+#include< GL\glut.h>
+#include< iostream>
+#include< conio.h>
+#include< math.h>
+using namespace std;
+void ellipse(float a,float b,float x,float y)
+{
+float p1,p2;
+int x1=x,y1=y;
+x=0;
+y=b;
+glClear(GL_COLOR_BUFFER_BIT);
+	glBegin(GL_POINTS);
+p1=((b*b)+((a*a)/4)-(a*a*b));
+
+while((2*(b*b)*x)< (2*(a*a)*y))
+{
+glVertex2f(x+x1,y+y1);
+	glVertex2f(-x+x1,y+y1);
+	glVertex2f(-x+x1,-y+y1);
+	glVertex2f(x+x1,-y+y1);
+	if(p1< 0)
+	{
+			x=x+1;
+			y=y;
+		p1=p1+(2*(b*b)*x)+(b*b);
+	}
+	else
+	{
+			x=x+1;
+		y=y-1;
+		p1=p1+(2*(b*b)*x)-(2*(a*a)*y)+(b*b);
+	}
+}
+p2=((b*b)*(x+(0.5))*(x+(0.5))+(a*a)*(y-1)*(y-1));
+while(y!=0)
+{
+		glVertex2f(x+x1,y+y1);
+	glVertex2f(-x+x1,y+y1);
+	glVertex2f(-x+x1,-y+y1);
+	glVertex2f(x+x1,-y+y1);
+if(p2< 0)
+{
+	x=x+1;
+	y=y-1;
+	p2=p2+(2*(b*b*x))-(2*(a*a*y)+(a*a));
+}
+else
+{
+	x=x;
+	y=y-1;
+	p2=p2-(2*(a*a*y))+(a*a);
+}
+}
+	glEnd();
+	glFlush();
+}
+void display()
+{
+	glClearColor(0.0,0.0,1.0,0.0);
+	glMatrixMode(GL_PROJECTION);
+	gluOrtho2D(-100.0,100.0,-100.0,100.0);
+	glClear(GL_COLOR_BUFFER_BIT);
+	ellipse(30,20,00,0);
+}
+int main(int argc,char **argv)
+{
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_RGB | GLUT_SINGLE);
+	glutInitWindowSize(500,500);
+	glutInitWindowPosition(0,0);
+	glutCreateWindow("My");
+	glutDisplayFunc(display);
+	glutMainLoop();
+	return 0;
+}

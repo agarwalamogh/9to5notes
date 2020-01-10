@@ -1,0 +1,15 @@
+class Demo
+{
+public static void main(String arv[])
+  {
+  try 
+    {
+    System.out.println("Hello");
+    throw new ArithmeticException();
+    }
+  finally
+    {
+    //throw new NullPointerException();
+    }
+  }
+}

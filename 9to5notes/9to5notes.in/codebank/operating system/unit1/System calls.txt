@@ -1,0 +1,58 @@
+// SYSTEM CALLS(1)
+---------------------		
+#include < unistd.h> 
+#include < stdlib.h> 
+int main() 
+{ 
+char buffer[10]; 
+read(0, buffer,10); 
+write(1,buffer,10); 
+}
+
+
+//SYSTEM CALLS(2) 
+---------------------
+#include< stdio.h> 
+#include < unistd.h> 
+#include < stdlib.h> 
+int main() 
+{ 
+char buffer[128]; 
+int nread; 
+nread=read(0, buffer,128); 
+write(1,buffer,nread); 
+printf("%d",nread); 
+}
+
+
+ //SYSTEM CALLS(3)
+ ---------------------
+#include < unistd.h> 
+#include < stdlib.h> 
+#include< stdio.h> 
+int main() 
+{ 
+int n; 
+write(1, "some", 4); 
+} 
+
+
+//SYSTEM CALLS(4) 
+----------------------
+#include< unistd.h> 
+#include< stdio.h> 
+#include< fcntl.h> 
+#include< sys/types.h> 
+#include< sys/stat.h> 
+int main() 
+{ 
+int n,m; 
+char buffer[100]; 
+n=open("new_file",O_RDONLY); 
+printf("file descriptor is %d\n",n); 
+m=open("new_file1",O_CREAT|O_WRONLY,0777); 
+printf("file descriptor is %d\n",m); 
+read(n,buffer,10); 
+write(m,buffer,10); 
+printf("copy completed"); 
+}

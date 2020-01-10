@@ -1,0 +1,36 @@
+interface A
+{
+int a =10;
+void m();
+default void m1()
+  {
+  System.out.println("A-m1");
+  }
+static void m2()
+  {
+  System.out.println("A-m2");
+  }
+}
+ 
+class Demo implements A
+{
+public void m()
+  {
+  System.out.println("Demo-m");
+  }
+public void m1()
+  {
+  System.out.println("Demo-m1");
+  }
+public void m2()
+  {
+  System.out.println("Demo-m2");
+  }
+public static void main(String arv[])
+  {
+  A obj = new Demo();
+  obj.m1();
+  obj.m();
+  obj.m2();
+  }
+}

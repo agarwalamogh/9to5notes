@@ -1,0 +1,971 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=datastructure&unitid=unit2 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:52:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<script type="3edf661dee68dbb0018314bb-text/javascript">
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5438332058152036",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135372602-1" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<script type="3edf661dee68dbb0018314bb-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135372602-1');
+</script>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<link href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../../use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Exo:200,300i,400,400i,500,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="prism.html" />
+
+<link rel="stylesheet" type="text/css" href="media.css" />
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="3edf661dee68dbb0018314bb-text/javascript">
+	</script>
+
+<script src="../../code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous" type="3edf661dee68dbb0018314bb-text/javascript">
+	</script>
+
+
+<script src="../../code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<script src="../../stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<script src="../../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+
+<script src="prism-2.html" type="3edf661dee68dbb0018314bb-text/javascript"></script>
+<title>datastructure</title>
+</head>
+<body style="background:url(code-2a.png);background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;overflow-x:hidden;">
+<div class="sidebar-loader"></div>
+<div class="row" style="height:75px"></div>
+<div class="row justify-content-md-center" style="height:85px;text-align:center;">
+<div class="col-md-8" style="font-family:'Charmonman', cursive;font-size:6vw;font-weight:700;text-align:center;">
+Datastructure </div>
+</div>
+<div class="row" style="height:1px">
+<div class="col-md-6 offset-md-3" style="background:#999999"></div>
+</div>
+<div class="row" style="height:45px"></div>
+<div class="row text-center">
+<div class="col-md-8 offset-md-2" style="font-family:'Charmonman', cursive;font-size:30px;font-weight:400;">
+Stacks And Queues </div>
+</div>
+<div class="row" style="height:25px"></div>
+<div class="row">
+<div class="col-md-10 offset-md-1">
+<div class="container-fluid" style="height:495px;overflow-y:auto;">
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Queue using Array </div>
+<div class="col">
+<a href="datastructure/unit2/Queue%20using%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal1">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Queue using Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+
+int insertion(int *, int);
+int deletion(int *);
+int peek(int *);
+
+int front=-1, rear=-1;    //initializing variables
+int size = 5;
+int insertion(int arr[], int val)
+{
+    if( (front==0 && rear==size-1) || (front==rear+1) )     //comparison with (size-1) since index starts from 0
+    {
+        cout<<"Overflow..." << endl;
+        return 0;    
+    }
+    else if(front==-1)         //checking if queue is empty
+         front = rear = 0;    //bringing front and rear to beginning position         
+    else if(rear==size-1)     //checking if rear is at end position of array
+         rear = 0;          //bringing rear to beginning position
+    else
+         rear++;            //incrementing front variable    
+    
+    arr[rear] = val;         //inserting in queue
+}
+int deletion(int arr[])
+{
+    if(front==-1)            //checking if queue is empty
+    {
+         cout<<"Underflow..." << endl;
+         return 0;     
+    }
+    int val = arr[front];    //temporarily storing value to be deleted
+                         
+    if(front==rear)          //checking if only 1 element in queue
+         front = rear = -1;
+    else if(front==size-1)   //comparison with (size-1) since index starts from 0
+         front = 0;
+    else
+        front++;
+    cout<<"Value deleted is: " << val << endl;
+}
+
+int peek(int arr[])
+{
+     int p = front;
+     if(p==-1)
+     {
+         cout<<"Queue is empty..." << endl;
+         return 0;             
+     }
+     
+     cout<<"\n Elements in queue are: " << endl;
+     while(p!=rear)
+     {
+          cout<< arr[p] << "  ";
+          if(p==size-1)      //checking if end of array is reached while traversing
+             p=0;            //bringing varible to beginning position
+          else
+             p++;
+     }  
+     cout<<  arr[p];        //printing last element of queue which was skipped in loop
+}
+int main()
+{
+    int val, choice, arr[size];
+    while(1)
+    {
+            cout<<"\n**** Enter choice: ****"  << endl;
+            cout<<"1 : Insert"  << endl;
+            cout<<"2 : Delete"  << endl;
+            cout<<"3 : Peek"  << endl;
+            cout<<"4 : Exit"  << endl;
+            cin>>choice;
+            switch(choice)
+            {
+                case 1: 
+                     cout<<"Enter value to insert: ";
+                     cin>>val;
+                     insertion(arr, val);
+                     break;                     
+                case 2:
+                     deletion(arr);
+                     break;                     
+                case 3:
+                     peek(arr);
+                     break;
+                case 4:
+                     exit(1);
+                     break;
+                default:
+                   cout<<"Wrong choice..." << endl;          
+            }
+    } 
+        
+       
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Queue using Linked List </div>
+<div class="col">
+<a href="datastructure/unit2/Queue%20using%20Linked%20List.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal2">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal2">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Queue using Linked List</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+
+struct node
+{
+   int info;
+   node *next;
+}*front=NULL, *rear=NULL;
+
+void insertion(int);
+void deletion();
+int peek();
+void insertion(int val)
+{
+    node *temp = new node;
+    temp->info = val;
+    temp->next = NULL;
+    if(rear==NULL)              //checking if queue is empty        
+        front = rear = temp;              
+    else
+    {
+        rear->next = temp;     //connecting last node with new node
+        rear = temp;           //moving rear pointer to last node
+    }    
+}
+
+void deletion()
+{
+     node *p;
+     if(front==NULL)           //checking if queue is empty
+         cout<<"UnderFlow..." << endl; 
+     else if(front==rear)      //checking if only 1 element remaining in queue
+     {
+         p = front;
+         front = rear = NULL;
+         cout<<"Element deleted is: " << p->info << endl;
+         delete p;    
+     }
+     else
+     {
+         p = front;
+         front = front->next;
+         cout<<"Element deleted is: " << p->info << endl;
+         delete p;    
+     }
+}
+
+int peek()
+{
+   node *p = front;
+   if(p==NULL)
+   {
+       cout<<"Queue is empty..." << endl;
+       return 0;           
+   }
+   
+   cout<<"\n Element in queue are: " << endl;
+   while(p!=NULL)
+   {
+       cout<< p->info <<"  ";   
+       p = p->next;           
+   }          
+   cout<< endl; 
+}
+int main()
+{
+    int val, choice;    
+    while(1)
+    {
+            cout<<"\n**** Enter choice: ****"  << endl;
+            cout<<"1 : Insert"  << endl;
+            cout<<"2 : Delete"  << endl;
+            cout<<"3 : Peek"  << endl;
+            cout<<"4 : Exit"  << endl;
+            cin>>choice;
+            switch(choice)
+            {
+                case 1: 
+                     cout<<"Enter value to insert: ";
+                     cin>>val;
+                     insertion(val);
+                     break;                     
+                case 2:
+                     deletion();
+                     break;                     
+                case 3:
+                     peek();
+                     break;
+                case 4:
+                     exit(1);
+                     break;
+default:
+                   cout<<"Wrong choice..." << endl;          
+            }
+    } 
+        
+      
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Queue </div>
+<div class="col">
+<a href="datastructure/unit2/Queue.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal3">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal3">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Queue</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include < iostream>
+#include < conio.h>
+using namespace std;
+
+int q[25], n ,front=-1 , rear=-1 , item;
+
+void insertion()
+{
+       
+     if((rear==n) && (front==(rear+1))||(front==rear+1))
+     {
+       cout<<"Queue Overflow"<< endl;
+     }
+       
+       else if (rear==0)
+       front = rear = 1;
+       
+       else if(rear==n)
+       rear=1;
+       
+       else
+       rear=rear+1;
+       
+       cout<<"Enter the item"<< endl;
+       cin>>item;
+       q[rear] = item;
+       cout<<"is inserted\n\n"<< item;
+       
+     }
+     
+void deletion()
+{
+     if(front==0)
+     {
+                    cout<<"Queue Underflow\n\n"<< endl;
+           
+          }
+          
+     item=q[front];
+          
+     if(front==rear)
+     {
+               front=0;
+               rear=0;
+     }
+     
+     else if (front==n)
+     front=1;
+     
+     else
+     front=front+1;
+     
+      //cout<<" is deleted\n\n"<< item;
+ }  
+     
+void show()         
+{
+     for(int i=0;i<=rear;i++)
+     cout<< q[i]<< endl;
+
+ }
+     
+     
+     
+int main()
+{   
+    int op;
+    
+    cout<<"Enter the size of the queue :"<< endl;
+    cin>>n;
+    
+    do
+          {
+             cout<<"1.Insert"<< endl;
+             cout<<"2.Delete"<< endl;
+             cout<<"3.Display"<< endl;
+             cout<<"Enter your choice :"<<endl; cin>>op;
+          
+             switch(op)
+             {
+                    case 1:
+                              insertion();
+                              break;
+                              
+                    case 2:
+                              deletion();
+                              break;
+                              
+                    case 3:
+                              show();
+                              break;
+                    
+                                   
+                    //default:
+                      //        printf("Invalid Option. Try again.");
+                    
+              }
+        }while(op!=4);
+        
+        cout<<"----THE END------";
+    } </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Quick Sort </div>
+<div class="col">
+<a href="datastructure/unit2/Quick%20Sort.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal4">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal4">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Quick Sort</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< conio.h>
+#include< iostream>
+using namespace std;
+int quick(int q[],int lt,int rt ,int lc){
+int temp;
+lc=lt;
+l1:
+while((q[lc]<=q[rt])&&(lc!=rt)){
+rt=rt-1;
+}
+if(lc==rt){
+return lc ;
+}
+if(q[lc]>q[rt]){
+    temp=q[rt];
+    q[rt]=q[lc];
+    q[lc]=temp;
+    lc=rt;
+    }
+    while((q[lc]>=q[lt])&&(lc!=lt)){
+    lt=lt+1;
+    }
+    if(lc==lt){
+    return lc;}
+    if(q[lc]< q[lt]){
+    temp=q[lt];
+    q[lt]=q[lc];
+    q[lc]=temp;
+    lc=lt;
+    }
+    goto l1;
+    }
+
+
+int main(){
+
+int b,e,l=0, n;
+cout<<"enter size"<< endl;
+cin>>n;
+int q[n], ls[n/2], us[n/2];
+cout<<"enter elements"<< endl;
+for(int i=0;i< n;i++){
+cin>>q[i];
+}
+cout<<"enterd elements are "<< endl;
+for(int i=0;i< n;i++){
+cout<< q[i]<<"\t";
+ }
+ cout<< endl;
+ int sp=-1;
+ if(n>1 )
+ {
+ sp=sp+1;
+ ls[sp]=0;
+ us[sp]=n-1;
+ }
+ while(sp!=-1){
+     b=ls[sp];
+     e=us[sp];
+     sp=sp-1;
+     l=quick(q,b,e,l);
+     if( b< l-1){
+     sp=sp+1;
+     ls[sp]=b;
+     us[sp]=l-1;
+     }
+     if(e>l+1){
+     sp=sp+1;
+     ls[sp]=l+1;
+     us[sp]=e;
+     }
+     }
+     cout<<"sorted" << endl;
+     for(int i=0;i< n;i++){
+     cout<< q[i]<<"\t";
+     }
+
+ getch();
+ return 0;
+ } </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Stack using Array  </div>
+<div class="col">
+<a href="datastructure/unit2/Stack%20using%20Array.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal5">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal5">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Stack using Array</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+void push(int *, int);
+void pop(int *);
+void display(int *);
+int top = -1;    
+int size = 3;
+void push(int arr[], int val)
+{
+    if(top==size-1)    
+    {
+        cout<<"Overflow..." << endl;                 
+    }
+    else
+    {
+         top++;    
+         arr[top] = val;         
+    }
+}
+
+void pop(int arr[])
+{
+    if(top==-1)     
+    {
+         cout<<"Underflow..." << endl;                
+    }   
+    else
+    {
+         cout<<"Value poped is: " << arr[top]  << endl;
+         top--;      
+    }
+}
+
+void display(int arr[])
+{
+   int p = top;
+   cout<<"\n Elements in stack are: " << endl;
+   while(p!=-1)
+   {
+       cout<< arr[p] << endl;
+       p--;           
+   }
+   cout<<"NULL" << endl;
+        
+}
+
+int main()
+{
+    int val, choice, arr[size];
+    while(1)
+    {
+            cout<<"\n**** Enter choice: ****"  << endl;
+            cout<<"1 : Push"  << endl;
+            cout<<"2 : Pop"  << endl;
+            cout<<"3 : Display"  << endl;
+            cout<<"4 : Exit"  << endl;
+            cin>>choice;
+            switch(choice)
+            {
+                case 1: 
+                     cout<<"Enter value to push: ";
+                     cin>>val;
+                     push(arr, val);
+                     break;                     
+                case 2:
+                     pop(arr);
+                     break;                     
+                case 3:
+                     display(arr);
+                     break;
+                case 4:
+                     exit(1);
+                     break;
+                default:
+                   cout<<"Wrong choice..." << endl;          
+            }
+    } 
+        
+        
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Stack using Linked List </div>
+<div class="col">
+<a href="datastructure/unit2/Stack%20using%20Linked%20List.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal6">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal6">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Stack using Linked List</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+struct node
+{
+   int info;
+   node *next;   
+}*top=NULL;
+
+void push(int);
+void pop();
+void display();
+
+void push(int val)
+{
+    node *temp = new node;     
+    temp->info = val;
+    
+    if(top==NULL)              
+
+    {   
+       temp->next = NULL;      
+       top = temp;                      
+    }    
+    else
+    {
+       temp->next = top;
+       top = temp;    
+    }
+}
+
+void pop()
+{
+    node *p;
+    if(top==NULL)              
+    {
+      cout<<"Stack is empty...";
+    }
+    else
+    {
+        p = top;
+        top = top->next;       
+        cout<<"Element deleted is: " << p->info  << endl;   
+        delete p; 
+    }   
+}
+void display()
+{
+   node *p = top;         
+   cout<<"\n Elements in stack are: " << endl;
+   while(p!=NULL)
+   {
+       cout<< p->info  << endl;
+       p = p->next;                
+   }
+   cout<<"NULL" << endl;
+        
+}
+int main()
+{
+    int val, choice;    
+    while(1)
+    {
+            cout<<"\n**** Enter choice: ****"  << endl;
+            cout<<"1 : Push"  << endl;
+            cout<<"2 : Pop"  << endl;
+            cout<<"3 : Display"  << endl;
+            cout<<"4 : Exit"  << endl;
+            cin>>choice;
+            switch(choice)
+            {
+                case 1: 
+                     cout<<"Enter value to push: ";
+                     cin>>val;
+                     push(val);
+                     break;                     
+                case 2:
+                     pop();
+                     break;                     
+                case 3:
+                     display();
+                     break;
+                case 4:
+                     exit(1);
+                     break;
+default:
+                   cout<<"Wrong choice..." << endl;          
+            }
+    } 
+        
+  
+}
+ </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Stack </div>
+<div class="col">
+<a href="datastructure/unit2/Stack.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal7">Preview</button>
+</div>
+ </div>
+</div>
+
+<div class="modal fade" id="myModal7">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Stack</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< iostream>
+#include< conio.h>
+using namespace std;
+void push();
+void pop();
+void display();
+int stack[10];
+int top=-1;
+int main()
+{
+	int n;
+	cout<<"Enter how many numbers u want to insert into stack:"<< endl;
+	cin>>n;
+	for(int k=0;k<n;k++) { if(n>=10)
+	{
+		cout<<"Excceding space of stack";
+	}
+	else
+	{
+		push();
+	}
+}
+	display();
+char ch;	
+cout<<"Press y to perform deletion in this stack:";
+cin>>ch;
+if(ch=='y')
+{
+	cout<<"Deletion is:";
+	pop();
+}
+else
+{
+	cout<<"Wrong input";
+}
+cout<< endl;
+	display();
+}
+void push()
+{
+	int item;
+	cout<<"Enter item to be inserted";
+	cin>>item;
+	if(top==9)
+	{
+	cout<<"OVERFLOW";
+	}
+	else
+	{
+		top=top+1;
+		stack[top]=item;
+	}
+}
+void pop()
+{
+if(top==-1)
+{
+	cout<<"\nUNDERFLOW\n";
+}
+top=top-1;
+}
+void display()
+{
+	for(int i=top;i>=0;i--)
+{
+	cout<< stack[i]<< endl;
+}
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert" style="background-color:rgba(0,0,0,0.5);color:white;">
+<div class="row">
+<div class="col">
+Tower of Hanoi </div>
+<div class="col">
+<a href="datastructure/unit2/Tower%20of%20Hanoi.txt" download><button id="download" type="button" class="btn btn-dark btn-sm mb-2 float-right">Download</button></a>
+<button id="preview" type="button" class="btn btn-danger btn-sm float-right mr-3" data-toggle="modal" data-target="#myModal8">Preview</button>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="myModal8">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+
+<div class="modal-header" style="background-color:black;color:white;">
+<h4 class="modal-title">Tower of Hanoi</h4>
+<button type="button" class="close" style="color:white" data-dismiss="modal">&times;</button>
+</div>
+
+<div class="modal-body" style="height:500px;overflow-y:auto;">
+<pre id="p1"><code> #include< conio.h>
+#include < stdio.h>
+ 
+void towers(int, char, char, char);
+ 
+int main()
+{
+    int num;
+ 
+    printf("Enter the number of disks : ");
+    scanf("%d", &num);
+    printf("The sequence of moves involved in the Tower of Hanoi are :\n");
+    towers(num, 'A', 'C', 'B');
+    getch();
+    return 0;
+}
+void towers(int num, char frompeg, char topeg, char auxpeg)
+{
+    if (num == 1)
+    {
+        printf("\n Move disk 1 from peg %c to peg %c", frompeg, topeg);
+        return;
+    }
+    towers(num - 1, frompeg, auxpeg, topeg);
+    printf("\n Move disk %d from peg %c to peg %c", num, frompeg, topeg);
+    towers(num - 1, auxpeg, topeg, frompeg);
+} </code></pre>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-info" onclick="if (!window.__cfRLUnblockHandlers) return false; copyToClipboard('#p1')" data-cf-modified-3edf661dee68dbb0018314bb-="">Copy</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="3edf661dee68dbb0018314bb-text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+	</script>
+<script type="3edf661dee68dbb0018314bb-text/javascript">
+        $(".sidebar-loader").load("../sidebar/sidebar.html");
+    </script>
+<script src="../../ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3edf661dee68dbb0018314bb-|49" defer=""></script></body>
+
+<!-- Mirrored from 9to5notes.in/codebank/coding_page.php?categname=datastructure&unitid=unit2 by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 Dec 2019 10:52:21 GMT -->
+</html>

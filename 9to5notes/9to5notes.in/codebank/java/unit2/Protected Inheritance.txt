@@ -1,0 +1,44 @@
+/*protected members-protected fields in public class can be accessed directly by all classs within same package and in its sub classes*/
+class num
+{ //datafields x and y of num are protected as we want add() to access it directly.
+//in main we create object of result class and initialize x and y using call to constructor.
+protected int x,y;
+num(int a, int b)
+{
+x=a;
+y=b;
+}
+public void showxy()
+{
+System.out.println("x= "+x);
+System.out.println("y= "+y);
+}
+}
+
+class result extends num
+{
+private int z;
+result(int a,int b)
+{
+super(a,b);//
+}
+public void add()
+{ 
+z=x+y;
+}
+public void showz()
+{
+System.out.println("z="+z);
+}
+}
+
+public class protectedinheritance
+{
+public static void main(String[] args)
+{ 
+result d=new result(5,6);
+d.showxy();
+d.add();
+d.showz();
+}
+} 

@@ -1,0 +1,22 @@
+#include < conio.h >
+#include < stdio.h >
+main()
+{
+int a[10],n,i;
+
+printf("\nEnter the elements in array:");
+for(i=0; i < 10 ;i++)
+{
+  scanf("%d",&a[i]);
+}
+
+printf("\n\nEnter element number which you want to delete:");
+scanf("%d",&n);
+for(i=n-1; i < 10 ;i++)
+{
+ a[i]=a[i+1];
+}
+for(i=0; i < 9 ;i++)
+printf("%d\n",a[i]);
+getch();
+}

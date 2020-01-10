@@ -1,0 +1,26 @@
+#include < conio.h >
+#include < stdio.h >
+main()
+{
+int a[11],i,n,k;
+printf("Enter the elements :");
+for(i=0; i < 10 ;i++)
+{
+ scanf("%d",&a[i]);
+}
+printf("\nEnter element which you want to insert:");
+scanf("%d",&n);
+printf("\nEnter location:");
+scanf("%d",&k);
+k--;
+for(i=10; i > k ;i--)
+ {
+   a[i]=a[i-1];
+  }
+  a[k]=n;
+for(i=0; i < = 10 ;i++)
+{
+ printf("%d ",a[i]);
+ }
+ getch();
+ }

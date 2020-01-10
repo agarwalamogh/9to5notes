@@ -1,0 +1,62 @@
+#include< iostream>
+#include< GL/gl.h>
+#include< GL/glu.h>
+#include< GL/glut.h>
+void k1424(int a,int b)
+{
+	glBegin(GL_POINTS);
+	glVertex2d(a,b);
+
+	glEnd();
+		glFlush();//flush used before end
+}
+void display()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	glPointSize(5.0);
+	glClearColor(1.0,0.0,0.0,0.0);
+	glColor3f(0.0,0.0,1.0);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluOrtho2D(-100,100,-100,100);
+	int x,y,r,p;
+	x=0;
+	r=10;
+	y=r;
+	p=1-r;
+	while(x<=y)
+	{
+		glVertex2f(0+x,0+y);
+		glVertex2f(0+y,0+x);
+		glVertex2f(0+y,0-x);
+		glVertex2f(0+x,0-y);
+		glVertex2f(0-x,0-y);
+		glVertex2f(0-y,0-x);//here 0-x is used instead of 0+x
+		glVertex2f(0-y,0+x);
+		glVertex2f(0-x,0+y);
+		
+		if(p< 0)
+			{
+			    p=p+(2*x)+3;
+			    x++;
+	          }
+		else
+		{
+			p=p+(2*x)-(2*y)+5;
+			x++;
+			y--;
+		}
+	}
+	
+}
+
+int main(int argc,char **argv)
+{
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowPosition(100,200);
+	glutInitWindowSize(400,500);
+	glutCreateWindow("program");
+	glutDisplayFunc(display);
+	glutMainLoop();
+}

@@ -1,0 +1,42 @@
+#include< iostream>
+#include< GL/glut.h>
+
+
+void ysr()
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(0.0,0.0,0.0,0.0);
+	glColor3f(1.0,1.0,0.0);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluOrtho2D(0,100,0,100);
+	glBegin(GL_TRIANGLE_FAN);
+	//TRIANGLE 1
+	glVertex2f(25,25);
+	glVertex2f(50,50);
+//		glColor3f(0.0,0.0,1.0);//NOT NECESSARY
+	glVertex2f(10,70);
+	
+	//glVertex2f(90,50);
+	glColor3f(0.0,0.8,1.0);//NOT NECESSARY
+	glVertex2f(60,50);
+//		glColor3f(1.0,.0,0.0);//NOT NECESSARY
+	glVertex2f(70,60);
+	glVertex2f(80,100);
+	
+	glEnd();
+	glFlush();
+}
+
+
+
+int main(int argc,char** argv)
+{
+	glutInit(&argc,argv);
+	glutInitDisplayMode(GLUT_RGB|GLUT_SINGLE);
+	glutInitWindowPosition(300,200);
+	glutInitWindowSize(400,400);
+	glutCreateWindow("GRAPHICS LAB");
+	glutDisplayFunc(ysr);
+	glutMainLoop();
+}

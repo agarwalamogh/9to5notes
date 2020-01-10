@@ -1,0 +1,13 @@
+#include < stdio.h >
+#include < conio.h >
+main()
+{
+FILE *fp;
+char name[10];
+int sal;
+fp=fopen("h1.c","r");
+fscanf(fp,"%s%d",name,&sal);
+printf("%s\t%d",name,sal);
+fclose(fp);
+getch();
+}

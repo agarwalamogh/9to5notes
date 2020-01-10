@@ -1,0 +1,69 @@
+    1. #include < iostream >
+    2. #include < vector >
+    3. #include < string >
+    4. #include < cstdlib >
+    5. using namespace std;
+    6. int main()
+    7. {
+    8.     vector< int > ss;
+    9.     vector< int >::iterator it;
+    10.     int choice, item;
+    11.     while (1)
+    12.     {
+    13.         cout<<"\n---------------------"<< endl;
+    14.         cout<<"Vector Implementation in Stl"<< endl;
+    15.         cout<<"\n---------------------"<< endl;
+    16.         cout<<"1.Insert Element into the Vector"<< endl;
+    17.         cout<<"2.Delete Last Element of the Vector"<< endl;
+    18.         cout<<"3.Size of the Vector"<< endl;
+    19.         cout<<"4.Display by Index"<< endl;
+    20.         cout<<"5.Dislplay by Iterator"<< endl;
+    21.         cout<<"6.Clear the Vector"<< endl;
+    22.         cout<<"7.Exit"<< endl;
+    23.         cout<<"Enter your Choice: ";
+    24.         cin>>choice;
+    25.         switch(choice)
+    26.         {
+    27.         case 1:
+    28.             cout<<"Enter value to be inserted: ";
+    29.             cin>>item;
+    30.             ss.push_back(item);
+    31.             break;
+    32.         case 2:
+    33.             cout<<"Delete Last Element Inserted:"<< endl;
+    34.             ss.pop_back();
+    35.             break;
+    36.         case 3:
+    37.             cout<<"Size of Vector: ";
+    38.             cout<< ss.size()<< endl;
+    39.             break;
+    40.         case 4:
+    41.             cout<<"Displaying Vector by Index: ";
+    42.             for (int i = 0; i < ss.size(); i++)
+    43.             {
+    44.                 cout<< ss[i]<<" ";
+    45.             }
+    46.             cout<< endl;
+    47.             break;
+    48.         case 5:
+    49.             cout<<"Displaying Vector by Iterator: ";
+    50.             for (it = ss.begin(); it != ss.end(); it++)
+    51.             {
+    52.                 cout<< *it<<" ";
+    53.             }
+    54.             cout<< endl;
+    55.             break;
+    56.         case 6:
+    57.             ss.clear();
+    58.             cout<<"Vector Cleared"<< endl;
+    59.             break;
+    60.         case 7:
+    61.             exit(1);
+    62.             break;
+    63.         default:
+    64.             cout<<"Wrong Choice"<< endl;
+    65.         }
+    66.     }
+    67.     return 0;
+    68. }
+

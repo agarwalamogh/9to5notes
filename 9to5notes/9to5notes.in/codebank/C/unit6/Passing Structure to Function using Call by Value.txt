@@ -1,0 +1,26 @@
+#include < stdio.h >
+#include < conio.h >
+#include < string.h >
+typedef struct{
+int rollno;
+char name[10];
+int regno;
+}stud;
+void display(stud s2);
+main()
+{
+stud s1;
+printf("enter rollno of student");
+scanf("%d",&s1.rollno);
+printf("\nenter regno of student");
+scanf("%d",&s1.regno);
+printf("\nenter name of student");
+fflush(stdin);
+gets(s1.name);
+display(s1);
+getch();
+}
+void display(stud s2)
+{
+printf("rollno is %d",s2.rollno);
+}

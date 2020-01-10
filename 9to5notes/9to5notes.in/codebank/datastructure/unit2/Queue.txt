@@ -1,0 +1,102 @@
+#include < iostream>
+#include < conio.h>
+using namespace std;
+
+int q[25], n ,front=-1 , rear=-1 , item;
+
+void insertion()
+{
+       
+     if((rear==n) && (front==(rear+1))||(front==rear+1))
+     {
+       cout<<"Queue Overflow"<< endl;
+     }
+       
+       else if (rear==0)
+       front = rear = 1;
+       
+       else if(rear==n)
+       rear=1;
+       
+       else
+       rear=rear+1;
+       
+       cout<<"Enter the item"<< endl;
+       cin>>item;
+       q[rear] = item;
+       cout<<"is inserted\n\n"<< item;
+       
+     }
+     
+void deletion()
+{
+     if(front==0)
+     {
+                    cout<<"Queue Underflow\n\n"<< endl;
+           
+          }
+          
+     item=q[front];
+          
+     if(front==rear)
+     {
+               front=0;
+               rear=0;
+     }
+     
+     else if (front==n)
+     front=1;
+     
+     else
+     front=front+1;
+     
+      //cout<<" is deleted\n\n"<< item;
+ }  
+     
+void show()         
+{
+     for(int i=0;i<=rear;i++)
+     cout<< q[i]<< endl;
+
+ }
+     
+     
+     
+int main()
+{   
+    int op;
+    
+    cout<<"Enter the size of the queue :"<< endl;
+    cin>>n;
+    
+    do
+          {
+             cout<<"1.Insert"<< endl;
+             cout<<"2.Delete"<< endl;
+             cout<<"3.Display"<< endl;
+             cout<<"Enter your choice :"<<endl;
+             cin>>op;
+          
+             switch(op)
+             {
+                    case 1:
+                              insertion();
+                              break;
+                              
+                    case 2:
+                              deletion();
+                              break;
+                              
+                    case 3:
+                              show();
+                              break;
+                    
+                                   
+                    //default:
+                      //        printf("Invalid Option. Try again.");
+                    
+              }
+        }while(op!=4);
+        
+        cout<<"----THE END------";
+    }

@@ -1,0 +1,59 @@
+  class Parent
+    {
+    	int balance;
+    	Parent()
+   	  {
+    		balance=100;
+   	  }
+    	int property()
+    	  {
+     		return balance;
+    	  }
+    }
+   class Son extends Parent
+    {
+   	int sbalance;
+   	Son()
+          {
+     		sbalance=50;
+          }
+   	int property()
+   	  {
+    		int total = balance/2+ sbalance;  
+    		return total; 
+   	  }
+  
+    }
+   class Daughter extends Parent
+     {
+   	int dbalance;
+   	Daughter()
+          {
+     		dbalance=100;
+          }
+   	int property()
+          {
+    		int total = balance/2+ dbalance;  
+    		return total; 
+   	  }
+    
+     }
+   class TestUpCastAndDownCast
+     {
+   	public static void main(String [] rk)
+    	   {
+                Parent p = new Son();
+		Son s = (Son)p;
+		
+                System.out.println(p instanceof Son);
+		System.out.println(s.sbalance);
+		System.out.println(s.property());  
+
+                Parent p1 = new Daughter();
+		Daughter d = (Daughter)p1;
+
+	        System.out.println(d instanceof Parent);
+		System.out.println(d.dbalance);
+		System.out.println(d.property());  
+           }
+     }
